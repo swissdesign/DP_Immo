@@ -1,0 +1,49 @@
+/* Color Palette System
+  Default: B — Graphite & Fir
+*/
+:root {
+  /* B — Graphite & Fir (Default) */
+  --ink: #111827;     /* Dark text */
+  --paper: #FAF8F5;   /* Off-white background */
+  --accent: #0B6B4D;  /* Dark green for links, CTAs */
+  --muted: #4B5563;   /* Lighter grey for secondary text */
+  --line: #E7E5E4;    /* Light grey for borders, dividers */
+  --cta-text: #FFFFFF;
+
+  --focus-ring: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+  color-scheme: light;
+}
+
+/* Optional Dark Mode - enable by uncommenting or via user toggle */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #F3F4F6;
+    --paper: #111827;
+    --accent: #34D399; 
+    --muted: #9CA3AF;
+    --line: #374151;
+    --cta-text: #111827;
+    color-scheme: dark;
+  }
+} */
+
+
+/* A — Alpine Quiet (Alternative) */
+/* :root {
+  --ink:#0F172A;
+  --paper:#F5F3EE;
+  --accent:#1A8FE3;
+  --muted:#6B7280;
+  --line:#E5E7EB;
+  --cta-text: #FFFFFF;
+} */
+
+/* C — Slate & Copper (Alternative) */
+/* :root {
+  --ink:#0B1220;
+  --paper:#FAF8F5;
+  --accent:#B86F3D;
+  --muted:#64748B;
+  --line:#E7E5E4;
+  --cta-text: #FFFFFF;
+} */

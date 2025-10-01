@@ -1,0 +1,68 @@
+/* Typography System 
+*/
+
+/* 1. Font Imports */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/newsreader/v22/cY9tkP-3o2lP-bEljsg9f__2f-r-oA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* 2. Font Variables */
+:root {
+  --font-body: 'Inter', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-heading: 'Newsreader', Georgia, serif;
+}
+
+/* 3. Fluid Type Scale using clamp() */
+:root {
+  /* Base size: 16px on mobile (375px) up to 18px on desktop (1440px) */
+  --font-size-base: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  
+  /* Scale based on a modular ratio (e.g., 1.25) */
+  --font-size-sm:   clamp(0.8rem, 0.76rem + 0.16vw, 0.9rem);    /* 14.4px */
+  --font-size-lg:   clamp(1.25rem, 1.19rem + 0.25vw, 1.406rem); /* 22.5px */
+  --font-size-xl:   clamp(1.563rem, 1.48rem + 0.33vw, 1.758rem);/* 28.1px */
+  --font-size-2xl:  clamp(1.953rem, 1.85rem + 0.41vw, 2.197rem);/* 35.1px */
+  --font-size-3xl:  clamp(2.441rem, 2.31rem + 0.52vw, 2.746rem);/* 43.9px */
+  --font-size-4xl:  clamp(3.052rem, 2.89rem + 0.65vw, 3.433rem);/* 54.9px */
+}
+
+/* 4. Base typography styles */
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+p { margin: 0 0 1.5rem 0; max-width: 65ch; }
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
