@@ -1,0 +1,124 @@
+{
+  "skip_link": "Skip to main content",
+  "nav_toggle": "Open/close menu",
+  "nav_services": "Services",
+  "nav_process": "Process",
+  "nav_team": "Team",
+  "nav_contact": "Contact",
+  "nav_back_home": "Back to Homepage",
+
+  "meta_title_home": "Wertwerk | Precise Real Estate Valuation & Advisory",
+  "meta_description_home": "Wertwerk offers independent market value appraisals, building condition analyses, and construction advisory in Zurich and Switzerland. Precision and discretion.",
+  "meta_title_person_a": "[Full Name A] | Wertwerk",
+  "meta_description_person_a": "Profile of [Full Name A], Dipl. Arch. ETH/SIA and Real Estate Valuer at Wertwerk.",
+  "meta_title_person_b": "[Full Name B] | Wertwerk",
+  "meta_description_person_b": "Profile of [Full Name B], Dipl. Arch. ETH/SIA and Real Estate Valuer at Wertwerk.",
+
+  "hero_subtitle": "Real Estate Valuation + Advisory",
+  "hero_tagline": "Precise Property Valuation & Client-side Representation",
+  "hero_cta": "Request an Offer",
+
+  "value_1_title": "Precision",
+  "value_1_desc": "Detailed analyses and well-founded valuations as a basis for decision-making.",
+  "value_2_title": "Independence",
+  "value_2_desc": "Objective and impartial reports, free from conflicts of interest.",
+  "value_3_title": "Discretion",
+  "value_3_desc": "Absolute protection of your sensitive data and preservation of your privacy.",
+  "value_4_title": "Experience",
+  "value_4_desc": "Decades of expertise as architects and real estate valuers.",
+
+  "services_title": "Services",
+  "services": [
+    { "id": "s1", "title": "Market Value Appraisals", "description": "We determine the market value of your property according to national and international standards. Ideal for purchases, sales, financing, or inheritances." },
+    { "id": "s2", "title": "Building Condition Assessments", "description": "Detailed analysis of the building fabric to identify defects and plan renovation measures, including cost estimates." },
+    { "id": "s3", "title": "Project Management (New Build/Refurbishment)", "description": "We oversee your construction project from planning to completion, ensuring quality and monitoring costs and deadlines." },
+    { "id": "s4", "title": "Transaction Advisory", "description": "Comprehensive support for purchase, sale, or gift processes, from due diligence to the closing of the contract." }
+  ],
+
+  "work_title": "Selected References",
+  "work_1_title": "Apartment Building, Zurich",
+  "work_1_desc": "Market value appraisal in the context of an inheritance.",
+  "work_2_title": "Office Building, Zug",
+  "work_2_desc": "Building condition assessment and refurbishment consulting.",
+  "work_3_title": "Villa, Lake Geneva",
+  "work_3_desc": "Transaction advisory for an international buyer.",
+  "work_4_title": "New Development, Lucerne",
+  "work_4_desc": "Project management and cost control for a developer.",
+
+  "process_title": "Our Process",
+  "process_steps": [
+    { "title": "Contact & Needs Analysis", "description": "You describe your request. We clarify the objective, scope, and specific requirements of your assignment." },
+    { "title": "Site Inspection & Data Collection", "description": "We conduct a thorough on-site inspection and gather all relevant documents and market data." },
+    { "title": "Analysis & Valuation", "description": "Our experts analyze the collected information and apply the appropriate valuation methods." },
+    { "title": "Report & Debriefing", "description": "You receive a clear, comprehensive report. We discuss the results with you and answer your questions." }
+  ],
+
+  "credentials_methods_title": "Methods",
+  "credentials_methods_desc": "Hedonic modelling, DCF (Discounted Cash Flow), comparable sales approach, and other methods according to international standards.",
+  "credentials_regions_title": "Regions",
+  "credentials_regions_desc": "Zurich, Central Switzerland, Western Switzerland, and by request.",
+  "credentials_partners_title": "Partners",
+  "credentials_partners_desc": "We regularly collaborate with leading banks, insurance companies, and pension funds.",
+
+  "team_title": "The Founders",
+  "team_a_name": "[Full Name A]",
+  "team_a_title": "MSc Arch ETH/SIA, Real Estate Valuer",
+  "team_b_name": "[Full Name B]",
+  "team_b_title": "MSc Arch ETH/SIA, Real Estate Valuer",
+  "team_link_cta": "View Profile",
+
+  "testimonials_title": "Testimonials",
+  "testimonials": [
+    { "quote": "The analysis was extremely detailed and decisively helped us in the price negotiation. Absolutely professional.", "author": "Private Investor, Zurich" },
+    { "quote": "Wertwerk handled the complex case of our community of heirs with great expertise and sensitivity.", "author": "Family S., Lucerne" },
+    { "quote": "Fast, reliable, and a report that is understandable even for non-experts. Unreserved recommendation.", "author": "CEO of an SME, Zug" }
+  ],
+
+  "faq_title": "Frequently Asked Questions",
+  "faq": [
+    { "id": "f1", "title": "How long does a valuation take?", "description": "A standard market value appraisal for a residential property typically takes 2-3 weeks from inspection to completion." },
+    { "id": "f2", "title": "What does a report cost?", "description": "The cost depends on the property type, complexity, and scope of the assignment. We would be happy to provide a transparent offer." },
+    { "id": "f3", "title": "Are your reports accepted by banks?", "description": "Yes, our reports comply with the standards of most Swiss financial institutions and are widely accepted." }
+  ],
+
+  "contact_title": "Contact Us",
+  "contact_intro": "We look forward to your inquiry for a non-binding initial consultation.",
+  "contact_firm_name": "Real Estate Valuation + Advisory",
+  "contact_cta": "Request an Offer",
+
+  "footer_long_name": "Real Estate Valuation + Advisory",
+  "footer_imprint": "Imprint",
+  "footer_privacy": "Privacy Policy",
+  
+  "person_timeline_title": "Career Path",
+  "person_motivation_title": "Motivation & Personal",
+  "person_expertise_title": "Expertise",
+  "person_cv_download": "Download CV",
+
+  "person_a": {
+    "name": "[Full Name A]",
+    "title": "MSc Arch ETH/SIA, Real Estate Valuer",
+    "bio": "An analytical thinker with a passion for architecture and solid, data-driven valuations. His focus is on complex commercial properties and portfolios.",
+    "motivation": "\"Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.\"",
+    "expertise": ["Commercial Real Estate", "Portfolio Valuation", "DCF Analysis", "Building Law", "Project Development"],
+    "timeline": [
+      { "date": "2023 - Present", "title": "Founder & Partner, Wertwerk", "description": "Zurich, Switzerland" },
+      { "date": "2015 - 2023", "title": "Senior Valuer, Major Bank", "description": "Focus on commercial real estate financing." },
+      { "date": "2010 - 2015", "title": "Architect & Project Manager, Renowned Architectural Firm", "description": "Planning and execution of large-scale projects." },
+      { "date": "2004 - 2010", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
+    ]
+  },
+  "person_b": {
+    "name": "[Full Name B]",
+    "title": "MSc Arch ETH/SIA, Real Estate Valuer",
+    "bio": "Combines design sensibility with methodical valuation competence. Her strength lies in residential properties and advising on inheritances and donations.",
+    "motivation": "\"Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.\"",
+    "expertise": ["Residential Properties", "Inheritance Cases", "Hedonic Valuation", "Condition Analysis", "Historic Preservation"],
+    "timeline": [
+      { "date": "2023 - Present", "title": "Founder & Partner, Wertwerk", "description": "Zurich, Switzerland" },
+      { "date": "2017 - 2023", "title": "Real Estate Valuer, Consulting Firm", "description": "Specialization in residential and special-purpose properties." },
+      { "date": "2012 - 2017", "title": "Architect, Firm specializing in renovations", "description": "Work on historically listed buildings." },
+      { "date": "2006 - 2012", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
+    ]
+  }
+}
