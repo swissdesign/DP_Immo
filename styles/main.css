@@ -22,7 +22,13 @@ html {
   scroll-padding-top: 8rem; /* Offset for sticky header */
 }
 body {
-  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: #FFFFFF; /* Changed from var(--paper) for section contrast */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 img {
   max-width: 100%;
