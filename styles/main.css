@@ -198,7 +198,7 @@ section {
 .hero {
   padding-block: clamp(4rem, 2.3rem + 7.2vw, 8rem);
   text-align: center;
-  background-image: linear-gradient(rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0.4)), url('https://placehold.co/1920x1080/e7e5e4/4b5563?text=Wertwerk');
+  background-image: linear-gradient(rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0.4)), url('https://placehold.co/1920x1080/e7e5e4/4b5563?text=Platzhalter');
   background-size: cover;
   background-position: center;
   color: var(--paper); /* Ensures all text inside defaults to light */
