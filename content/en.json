@@ -7,12 +7,12 @@
   "nav_contact": "Contact",
   "nav_back_home": "Back to Homepage",
 
-  "meta_title_home": "Wertwerk | Precise Real Estate Valuation & Advisory",
-  "meta_description_home": "Wertwerk offers independent market value appraisals, building condition analyses, and construction advisory in Zurich and Switzerland. Precision and discretion.",
-  "meta_title_person_a": "[Full Name A] | Wertwerk",
-  "meta_description_person_a": "Profile of [Full Name A], Dipl. Arch. ETH/SIA and Real Estate Valuer at Wertwerk.",
-  "meta_title_person_b": "[Full Name B] | Wertwerk",
-  "meta_description_person_b": "Profile of [Full Name B], Dipl. Arch. ETH/SIA and Real Estate Valuer at Wertwerk.",
+  "meta_title_home": "[Placeholder Name] | Precise Real Estate Valuation & Advisory",
+  "meta_description_home": "[Placeholder Name] offers independent market value appraisals, building condition analyses, and construction advisory in Zurich and Switzerland. Precision and discretion.",
+  "meta_title_person_a": "[Full Name A] | [Placeholder Name]",
+  "meta_description_person_a": "Profile of [Full Name A], Dipl. Arch. ETH/SIA and Real Estate Valuer at [Placeholder Name].",
+  "meta_title_person_b": "[Full Name B] | [Placeholder Name]",
+  "meta_description_person_b": "Profile of [Full Name B], Dipl. Arch. ETH/SIA and Real Estate Valuer at [Placeholder Name].",
 
   "hero_subtitle": "Real Estate Valuation + Advisory",
   "hero_tagline": "Precise Property Valuation & Client-side Representation",
@@ -70,7 +70,7 @@
   "testimonials_title": "Testimonials",
   "testimonials": [
     { "quote": "The analysis was extremely detailed and decisively helped us in the price negotiation. Absolutely professional.", "author": "Private Investor, Zurich" },
-    { "quote": "Wertwerk handled the complex case of our community of heirs with great expertise and sensitivity.", "author": "Family S., Lucerne" },
+    { "quote": "[Placeholder Name] handled the complex case of our community of heirs with great expertise and sensitivity.", "author": "Family S., Lucerne" },
     { "quote": "Fast, reliable, and a report that is understandable even for non-experts. Unreserved recommendation.", "author": "CEO of an SME, Zug" }
   ],
 
@@ -102,7 +102,7 @@
     "motivation": "\"Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.\"",
     "expertise": ["Commercial Real Estate", "Portfolio Valuation", "DCF Analysis", "Building Law", "Project Development"],
     "timeline": [
-      { "date": "2023 - Present", "title": "Founder & Partner, Wertwerk", "description": "Zurich, Switzerland" },
+      { "date": "2023 - Present", "title": "Founder & Partner, [Placeholder Name]", "description": "Zurich, Switzerland" },
       { "date": "2015 - 2023", "title": "Senior Valuer, Major Bank", "description": "Focus on commercial real estate financing." },
       { "date": "2010 - 2015", "title": "Architect & Project Manager, Renowned Architectural Firm", "description": "Planning and execution of large-scale projects." },
       { "date": "2004 - 2010", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
@@ -115,7 +115,7 @@
     "motivation": "\"Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.\"",
     "expertise": ["Residential Properties", "Inheritance Cases", "Hedonic Valuation", "Condition Analysis", "Historic Preservation"],
     "timeline": [
-      { "date": "2023 - Present", "title": "Founder & Partner, Wertwerk", "description": "Zurich, Switzerland" },
+      { "date": "2023 - Present", "title": "Founder & Partner, [Placeholder Name]", "description": "Zurich, Switzerland" },
       { "date": "2017 - 2023", "title": "Real Estate Valuer, Consulting Firm", "description": "Specialization in residential and special-purpose properties." },
       { "date": "2012 - 2017", "title": "Architect, Firm specializing in renovations", "description": "Work on historically listed buildings." },
       { "date": "2006 - 2012", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
