@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- PWA Service Worker Registration ---
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js').then(registration => {
+            navigator.serviceWorker.register('sw.js').then(registration => {
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, err => {
                 console.log('ServiceWorker registration failed: ', err);
@@ -87,14 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Animated Logo Injection ---
     const logoWrapper = document.querySelector('.logo-animated-wrapper');
     if (logoWrapper && !prefersReducedMotion) {
-        fetch('/assets/logo.svg')
+        fetch('assets/logo.svg')
             .then(response => response.text())
             .then(svgData => {
                 logoWrapper.innerHTML = svgData;
             });
     } else if (logoWrapper) {
         // Fallback to static logo if reduced motion is on
-        logoWrapper.innerHTML = `<img src="/assets/logo-static.svg" alt="Wertwerk Logo" style="width:100px; height:100px;">`;
+        logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Wertwerk Logo" style="width:100px; height:100px;">`;
     }
 
 });
