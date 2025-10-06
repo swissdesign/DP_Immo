@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wertwerk-static-v1';
+const CACHE_NAME = 'platzhalter-static-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
