@@ -7,12 +7,12 @@
   "nav_contact": "Kontakt",
   "nav_back_home": "Zurück zur Startseite",
 
-  "meta_title_home": "Wertwerk | Präzise Immobilienbewertung & Bauberatung",
-  "meta_description_home": "Wertwerk bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Bauberatung in Zürich und der Schweiz. Präzision und Diskretion.",
-  "meta_title_person_a": "[Full Name A] | Wertwerk",
-  "meta_description_person_a": "Profil von [Full Name A], Dipl. Arch. ETH/SIA und Immobilienschätzer bei Wertwerk.",
-  "meta_title_person_b": "[Full Name B] | Wertwerk",
-  "meta_description_person_b": "Profil von [Full Name B], Dipl. Arch. ETH/SIA und Immobilienschätzerin bei Wertwerk.",
+  "meta_title_home": "[Platzhalter Name] | Präzise Immobilienbewertung & Bauberatung",
+  "meta_description_home": "[Platzhalter Name] bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Bauberatung in Zürich und der Schweiz. Präzision und Diskretion.",
+  "meta_title_person_a": "[Full Name A] | [Platzhalter Name]",
+  "meta_description_person_a": "Profil von [Full Name A], Dipl. Arch. ETH/SIA und Immobilienschätzer bei [Platzhalter Name].",
+  "meta_title_person_b": "[Full Name B] | [Platzhalter Name]",
+  "meta_description_person_b": "Profil von [Full Name B], Dipl. Arch. ETH/SIA und Immobilienschätzerin bei [Platzhalter Name].",
 
   "hero_subtitle": "Immobilien Schätzung + Beratung",
   "hero_tagline": "Präzise Immobilienbewertung & Bauherrenberatung",
@@ -70,7 +70,7 @@
   "testimonials_title": "Kundenstimmen",
   "testimonials": [
     { "quote": "Die Analyse war extrem detailliert und hat uns bei der Preisverhandlung entscheidend geholfen. Absolut professionell.", "author": "Privater Investor, Zürich" },
-    { "quote": "Wertwerk hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.", "author": "Familie S., Luzern" },
+    { "quote": "[Platzhalter Name] hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.", "author": "Familie S., Luzern" },
     { "quote": "Schnell, zuverlässig und ein Gutachten, das auch für Laien verständlich ist. Uneingeschränkte Empfehlung.", "author": "Geschäftsführer KMU, Zug" }
   ],
 
@@ -102,7 +102,7 @@
     "motivation": "\"Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens.\"",
     "expertise": ["Gewerbeimmobilien", "Portfoliobewertung", "DCF-Analyse", "Baurecht", "Projektentwicklung"],
     "timeline": [
-      { "date": "2023 - Heute", "title": "Gründer & Partner, Wertwerk", "description": "Zürich, Schweiz" },
+      { "date": "2023 - Heute", "title": "Gründer & Partner, [Platzhalter Name]", "description": "Zürich, Schweiz" },
       { "date": "2015 - 2023", "title": "Senior Bewerter, Grossbank", "description": "Fokus auf kommerzielle Immobilienfinanzierung." },
       { "date": "2010 - 2015", "title": "Architekt & Projektleiter, Renommiertes Architekturbüro", "description": "Planung und Realisierung von Grossprojekten." },
       { "date": "2004 - 2010", "title": "Architekturstudium, ETH Zürich", "description": "Master of Science in Architektur." }
@@ -115,7 +115,7 @@
     "motivation": "\"Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Wandern in den Alpen und in der Beschäftigung mit moderner Kunst.\"",
     "expertise": ["Wohnimmobilien", "Erbteilungen", "Hedonische Bewertung", "Bauzustandsanalyse", "Denkmalpflege"],
     "timeline": [
-        { "date": "2023 - Heute", "title": "Gründerin & Partnerin, Wertwerk", "description": "Zürich, Schweiz" },
+        { "date": "2023 - Heute", "title": "Gründerin & Partnerin, [Platzhalter Name]", "description": "Zürich, Schweiz" },
         { "date": "2017 - 2023", "title": "Immobilienschätzerin, Beratungsunternehmen", "description": "Spezialisierung auf Wohn- und Spezialliegenschaften." },
         { "date": "2012 - 2017", "title": "Architektin, Architekturbüro mit Fokus auf Sanierungen", "description": "Arbeit an denkmalgeschützten Objekten." },
         { "date": "2006 - 2012", "title": "Architekturstudium, ETH Zürich", "description": "Master of Science in Architektur." }
