@@ -198,6 +198,10 @@ section {
 .hero {
   padding-block: clamp(4rem, 2.3rem + 7.2vw, 8rem);
   text-align: center;
+  background-image: linear-gradient(rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0.4)), url('https://placehold.co/1920x1080/e7e5e4/4b5563?text=Wertwerk');
+  background-size: cover;
+  background-position: center;
+  color: var(--paper); /* Ensures all text inside defaults to light */
 }
 .hero-content {
     display: flex;
@@ -213,19 +217,22 @@ section {
   font-size: var(--font-size-4xl);
   font-weight: 700;
   margin-bottom: 0.25rem;
+  color: var(--paper);
 }
 .hero-subtitle {
   font-size: var(--font-size-lg);
-  color: var(--muted);
+  color: var(--paper);
   margin-bottom: 0.5rem;
+  opacity: 0.9;
 }
 .hero-tagline {
   font-size: var(--font-size-lg);
   max-width: 40ch;
   margin-inline: auto;
   margin-bottom: 2rem;
+  color: var(--paper);
+  opacity: 0.9;
 }
-
 /* Value Prop */
 .grid-4 {
   display: grid;
@@ -236,6 +243,8 @@ section {
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .value-card h3 {
   font-size: var(--font-size-lg);
@@ -244,6 +253,7 @@ section {
 .value-card p {
   margin-bottom: 0;
   color: var(--muted);
+  flex-grow: 1;
 }
 @media (min-width: 500px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
