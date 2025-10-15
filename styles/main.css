@@ -26,9 +26,27 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--ink);
-  background-color: #FFFFFF; /* Changed from var(--paper) for section contrast */
+  /*
+    Apply a subtle vertical gradient that evolves as the user scrolls. The
+    top of the page starts with the neutral paper colour while the end
+    gradually shifts to a slightly darker shade. The JavaScript below
+    updates the --gradient-scroll variable on scroll for a dynamic effect.
+  */
+  background: linear-gradient(to bottom, var(--paper) 0%, var(--gradient-scroll) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Enable vertical scroll snapping for full-screen sections. Each section
+     will snap to the viewport when scrolling, creating a smooth, page-like
+     progression. This is disabled on small screens to maintain natural
+     scrolling behaviour. */
+  scroll-snap-type: y mandatory;
+}
+
+@media (max-width: 768px) {
+  body {
+    scroll-snap-type: none;
+  }
 }
 img {
   max-width: 100%;
@@ -43,8 +61,101 @@ img {
   margin-inline: auto;
   padding-inline: 1.5rem;
 }
+/*
+  Full-Screen Sections
+  --------------------
+  Certain sections are designed to fill the viewport height to create a
+  cinematic, Apple‑style scrolling experience. By default, each
+  section with the `.full-screen` class will stretch to at least
+  100% of the viewport height and centre its contents vertically.
+  On small screens the minimum height is unset to prevent
+  unnecessary whitespace and ensure content remains accessible.
+*/
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Remove default vertical padding applied to all sections so that
+     content can be centred perfectly within the viewport. Padding will
+     be handled by nested containers if necessary. */
+  padding-block: 0;
+  /* Use scroll snapping instead of sticky positioning. Each section
+     naturally snaps to the start of the viewport when scrolled, creating
+     a controlled reveal without overlapping layers. */
+  scroll-snap-align: start;
+}
+@media (max-width: 768px) {
+  .full-screen {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+}
 section {
   padding-block: clamp(3rem, 1.3rem + 7.2vw, 6rem); /* Responsive padding */
+}
+
+/*
+  Value & Services Layout
+  ----------------------
+  The services section combines the four core values with the accordion of
+  service offerings. This grid layout stacks on small screens and
+  splits into two columns on larger viewports. Each card and accordion
+  item can reveal with a subtle fade/slide animation (see JS). The
+  surrounding wrapper ensures consistent spacing and alignment.
+*/
+.value-services {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .value-services {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.value-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .value-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services-wrapper {
+  /* Provide spacing above the accordion on small screens */
+  display: block;
+}
+
+/* Credentials blocks inside process section */
+.credentials-blocks {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .credentials-blocks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.credentials-block {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state for credentials blocks: subtle lift and tint to mirror other
+   interactive cards. */
+.credentials-block:hover,
+.credentials-block:focus-within {
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
 }
 
 /* 3. Header & Navigation */
@@ -177,11 +288,12 @@ section {
   text-decoration: none;
   font-weight: 700;
   border: 2px solid var(--accent);
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s, transform 0.3s;
 }
 .cta-button:hover, .cta-button:focus {
   background-color: transparent;
   color: var(--accent);
+  transform: translateY(-2px);
 }
 
 /* 5. Section Styles */
@@ -203,16 +315,30 @@ section {
 /* Hero */
 .hero {
   padding-block: clamp(4rem, 2.3rem + 7.2vw, 8rem);
+  /* Make the hero section fill the viewport height to anchor the
+     storytelling. The content is vertically centred via flexbox in
+     .hero-content. */
+  min-height: 100vh;
   text-align: center;
-  background-image: linear-gradient(rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0.4)), url('https://placehold.co/1920x1080/e7e5e4/4b5563?text=Platzhalter');
+  /*
+    Use the custom hero illustration provided by the client. The dark base
+    colour in the SVG sets a calm, professional tone while the lines
+    reference architecture and precision. An additional semi–transparent
+    overlay ensures sufficient contrast for the headline and call‑to‑action.
+    The relative path ascends once from styles/ to reach the assets folder.
+  */
+  background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.6)), url('../assets/hero.svg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: var(--paper); /* Ensures all text inside defaults to light */
 }
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex: 1;
     gap: 2rem;
 }
 .logo-animated-wrapper {
@@ -251,6 +377,16 @@ section {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state for value cards: give a gentle lift and subtle shade change to
+   enhance interactivity without overwhelming the minimalist aesthetic. */
+.value-card:hover,
+.value-card:focus-within {
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
 }
 .value-card h3 {
   font-size: var(--font-size-lg);
@@ -272,31 +408,59 @@ section {
 .services .accordion { max-width: 800px; margin-inline: auto; }
 
 /* Work */
-.work-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+/*
+  Work/Projects Scroller
+  ---------------------
+  The selected projects section uses a horizontal scroller inspired
+  by portfolio sites. Each card snaps neatly into place as the user
+  swipes, providing an intuitive way to browse through references.
+  On all screen sizes, we use a horizontal scroller to emphasise
+  exploration and reduce vertical bulk. The scroll bar remains
+  visible as an affordance, and cards snap to the centre for a
+  focused reading experience.
+*/
+.work-scroller {
+  overflow-x: auto;
+  padding-bottom: 1.5rem; /* space for scrollbar */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.work-cards {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
 }
 .work-card {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff; /* In case paper is not pure white */
+  flex: 0 0 85%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  scroll-snap-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.work-card:hover,
+.work-card:focus {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 .work-card img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
 }
 .work-card-content {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
-.work-card-content h3 { font-size: var(--font-size-lg); margin-bottom: 0.5rem; }
-.work-card-content p { color: var(--muted); margin-bottom: 0; }
-@media (min-width: 768px) {
-    .work-grid { grid-template-columns: repeat(2, 1fr); }
+.work-card-content h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.5rem;
 }
-@media (min-width: 1024px) {
-    .work-grid { grid-template-columns: repeat(3, 1fr); }
+.work-card-content p {
+  color: var(--muted);
+  margin-bottom: 0;
 }
 
 /* Process */
@@ -319,6 +483,16 @@ section {
   border: 1px solid var(--line);
   border-radius: 8px;
   scroll-snap-align: start;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state for process steps: subtly elevate and tint the background to
+   encourage exploration. */
+.process-step:hover,
+.process-step:focus-within {
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 .process-step::before {
   content: "0" counter(step);
@@ -455,9 +629,12 @@ section {
     max-width: 600px;
     margin-inline: auto;
     text-align: center;
+    /* Provide consistent padding on mobile and a clean backdrop */
     padding: clamp(2rem, 1rem + 4.2vw, 4rem);
     border: 1px solid var(--line);
     border-radius: 8px;
+    background-color: var(--paper);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
 }
 .contact-details {
     margin-block: 2rem;
@@ -465,24 +642,55 @@ section {
     flex-direction: column;
     gap: 1.5rem;
     line-height: 1.5;
+    /* Allow the details panel to grow and shrink within the flex container. */
+    flex: 1 1 300px;
 }
 @media (min-width: 768px) {
-    .contact-details { flex-direction: row; justify-content: center; }
+    /*
+      Keep the details stacked vertically even on larger screens so that the
+      address and contact links remain easy to scan. The flex: 1 1 300px
+      property defined above ensures this panel will align next to the form
+      in the contact grid.  We intentionally avoid switching to row
+      orientation here because it squashes the text into a single line.
+    */
+    .contact-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* Contact form enhancements */
+/*
+  Use a flexible layout for the contact grid so that the address block and
+  form align nicely across all screen sizes. A flex container allows
+  children to wrap automatically and centre within the card.  Increased
+  gap provides breathing room between the two halves.
+*/
 .contact-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .contact-card {
     max-width: 900px;
+    margin-inline: auto;
+    /* Provide generous padding and a subtle border to distinguish the card
+       from the background. The card stays centred on wide screens. */
+    padding: clamp(2rem, 4vw, 3rem);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background-color: var(--paper);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.04);
   }
+  /* On larger screens, keep using flex: the children grow evenly and
+     remain aligned to the top. */
   .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -490,6 +698,8 @@ section {
   display: grid;
   gap: 1rem;
   text-align: left;
+  /* Allow the form to grow and shrink within the flex container on wide screens. */
+  flex: 1 1 300px;
 }
 .contact-form label {
   font-weight: 600;
@@ -536,46 +746,89 @@ section {
 
 /* 6. Component Styles */
 /* Accordion */
+/*
+  Accordion items should breathe a little more on long pages. A generous
+  bottom margin ensures each section can be easily distinguished when
+  scanning the Leistungen list on both the home page and the dedicated
+  services page. Remove the margin on the last item to avoid trailing
+  whitespace.  Increased from 1.5rem to 2rem per user feedback.
+*/
 .accordion-item {
-  border-bottom: 1px solid var(--line);
+  /* Use a card-like container for each service. A soft border, rounded
+     corners and light drop shadow separate items from the page while
+     maintaining the minimalistic aesthetic. */
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background-color: var(--paper);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+/* Remove bottom margin for the last accordion item */
+.accordion-item:last-child {
+  margin-bottom: 0;
 }
 .accordion-item:first-child {
-  border-top: 1px solid var(--line);
+  /* Remove the extra top border: the card now has its own border */
+  border-top: none;
 }
 .accordion-header {
   width: 100%;
   background: none;
   border: none;
   text-align: left;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.25rem;
   font-family: var(--font-heading);
   font-size: var(--font-size-lg);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.2s ease;
 }
 .accordion-header::after {
   content: '+';
   font-family: var(--font-body);
   font-size: 2rem;
   font-weight: 300;
+  color: var(--accent);
   transition: transform 0.3s ease;
 }
 .accordion-header[aria-expanded="true"]::after {
   transform: rotate(45deg);
 }
+
+/* When expanded, subtly highlight the header to indicate active state */
+.accordion-header[aria-expanded="true"] {
+  background-color: var(--line);
+}
+.accordion-header:hover,
+.accordion-header:focus {
+  background-color: var(--line);
+}
+/* Style for the numbered prefix */
+.accordion-number {
+  font-family: var(--font-body);
+  font-size: calc(var(--font-size-lg) * 0.8);
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.accordion-title {
+  flex-grow: 1;
+}
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
+  transition: grid-template-rows 0.4s ease;
 }
 .accordion-header[aria-expanded="true"] + .accordion-content {
   grid-template-rows: 1fr;
 }
 .accordion-content-inner {
   overflow: hidden;
-  padding: 0 1rem 1.5rem 1rem;
+  padding: 0 1.25rem 1.5rem 1.25rem;
 }
 .accordion-content-inner p { color: var(--muted); }
 

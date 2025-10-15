@@ -10,7 +10,13 @@
   "nav_back_home": "Back to Homepage",
 
   "meta_title_home": "Immobilien Schätzung + Beratung | Precise real estate valuation & consulting",
-  "meta_description_home": "Immobilien Schätzung + Beratung offers independent traffic-value appraisals, building condition assessments and consulting across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience since 1995.",
+  /*
+    Expanded meta description to emphasise the independent nature of the firm
+    and its full service offering (valuations, consulting and project
+    management). It also mentions the 1995 founding date and regions served
+    for improved local SEO.
+  */
+  "meta_description_home": "Since 1995 Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management. We prepare traffic-value appraisals, conduct building condition assessments and guide your project across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
   "meta_description_person_a": "Profile of Dominik Planzer, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
   "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
@@ -18,9 +24,16 @@
 
   "hero_subtitle": "Real estate valuation + consulting",
   /* hero tagline is overridden below */
-  "hero_cta": "Request an Offer",
+  /* A more inviting call to action encouraging visitors to get in touch */
+  "hero_cta": "Send Inquiry",
   "hero_title_name": "Immobilien Schätzung + Beratung",
-  "hero_tagline": "Precise real estate valuation & consulting since 1995",
+  /*
+    Updated tagline highlighting the firm’s founding year and its core
+    services: independent valuations, consulting and project management.
+    This phrasing aligns with recommendations to spell out the breadth of
+    services and the longevity of the practice【986185853589315†L138-L145】.
+  */
+  "hero_tagline": "Since 1995 – independent valuations, consulting and project management",
 
   "value_1_title": "Precision",
   "value_1_desc": "Detailed analyses and well-founded valuations as a basis for decision-making.",
@@ -29,7 +42,7 @@
   "value_3_title": "Discretion",
   "value_3_desc": "Absolute protection of your sensitive data and preservation of your privacy.",
   "value_4_title": "Experience",
-  "value_4_desc": "Decades of expertise as architects and real estate valuers.",
+  "value_4_desc": "Experience since 1995 as architects and real estate valuers.",
 
   "services_title": "Services",
   "services": [

@@ -52,7 +52,7 @@
         </div>
     </header>
     <main id="main-content">
-        <section id="services-page" class="services reveal-on-scroll">
+        <section id="services-page" class="services reveal-on-scroll full-screen">
             <div class="container">
                 <h1 class="section-title" data-i18n-key="services_title">Leistungen</h1>
                 <!--
@@ -62,9 +62,14 @@
                     corresponding translations exist.
                 -->
                 <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[0].title">Verkehrswertgutachten</span>
+                    <!-- Each accordion item is initially collapsed (aria-expanded=false) and wrapped
+                         with the reveal-on-scroll class so that items fade in and slide up
+                         individually as the user scrolls. A numbered prefix provides a clear
+                         sequence and gives each service a distinct visual anchor. -->
+                    <div class="accordion-item reveal-on-scroll">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-number">01</span>
+                            <span class="accordion-title" data-i18n-key="services[0].title">Verkehrswertgutachten</span>
                         </button>
                         <div class="accordion-content">
                             <div class="accordion-content-inner">
@@ -72,9 +77,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
+                    <div class="accordion-item reveal-on-scroll">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-number">02</span>
+                            <span class="accordion-title" data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
                         </button>
                         <div class="accordion-content">
                             <div class="accordion-content-inner">
@@ -82,9 +88,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
+                    <div class="accordion-item reveal-on-scroll">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-number">03</span>
+                            <span class="accordion-title" data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
                         </button>
                         <div class="accordion-content">
                             <div class="accordion-content-inner">
@@ -92,9 +99,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[3].title">Transaktionsberatung</span>
+                    <div class="accordion-item reveal-on-scroll">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-number">04</span>
+                            <span class="accordion-title" data-i18n-key="services[3].title">Transaktionsberatung</span>
                         </button>
                         <div class="accordion-content">
                             <div class="accordion-content-inner">

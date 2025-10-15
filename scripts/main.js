@@ -46,14 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = header.nextElementSibling;
             const isExpanded = header.getAttribute('aria-expanded') === 'true';
 
-            // Optional: Close other accordions
-            // const parentAccordion = header.closest('.accordion');
-            // parentAccordion.querySelectorAll('.accordion-item').forEach(otherItem => {
-            //     if (otherItem !== item) {
-            //         otherItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
-            //     }
-            // });
-
+            // Close other accordion items within the same group when one is toggled.
+            const parentAccordion = header.closest('.accordion');
+            parentAccordion.querySelectorAll('.accordion-item').forEach(otherItem => {
+                const otherHeader = otherItem.querySelector('.accordion-header');
+                if (otherItem !== item) {
+                    otherHeader.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // Toggle the clicked item
             header.setAttribute('aria-expanded', !isExpanded);
         });
     });
@@ -95,6 +96,50 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (logoWrapper) {
         // Fallback to static logo if reduced motion is on
         logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Wertwerk Logo" style="width:100px; height:100px;">`;
+    }
+
+    // --- Dynamic Scroll Effects ---
+    // Subtle page background gradient and hero parallax
+    // Only run when motion is allowed
+    if (!prefersReducedMotion) {
+        const root = document.documentElement;
+        const heroSection = document.getElementById('hero');
+        // Base and target colours for the scroll gradient in RGB
+        // Update gradient colours to align with the warmer palette.  #F7F4EF is
+        // the new base (rgb(247,244,239)) and #EDE8E2 (rgb(237,232,226)) is the
+        // slightly darker target as the user scrolls.
+        const baseColour = { r: 247, g: 244, b: 239 }; // #F7F4EF
+        const targetColour = { r: 237, g: 232, b: 226 }; // #EDE8E2
+
+        function updateScrollEffects() {
+            const scrollY = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const ratio = docHeight > 0 ? Math.min(scrollY / docHeight, 1) : 0;
+            // Interpolate each channel
+            const r = Math.round(baseColour.r + (targetColour.r - baseColour.r) * ratio);
+            const g = Math.round(baseColour.g + (targetColour.g - baseColour.g) * ratio);
+            const b = Math.round(baseColour.b + (targetColour.b - baseColour.b) * ratio);
+            root.style.setProperty('--gradient-scroll', `rgb(${r}, ${g}, ${b})`);
+            // Parallax effect for hero background
+            if (heroSection) {
+                // Move background image slightly slower than scroll to create depth
+                const offset = scrollY * 0.1;
+                heroSection.style.backgroundPosition = `center calc(50% + ${offset}px)`;
+            }
+        }
+        // Throttle updates using requestAnimationFrame
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateScrollEffects();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        // Initial call
+        updateScrollEffects();
     }
 
 });

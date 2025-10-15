@@ -10,7 +10,13 @@
   "nav_back_home": "Zurück zur Startseite",
 
   "meta_title_home": "Immobilien Schätzung + Beratung | Präzise Immobilienbewertung & Beratung",
-  "meta_description_home": "Immobilien Schätzung + Beratung bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Beratung in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung seit 1995.",
+  /*
+    Expanded meta description to reinforce the firm’s independent stance
+    and breadth of services. It now explicitly mentions valuations,
+    consulting and project management and reiterates the 1995 founding
+    year. The regions served remain highlighted to improve local SEO.
+  */
+  "meta_description_home": "Immobilien Schätzung + Beratung bietet seit 1995 unabhängige Bewertungen, Beratung und Projektleitung. Wir erstellen Verkehrswertgutachten, führen Bauzustandsanalysen durch und unterstützen Sie bei Ihrem Projekt in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
   "meta_description_person_a": "Profil von Dominik Planzer, Dipl. Arch. ETH/SIA und Immobilienschätzer bei Immobilien Schätzung + Beratung.",
   "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
@@ -18,10 +24,17 @@
 
   "hero_subtitle": "Immobilien Schätzung + Beratung",
   /* The tagline is defined below with a time marker */
-  "hero_cta": "Angebot anfragen",
+  /* A more direct call to action that invites visitors to send a request */
+  "hero_cta": "Anfrage senden",
 
   "hero_title_name": "Immobilien Schätzung + Beratung",
-  "hero_tagline": "Präzise Immobilienbewertung & Beratung seit 1995",
+  /*
+    Updated tagline emphasising the firm’s heritage (since 1995) and
+    combining valuations, consulting and project management. This mirrors
+    the blueprint’s recommendation to reference independence, consulting
+    and project leadership clearly【986185853589315†L138-L145】.
+  */
+  "hero_tagline": "Seit 1995 – unabhängige Bewertungen, Beratung und Projektleitung",
 
   "value_1_title": "Präzision",
   "value_1_desc": "Detailgenaue Analysen und fundierte Bewertungen als Entscheidungsgrundlage.",
@@ -30,7 +43,7 @@
   "value_3_title": "Diskretion",
   "value_3_desc": "Absoluter Schutz Ihrer sensiblen Daten und Wahrung Ihrer Privatsphäre.",
   "value_4_title": "Erfahrung",
-  "value_4_desc": "Jahrzehntelange Expertise als Architekten und Immobilienschätzer.",
+  "value_4_desc": "Seit 1995 Erfahrung als Architekten und Immobilienschätzer.",
   
   "services_title": "Leistungen",
   "services": [

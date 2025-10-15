@@ -112,86 +112,87 @@
                     <!-- The firm name is now drawn from translations for localisation support -->
                     <h1 class="hero-title" data-i18n-key="hero_title_name">Immobilien Schätzung + Beratung</h1>
                     <p class="hero-subtitle" data-i18n-key="hero_subtitle">Immobilien Schätzung + Beratung</p>
-                    <p class="hero-tagline" data-i18n-key="hero_tagline">Präzise Immobilienbewertung & Bauherrenberatung</p>
-                    <a href="contact.html" class="cta-button" data-i18n-key="hero_cta">Angebot anfragen</a>
+                    <!-- Updated fallback tagline and CTA in case the translation script cannot load. -->
+                    <p class="hero-tagline" data-i18n-key="hero_tagline">Seit 1995 – unabhängige Bewertungen, Beratung und Projektleitung</p>
+                    <a href="contact.html" class="cta-button" data-i18n-key="hero_cta">Anfrage senden</a>
                 </div>
             </div>
         </section>
 
-        <!-- Value Proposition Section -->
-        <section class="value-prop reveal-on-scroll">
-            <div class="container">
-                <div class="grid-4">
-                    <div class="value-card">
-                        <h3 data-i18n-key="value_1_title">Präzision</h3>
-                        <p data-i18n-key="value_1_desc">Detailgenaue Analysen und fundierte Bewertungen als Entscheidungsgrundlage.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3 data-i18n-key="value_2_title">Unabhängigkeit</h3>
-                        <p data-i18n-key="value_2_desc">Objektive und unparteiische Gutachten, frei von Interessenkonflikten.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3 data-i18n-key="value_3_title">Diskretion</h3>
-                        <p data-i18n-key="value_3_desc">Absoluter Schutz Ihrer sensiblen Daten und Wahrung Ihrer Privatsphäre.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3 data-i18n-key="value_4_title">Erfahrung</h3>
-                        <p data-i18n-key="value_4_desc">Jahrzehntelange Expertise als Architekten und Immobilienschätzer.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Services Section -->
-        <section id="services" class="services reveal-on-scroll">
+        <section id="services" class="services reveal-on-scroll full-screen">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="services_title">Leistungen</h2>
-                <!--
-                    When JavaScript is disabled or the translation file fails to load,
-                    the following static accordion items provide meaningful content.
-                    The i18n script will replace the inner text based on the selected
-                    language at runtime, but these defaults ensure the page never
-                    appears empty. Each item is opened by default to communicate
-                    important information at a glance.
-                -->
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[0].title">Verkehrswertgutachten</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p data-i18n-key="services[0].description">Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung.</p>
-                            </div>
+                <!-- Combine value propositions and services into one viewport. A grid layout
+                     presents the four core values alongside the services accordion. On
+                     larger screens the grid splits into two columns; on smaller
+                     screens the elements stack vertically. All cards and accordion
+                     items have reveal animations to invite interaction. -->
+                <div class="value-services">
+                    <div class="value-cards">
+                        <div class="value-card reveal-on-scroll">
+                            <h3 data-i18n-key="value_1_title">Präzision</h3>
+                            <p data-i18n-key="value_1_desc">Detailgenaue Analysen und fundierte Bewertungen als Entscheidungsgrundlage.</p>
+                        </div>
+                        <div class="value-card reveal-on-scroll">
+                            <h3 data-i18n-key="value_2_title">Unabhängigkeit</h3>
+                            <p data-i18n-key="value_2_desc">Objektive und unparteiische Gutachten, frei von Interessenkonflikten.</p>
+                        </div>
+                        <div class="value-card reveal-on-scroll">
+                            <h3 data-i18n-key="value_3_title">Diskretion</h3>
+                            <p data-i18n-key="value_3_desc">Absoluter Schutz Ihrer sensiblen Daten und Wahrung Ihrer Privatsphäre.</p>
+                        </div>
+                        <div class="value-card reveal-on-scroll">
+                            <h3 data-i18n-key="value_4_title">Erfahrung</h3>
+                            <p data-i18n-key="value_4_desc">Jahrzehntelange Expertise als Architekten und Immobilienschätzer.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p data-i18n-key="services[1].description">Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung.</p>
+                    <div class="services-wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item reveal-on-scroll">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span class="accordion-number">01</span>
+                                    <span class="accordion-title" data-i18n-key="services[0].title">Verkehrswertgutachten</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        <p data-i18n-key="services[0].description">Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p data-i18n-key="services[2].description">Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine.</p>
+                            <div class="accordion-item reveal-on-scroll">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span class="accordion-number">02</span>
+                                    <span class="accordion-title" data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        <p data-i18n-key="services[1].description">Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header" aria-expanded="true">
-                            <span data-i18n-key="services[3].title">Transaktionsberatung</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p data-i18n-key="services[3].description">Umfassende Unterstützung bei Kauf‑, Verkaufs‑ oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss.</p>
+                            <div class="accordion-item reveal-on-scroll">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span class="accordion-number">03</span>
+                                    <span class="accordion-title" data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        <p data-i18n-key="services[2].description">Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item reveal-on-scroll">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span class="accordion-number">04</span>
+                                    <span class="accordion-title" data-i18n-key="services[3].title">Transaktionsberatung</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        <p data-i18n-key="services[3].description">Umfassende Unterstützung bei Kauf‑, Verkaufs‑ oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,77 +201,84 @@
         </section>
 
         <!-- Selected Work Section -->
-        <section id="work" class="work reveal-on-scroll">
+        <section id="work" class="work reveal-on-scroll full-screen">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="work_title">Ausgewählte Referenzen</h2>
-                <div class="work-grid">
-                    <a href="project-01.html" class="work-card">
-                        <!-- Use a local placeholder image so the grid loads reliably offline. -->
-                        <img src="assets/placeholder.png" alt="Projekt 1" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_1_title">Projekt Titel – 01</h3>
-                            <p data-i18n-key="work_1_desc">Verkehrswertgutachten im Rahmen einer Erbteilung.</p>
-                        </div>
-                    </a>
-                    <a href="project-02.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 2" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_2_title">Projekt Titel – 02</h3>
-                            <p data-i18n-key="work_2_desc">Bauzustandsanalyse und Sanierungsberatung.</p>
-                        </div>
-                    </a>
-                    <a href="project-03.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 3" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_3_title">Projekt Titel – 03</h3>
-                            <p data-i18n-key="work_3_desc">Transaktionsberatung für einen internationalen Käufer.</p>
-                        </div>
-                    </a>
-                     <a href="project-04.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 4" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_4_title">Projekt Titel – 04</h3>
-                            <p data-i18n-key="work_4_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
-                        </div>
-                     </a>
-                          <a href="project-05.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 5" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_5_title">Projekt Titel – 05</h3>
-                            <p data-i18n-key="work_5_desc">Verkehrswertgutachten bei Erbteilung.</p>
-                        </div>
-                    </a>
-                          <a href="project-06.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 6" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_6_title">Projekt Titel – 06</h3>
-                            <p data-i18n-key="work_6_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
-                        </div>
-                    </a>
-
-                    <!-- Additional placeholder projects to enrich the grid and provide ample examples.
-                         These use generic translation keys so that they will be replaced if
-                         corresponding entries exist in the JSON. Otherwise, the German fallback
-                         is shown. You can duplicate this markup for future projects. -->
-                    <a href="project-07.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 7" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_7_title">Projekt Titel – 07</h3>
-                            <p data-i18n-key="work_7_desc">Transaktionsberatung für einen internationalen Käufer.</p>
-                        </div>
-                    </a>
-                    <a href="project-08.html" class="work-card">
-                        <img src="assets/placeholder.png" alt="Projekt 8" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_8_title">Projekt Titel – 08</h3>
-                            <p data-i18n-key="work_8_desc">Bauzustandsanalyse für denkmalgeschützte Villa.</p>
-                        </div>
-                    </a>
+                <!--
+                    The work section now uses a horizontal scroller to present projects.
+                    Each card snaps to the center of the viewport and gently scales
+                    on hover/focus. This encourages exploration and elevates the
+                    perceived importance of each project without adding text.
+                -->
+                <div class="work-scroller">
+                    <div class="work-cards">
+                        <a href="project-01.html" class="work-card" tabindex="0">
+                            <!-- Use a local placeholder image so the grid loads reliably offline. -->
+                            <img src="assets/placeholder.png" alt="Projekt 1" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_1_title">Projekt Titel – 01</h3>
+                                <p data-i18n-key="work_1_desc">Verkehrswertgutachten im Rahmen einer Erbteilung.</p>
+                            </div>
+                        </a>
+                        <a href="project-02.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 2" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_2_title">Projekt Titel – 02</h3>
+                                <p data-i18n-key="work_2_desc">Bauzustandsanalyse und Sanierungsberatung.</p>
+                            </div>
+                        </a>
+                        <a href="project-03.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 3" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_3_title">Projekt Titel – 03</h3>
+                                <p data-i18n-key="work_3_desc">Transaktionsberatung für einen internationalen Käufer.</p>
+                            </div>
+                        </a>
+                        <a href="project-04.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 4" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_4_title">Projekt Titel – 04</h3>
+                                <p data-i18n-key="work_4_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                            </div>
+                        </a>
+                        <a href="project-05.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 5" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_5_title">Projekt Titel – 05</h3>
+                                <p data-i18n-key="work_5_desc">Verkehrswertgutachten bei Erbteilung.</p>
+                            </div>
+                        </a>
+                        <a href="project-06.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 6" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_6_title">Projekt Titel – 06</h3>
+                                <p data-i18n-key="work_6_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                            </div>
+                        </a>
+                        <!-- Additional placeholder projects to enrich the scroller and provide ample examples.
+                             These use generic translation keys so that they will be replaced if
+                             corresponding entries exist in the JSON. Otherwise, the German fallback
+                             is shown. You can duplicate this markup for future projects. -->
+                        <a href="project-07.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 7" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_7_title">Projekt Titel – 07</h3>
+                                <p data-i18n-key="work_7_desc">Transaktionsberatung für einen internationalen Käufer.</p>
+                            </div>
+                        </a>
+                        <a href="project-08.html" class="work-card" tabindex="0">
+                            <img src="assets/placeholder.png" alt="Projekt 8" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_8_title">Projekt Titel – 08</h3>
+                                <p data-i18n-key="work_8_desc">Bauzustandsanalyse für denkmalgeschützte Villa.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Process Section -->
+        <!-- Process & Credentials Section -->
         <section id="process" class="process reveal-on-scroll">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="process_title">Unser Prozess</h2>
@@ -301,29 +309,29 @@
                         </li>
                     </ol>
                 </div>
-            </div>
-        </section>
-
-        <!-- Credentials Section -->
-        <section id="credentials" class="credentials reveal-on-scroll">
-            <div class="container credentials-container">
-                <div class="credentials-block">
-                    <h3 data-i18n-key="credentials_methods_title">Methoden</h3>
-                    <p data-i18n-key="credentials_methods_desc">Hedonische Bewertung, DCF (Discounted Cashflow), Vergleichswertverfahren und weitere nach internationalem Standard.</p>
-                </div>
-                <div class="credentials-block">
-                    <h3 data-i18n-key="credentials_regions_title">Regionen</h3>
-                    <p data-i18n-key="credentials_regions_desc">Zürich, Zentralschweiz, Westschweiz und auf Anfrage.</p>
-                </div>
-                <div class="credentials-block">
-                     <h3 data-i18n-key="credentials_partners_title">Partner</h3>
-                     <p data-i18n-key="credentials_partners_desc">Wir arbeiten regelmässig mit führenden Banken, Versicherungen und Pensionskassen zusammen.</p> <!-- TODO: Add specific logos if allowed -->
+                <!-- Credentials integrated directly after the process steps. The blocks below
+                     reinforce the expertise, regions and partners in a unified section.
+                     Each block has scroll-reveal animation and aligns to centre on
+                     larger screens. -->
+                <div class="credentials-blocks">
+                    <div class="credentials-block reveal-on-scroll">
+                        <h3 data-i18n-key="credentials_methods_title">Methoden</h3>
+                        <p data-i18n-key="credentials_methods_desc">Hedonische Bewertung, DCF (Discounted Cashflow), Vergleichswertverfahren und weitere nach internationalem Standard.</p>
+                    </div>
+                    <div class="credentials-block reveal-on-scroll">
+                        <h3 data-i18n-key="credentials_regions_title">Regionen</h3>
+                        <p data-i18n-key="credentials_regions_desc">Zürich, Zentralschweiz, Westschweiz und auf Anfrage.</p>
+                    </div>
+                    <div class="credentials-block reveal-on-scroll">
+                        <h3 data-i18n-key="credentials_partners_title">Partner</h3>
+                        <p data-i18n-key="credentials_partners_desc">Wir arbeiten regelmässig mit führenden Banken, Versicherungen und Pensionskassen zusammen.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Team Preview Section -->
-        <section id="team" class="team reveal-on-scroll">
+        <section id="team" class="team reveal-on-scroll full-screen">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="team_title">Die Gründer</h2>
                 <div class="team-grid">
