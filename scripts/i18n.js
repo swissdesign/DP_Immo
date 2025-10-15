@@ -52,10 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         populateList('.faq-accordion', 'faq', createAccordionItem);
         
         const pagePath = window.location.pathname;
-        if (pagePath.includes('person-a.html')) {
+        // Support both original and renamed profile pages
+        if (pagePath.includes('person-a.html') || pagePath.includes('dominik-planzer.html')) {
             populateList('.timeline-list', 'person_a.timeline', createTimelineItem);
         }
-        if (pagePath.includes('person-b.html')) {
+        if (pagePath.includes('person-b.html') || pagePath.includes('francoise-ellenberger.html')) {
             populateList('.timeline-list', 'person_b.timeline', createTimelineItem);
         }
     };

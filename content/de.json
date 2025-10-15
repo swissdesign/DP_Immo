@@ -5,18 +5,23 @@
   "nav_process": "Prozess",
   "nav_team": "Team",
   "nav_contact": "Kontakt",
+  "nav_projects": "Referenzen",
+  "nav_about": "Über uns",
   "nav_back_home": "Zurück zur Startseite",
 
-  "meta_title_home": "[Platzhalter Name] | Präzise Immobilienbewertung & Bauberatung",
-  "meta_description_home": "[Platzhalter Name] bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Bauberatung in Zürich und der Schweiz. Präzision und Diskretion.",
-  "meta_title_person_a": "[Full Name A] | [Platzhalter Name]",
-  "meta_description_person_a": "Profil von [Full Name A], Dipl. Arch. ETH/SIA und Immobilienschätzer bei [Platzhalter Name].",
-  "meta_title_person_b": "[Full Name B] | [Platzhalter Name]",
-  "meta_description_person_b": "Profil von [Full Name B], Dipl. Arch. ETH/SIA und Immobilienschätzerin bei [Platzhalter Name].",
+  "meta_title_home": "Immobilien Schätzung + Beratung | Präzise Immobilienbewertung & Beratung",
+  "meta_description_home": "Immobilien Schätzung + Beratung bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Beratung in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung seit 1995.",
+  "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
+  "meta_description_person_a": "Profil von Dominik Planzer, Dipl. Arch. ETH/SIA und Immobilienschätzer bei Immobilien Schätzung + Beratung.",
+  "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
+  "meta_description_person_b": "Profil von Françoise Ellenberger, Dipl. Arch. ETH/SIA und Immobilienschätzerin bei Immobilien Schätzung + Beratung.",
 
   "hero_subtitle": "Immobilien Schätzung + Beratung",
-  "hero_tagline": "Präzise Immobilienbewertung & Bauherrenberatung",
+  /* The tagline is defined below with a time marker */
   "hero_cta": "Angebot anfragen",
+
+  "hero_title_name": "Immobilien Schätzung + Beratung",
+  "hero_tagline": "Präzise Immobilienbewertung & Beratung seit 1995",
 
   "value_1_title": "Präzision",
   "value_1_desc": "Detailgenaue Analysen und fundierte Bewertungen als Entscheidungsgrundlage.",
@@ -61,9 +66,9 @@
   "credentials_partners_desc": "Wir arbeiten regelmässig mit führenden Banken, Versicherungen und Pensionskassen zusammen.",
 
   "team_title": "Die Gründer",
-  "team_a_name": "[Full Name A]",
+  "team_a_name": "Dominik Planzer",
   "team_a_title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
-  "team_b_name": "[Full Name B]",
+  "team_b_name": "Françoise Ellenberger",
   "team_b_title": "Dipl. Arch. ETH/SIA, Immobilienschätzerin",
   "team_link_cta": "Profil ansehen",
 
@@ -85,10 +90,27 @@
   "contact_intro": "Wir freuen uns auf Ihre Anfrage für eine unverbindliche Erstberatung.",
   "contact_firm_name": "Immobilien Schätzung + Beratung",
   "contact_cta": "Angebot anfragen",
+
+  "contact_name_label": "Name",
+  "contact_email_label": "E‑Mail",
+  "contact_phone_label": "Telefon (optional)",
+  "contact_message_label": "Nachricht",
+  "contact_submit": "Nachricht senden",
   
   "footer_long_name": "Immobilien Schätzung + Beratung",
   "footer_imprint": "Impressum",
   "footer_privacy": "Datenschutz",
+
+  "meta_title_services": "Leistungen | Immobilien Schätzung + Beratung",
+  "meta_description_services": "Erfahren Sie mehr über unsere Dienstleistungen – Verkehrswertgutachten, Bauzustandsbewertungen, Projektmanagement und Transaktionsberatung.",
+  "meta_title_projects": "Referenzen | Immobilien Schätzung + Beratung",
+  "meta_description_projects": "Entdecken Sie ausgewählte Projekte und Referenzen unserer Arbeit – von Wohnbauten über Gewerbeobjekte bis hin zu Neubauprojekten.",
+  "meta_title_about": "Über uns | Immobilien Schätzung + Beratung",
+  "meta_description_about": "Erfahren Sie mehr über die Geschichte und Werte von Immobilien Schätzung + Beratung.",
+  "meta_title_contact": "Kontakt | Immobilien Schätzung + Beratung",
+  "meta_description_contact": "Nehmen Sie Kontakt mit uns auf für eine unverbindliche Erstberatung.",
+  "about_title": "Über uns",
+  "about_intro": "Seit 1995 bietet Immobilien Schätzung + Beratung unabhängige Bewertungen, Beratung und Projektleitung für private und institutionelle Auftraggeber. Unsere Werte – Präzision, Unabhängigkeit, Diskretion und Erfahrung – leiten uns bei jedem Auftrag. Gegründet von Dominik Planzer und Françoise Ellenberger, vereinen wir jahrzehntelange Architekturerfahrung mit zertifiziertem Bewertungsknowhow.",
   
   "person_timeline_title": "Werdegang",
   "person_motivation_title": "Motivation & Persönliches",
@@ -96,7 +118,7 @@
   "person_cv_download": "CV Herunterladen",
   
   "person_a": {
-    "name": "[Full Name A]",
+    "name": "Dominik Planzer",
     "title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
     "bio": "Ein analytischer Denker mit Leidenschaft für Architektur und solide, datenbasierte Bewertungen. Sein Fokus liegt auf komplexen Gewerbeimmobilien und Portfolios.",
     "motivation": "\"Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens.\"",
@@ -109,7 +131,7 @@
     ]
   },
   "person_b": {
-    "name": "[Full Name B]",
+    "name": "Françoise Ellenberger",
     "title": "Dipl. Arch. ETH/SIA, Immobilienschätzerin",
     "bio": "Kombiniert gestalterische Sensibilität mit methodischer Bewertungskompetenz. Ihre Stärke liegt in Wohnimmobilien und der Beratung bei Erbteilungen und Schenkungen.",
     "motivation": "\"Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Wandern in den Alpen und in der Beschäftigung mit moderner Kunst.\"",

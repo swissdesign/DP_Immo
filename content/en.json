@@ -5,18 +5,22 @@
   "nav_process": "Process",
   "nav_team": "Team",
   "nav_contact": "Contact",
+  "nav_projects": "Projects",
+  "nav_about": "About",
   "nav_back_home": "Back to Homepage",
 
-  "meta_title_home": "[Placeholder Name] | Precise Real Estate Valuation & Advisory",
-  "meta_description_home": "[Placeholder Name] offers independent market value appraisals, building condition analyses, and construction advisory in Zurich and Switzerland. Precision and discretion.",
-  "meta_title_person_a": "[Full Name A] | [Placeholder Name]",
-  "meta_description_person_a": "Profile of [Full Name A], Dipl. Arch. ETH/SIA and Real Estate Valuer at [Placeholder Name].",
-  "meta_title_person_b": "[Full Name B] | [Placeholder Name]",
-  "meta_description_person_b": "Profile of [Full Name B], Dipl. Arch. ETH/SIA and Real Estate Valuer at [Placeholder Name].",
+  "meta_title_home": "Immobilien Schätzung + Beratung | Precise real estate valuation & consulting",
+  "meta_description_home": "Immobilien Schätzung + Beratung offers independent traffic-value appraisals, building condition assessments and consulting across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience since 1995.",
+  "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
+  "meta_description_person_a": "Profile of Dominik Planzer, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
+  "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
+  "meta_description_person_b": "Profile of Françoise Ellenberger, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
 
-  "hero_subtitle": "Real Estate Valuation + Advisory",
-  "hero_tagline": "Precise Property Valuation & Client-side Representation",
+  "hero_subtitle": "Real estate valuation + consulting",
+  /* hero tagline is overridden below */
   "hero_cta": "Request an Offer",
+  "hero_title_name": "Immobilien Schätzung + Beratung",
+  "hero_tagline": "Precise real estate valuation & consulting since 1995",
 
   "value_1_title": "Precision",
   "value_1_desc": "Detailed analyses and well-founded valuations as a basis for decision-making.",
@@ -61,9 +65,9 @@
   "credentials_partners_desc": "We regularly collaborate with leading banks, insurance companies, and pension funds.",
 
   "team_title": "The Founders",
-  "team_a_name": "[Full Name A]",
+  "team_a_name": "Dominik Planzer",
   "team_a_title": "MSc Arch ETH/SIA, Real Estate Valuer",
-  "team_b_name": "[Full Name B]",
+  "team_b_name": "Françoise Ellenberger",
   "team_b_title": "MSc Arch ETH/SIA, Real Estate Valuer",
   "team_link_cta": "View Profile",
 
@@ -83,12 +87,29 @@
 
   "contact_title": "Contact Us",
   "contact_intro": "We look forward to your inquiry for a non-binding initial consultation.",
-  "contact_firm_name": "Real Estate Valuation + Advisory",
+  "contact_firm_name": "Immobilien Schätzung + Beratung",
   "contact_cta": "Request an Offer",
 
-  "footer_long_name": "Real Estate Valuation + Advisory",
+  "contact_name_label": "Name",
+  "contact_email_label": "Email",
+  "contact_phone_label": "Phone (optional)",
+  "contact_message_label": "Message",
+  "contact_submit": "Send Message",
+
+  "footer_long_name": "Immobilien Schätzung + Beratung",
   "footer_imprint": "Imprint",
   "footer_privacy": "Privacy Policy",
+
+  "meta_title_services": "Services | Immobilien Schätzung + Beratung",
+  "meta_description_services": "Learn more about our services – traffic-value appraisals, building-condition assessments, project management and transaction advisory.",
+  "meta_title_projects": "Projects | Immobilien Schätzung + Beratung",
+  "meta_description_projects": "Explore selected projects and references – from residential buildings and commercial properties to new developments.",
+  "meta_title_about": "About | Immobilien Schätzung + Beratung",
+  "meta_description_about": "Discover the history and values of Immobilien Schätzung + Beratung.",
+  "meta_title_contact": "Contact | Immobilien Schätzung + Beratung",
+  "meta_description_contact": "Get in touch with us for a non-binding initial consultation.",
+  "about_title": "About us",
+  "about_intro": "Since 1995, Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management for private and institutional clients. Our values – precision, independence, discretion and experience – guide every assignment. Founded by Dominik Planzer and Françoise Ellenberger, we combine decades of architectural experience with certified valuation expertise.",
   
   "person_timeline_title": "Career Path",
   "person_motivation_title": "Motivation & Personal",
@@ -96,7 +117,7 @@
   "person_cv_download": "Download CV",
 
   "person_a": {
-    "name": "[Full Name A]",
+    "name": "Dominik Planzer",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
     "bio": "An analytical thinker with a passion for architecture and solid, data-driven valuations. His focus is on complex commercial properties and portfolios.",
     "motivation": "\"Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.\"",
@@ -109,7 +130,7 @@
     ]
   },
   "person_b": {
-    "name": "[Full Name B]",
+    "name": "Françoise Ellenberger",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
     "bio": "Combines design sensibility with methodical valuation competence. Her strength lies in residential properties and advising on inheritances and donations.",
     "motivation": "\"Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.\"",

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title data-i18n-key="meta_title_home">[Platzhalter Name] | Präzise Immobilienbewertung & Bauberatung</title>
-    <meta name="description" data-i18n-key="meta_description_home" content="[Platzhalter Name] bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Bauberatung in Zürich und der Schweiz. Präzision und Diskretion.">
+    <title data-i18n-key="meta_title_home">Immobilien Schätzung + Beratung | Präzise Immobilienbewertung &amp; Bauberatung</title>
+    <meta name="description" data-i18n-key="meta_description_home" content="Immobilien Schätzung + Beratung bietet unabhängige Verkehrswertgutachten, Bauzustandsanalysen und Bauberatung in Zürich und der Schweiz. Präzision und Diskretion.">
     
     <!-- SEO & Social Meta -->
     <link rel="canonical" href="https://wertwerk.ch/">
     <meta property="og:type" content="website">
-    <meta property="og:title" data-i18n-key="meta_title_home" content="[Platzhalter Name] | Präzise Immobilienbewertung & Bauberatung">
-    <meta property="og:description" data-i18n-key="meta_description_home" content="Unabhängige Gutachten und Beratung für Immobilien in Zürich und der Schweiz.">
+    <meta property="og:title" data-i18n-key="meta_title_home" content="Immobilien Schätzung + Beratung | Präzise Immobilienbewertung &amp; Bauberatung">
+    <meta property="og:description" data-i18n-key="meta_description_home" content="Immobilien Schätzung + Beratung bietet unabhängige Gutachten und Beratung für Immobilien in Zürich und der Schweiz.">
     <meta property="og:url" content="https://wertwerk.ch/">
     <meta property="og:image" content="https://wertwerk.ch/assets/og-image.png"> <!-- TODO: Add actual OG image -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" data-i18n-key="meta_title_home" content="[Platzhalter Name] | Präzise Immobilienbewertung & Bauberatung">
-    <meta name="twitter:description" data-i18n-key="meta_description_home" content="Unabhängige Gutachten und Beratung für Immobilien in Zürich und der Schweiz.">
+    <meta name="twitter:title" data-i18n-key="meta_title_home" content="Immobilien Schätzung + Beratung | Präzise Immobilienbewertung &amp; Bauberatung">
+    <meta name="twitter:description" data-i18n-key="meta_description_home" content="Immobilien Schätzung + Beratung bietet unabhängige Gutachten und Beratung für Immobilien in Zürich und der Schweiz.">
     <meta name="twitter:image" content="https://wertwerk.ch/assets/og-image.png"> <!-- TODO: Add actual OG image -->
 
     <!-- PWA & Favicons -->
@@ -43,7 +43,7 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "[Platzhalter Name]",
+      "name": "Immobilien Schätzung + Beratung",
       "alternateName": "Immobilien Schätzung + Beratung",
       "address": {
         "@type": "PostalAddress",
@@ -63,8 +63,8 @@
         { "@type": "AdministrativeArea", "name": "Westschweiz" }
       ],
       "founder": [
-        { "@type": "Person", "name": "[Full Name A]" },
-        { "@type": "Person", "name": "[Full Name B]" }
+        { "@type": "Person", "name": "Dominik Planzer" },
+        { "@type": "Person", "name": "Françoise Ellenberger" }
       ]
     }
     </script>
@@ -76,7 +76,7 @@
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="logo-link" aria-label="Homepage">
-                <img src="assets/logo-static.svg" alt="[Platzhalter Name] Logo" class="logo-static">
+                <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
             </a>
             <nav class="main-nav" aria-label="Hauptnavigation">
                 <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
@@ -86,10 +86,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <ul id="nav-list">
-                    <li><a href="#services" data-i18n-key="nav_services">Leistungen</a></li>
-                    <li><a href="#process" data-i18n-key="nav_process">Prozess</a></li>
-                    <li><a href="#team" data-i18n-key="nav_team">Team</a></li>
-                    <li><a href="#contact" data-i18n-key="nav_contact">Kontakt</a></li>
+                    <!-- Link to a dedicated services page instead of page anchors -->
+                    <li><a href="services.html" data-i18n-key="nav_services">Leistungen</a></li>
+                    <li><a href="projects.html" data-i18n-key="nav_projects">Referenzen</a></li>
+                    <li><a href="about.html" data-i18n-key="nav_about">Über uns</a></li>
+                    <li><a href="contact.html" data-i18n-key="nav_contact">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="lang-switcher">
@@ -108,10 +109,11 @@
                     <!-- Animated logo will be injected here by main.js -->
                 </div>
                 <div>
-                    <h1 class="hero-title">[Platzhalter Name]</h1>
+                    <!-- The firm name is now drawn from translations for localisation support -->
+                    <h1 class="hero-title" data-i18n-key="hero_title_name">Immobilien Schätzung + Beratung</h1>
                     <p class="hero-subtitle" data-i18n-key="hero_subtitle">Immobilien Schätzung + Beratung</p>
                     <p class="hero-tagline" data-i18n-key="hero_tagline">Präzise Immobilienbewertung & Bauherrenberatung</p>
-                    <a href="#contact" class="cta-button" data-i18n-key="hero_cta">Angebot anfragen</a>
+                    <a href="contact.html" class="cta-button" data-i18n-key="hero_cta">Angebot anfragen</a>
                 </div>
             </div>
         </section>
@@ -144,8 +146,55 @@
         <section id="services" class="services reveal-on-scroll">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="services_title">Leistungen</h2>
+                <!--
+                    When JavaScript is disabled or the translation file fails to load,
+                    the following static accordion items provide meaningful content.
+                    The i18n script will replace the inner text based on the selected
+                    language at runtime, but these defaults ensure the page never
+                    appears empty. Each item is opened by default to communicate
+                    important information at a glance.
+                -->
                 <div class="accordion">
-                    <!-- Accordion items will be populated by i18n.js from services array in JSON -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[0].title">Verkehrswertgutachten</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[0].description">Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[1].description">Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[2].description">Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[3].title">Transaktionsberatung</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[3].description">Umfassende Unterstützung bei Kauf‑, Verkaufs‑ oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -155,60 +204,68 @@
             <div class="container">
                 <h2 class="section-title" data-i18n-key="work_title">Ausgewählte Referenzen</h2>
                 <div class="work-grid">
-                    <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+1" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                    <a href="project-01.html" class="work-card">
+                        <!-- Use a local placeholder image so the grid loads reliably offline. -->
+                        <img src="assets/placeholder.png" alt="Projekt 1" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_1_title">Projekt Titel - 01</h3>
-                            <p data-i18n-key="work_1_desc">Kurz Beschrib z.b.Bauzustandsanalyse und Sanierungsberatung.</p>
+                            <h3 data-i18n-key="work_1_title">Projekt Titel – 01</h3>
+                            <p data-i18n-key="work_1_desc">Verkehrswertgutachten im Rahmen einer Erbteilung.</p>
                         </div>
-                    </div>
-                    <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+2" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                    </a>
+                    <a href="project-02.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 2" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_2_title">Projekt Titel - 02</h3>
-                            <p data-i18n-key="work_2_desc">Kurz Beschrib z.b.Transaktionsberatung für einen internationalen Käufer.</p>
+                            <h3 data-i18n-key="work_2_title">Projekt Titel – 02</h3>
+                            <p data-i18n-key="work_2_desc">Bauzustandsanalyse und Sanierungsberatung.</p>
                         </div>
-                    </div>
-                    <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+3" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                    </a>
+                    <a href="project-03.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 3" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_3_title">Projekt Titel - 03</h3>
-                            <p data-i18n-key="work_3_desc">Kurz Beschrib z.b.Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                            <h3 data-i18n-key="work_3_title">Projekt Titel – 03</h3>
+                            <p data-i18n-key="work_3_desc">Transaktionsberatung für einen internationalen Käufer.</p>
                         </div>
-                    </div>
-                     <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+4" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                    </a>
+                     <a href="project-04.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 4" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_4_title">Projekt Titel - 04</h3>
-                            <p data-i18n-key="work_4_desc">Kurz Beschrib z.b.Bauzustandsanalyse und Sanierungsberatung.</p>
+                            <h3 data-i18n-key="work_4_title">Projekt Titel – 04</h3>
+                            <p data-i18n-key="work_4_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
                         </div>
-                    </div>
-                          <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+5" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                     </a>
+                          <a href="project-05.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 5" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_4_title">Projekt Titel - 05</h3>
-                            <p data-i18n-key="work_4_desc">Kurz Beschrib z.b.Transaktionsberatung für einen internationalen Käufer.</p>
+                            <h3 data-i18n-key="work_5_title">Projekt Titel – 05</h3>
+                            <p data-i18n-key="work_5_desc">Verkehrswertgutachten bei Erbteilung.</p>
                         </div>
-                    </div>
-                          <div class="work-card">
-                        <img src="https://placehold.co/600x400/E7E5E4/111827?text=Projekt+6" 
-                             alt="Repräsentatives Bild eines projekts"
-                             loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                    </a>
+                          <a href="project-06.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 6" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
                         <div class="work-card-content">
-                            <h3 data-i18n-key="work_4_title">Projekt Titel - 06</h3>
-                            <p data-i18n-key="work_4_desc">Kurz Beschrib z.b.Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                            <h3 data-i18n-key="work_6_title">Projekt Titel – 06</h3>
+                            <p data-i18n-key="work_6_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Additional placeholder projects to enrich the grid and provide ample examples.
+                         These use generic translation keys so that they will be replaced if
+                         corresponding entries exist in the JSON. Otherwise, the German fallback
+                         is shown. You can duplicate this markup for future projects. -->
+                    <a href="project-07.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 7" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_7_title">Projekt Titel – 07</h3>
+                            <p data-i18n-key="work_7_desc">Transaktionsberatung für einen internationalen Käufer.</p>
+                        </div>
+                    </a>
+                    <a href="project-08.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 8" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_8_title">Projekt Titel – 08</h3>
+                            <p data-i18n-key="work_8_desc">Bauzustandsanalyse für denkmalgeschützte Villa.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -217,9 +274,31 @@
         <section id="process" class="process reveal-on-scroll">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="process_title">Unser Prozess</h2>
+                <!--
+                    These process steps are statically included to guarantee a clear
+                    narrative even when JavaScript is not available. The flex layout
+                    provides a smooth horizontal scroll on mobile and a vertical timeline
+                    on desktop via CSS. Each list item is marked up consistently
+                    with a heading and descriptive text.
+                -->
                 <div class="process-scroller">
                     <ol class="process-steps">
-                        <!-- Process steps will be populated by i18n.js -->
+                        <li class="process-step">
+                            <h3 data-i18n-key="process_steps[0].title">Kontaktaufnahme & Bedarfsanalyse</h3>
+                            <p data-i18n-key="process_steps[0].description">Sie schildern uns Ihr Anliegen. Wir klären die Zielsetzung, den Umfang und die spezifischen Anforderungen Ihres Auftrags.</p>
+                        </li>
+                        <li class="process-step">
+                            <h3 data-i18n-key="process_steps[1].title">Objektbesichtigung & Datenerhebung</h3>
+                            <p data-i18n-key="process_steps[1].description">Wir führen eine gründliche Besichtigung vor Ort durch und sammeln alle relevanten Dokumente und Marktdaten.</p>
+                        </li>
+                        <li class="process-step">
+                            <h3 data-i18n-key="process_steps[2].title">Analyse & Bewertung</h3>
+                            <p data-i18n-key="process_steps[2].description">Unsere Experten analysieren die gesammelten Informationen und wenden die passenden Bewertungsmethoden an.</p>
+                        </li>
+                        <li class="process-step">
+                            <h3 data-i18n-key="process_steps[3].title">Gutachtenerstellung & Besprechung</h3>
+                            <p data-i18n-key="process_steps[3].description">Sie erhalten ein verständliches, nachvollziehbares Gutachten. Wir besprechen die Ergebnisse und beantworten Ihre Fragen.</p>
+                        </li>
                     </ol>
                 </div>
             </div>
@@ -249,19 +328,19 @@
                 <h2 class="section-title" data-i18n-key="team_title">Die Gründer</h2>
                 <div class="team-grid">
                     <a href="person-a.html" class="team-card">
-                        <img src="https://placehold.co/400x400/E7E5E4/111827?text=Person+A" 
-                             alt="Porträt von [Full Name A]"
+                        <img src="https://placehold.co/400x400/E7E5E4/111827?text=Dominik" 
+                             alt="Porträt von Dominik Planzer"
                              loading="lazy" decoding="async" class="team-photo">
-                        <h3 data-i18n-key="team_a_name">[Full Name A]</h3>
-                        <p class="team-title" data-i18n-key="team_a_title">Dipl. Arch. ETH/SIA, Immobilienschätzer</p>
+                        <h3 data-i18n-key="team_a_name">Dominik Planzer</h3>
+                        <p class="team-title" data-i18n-key="team_a_title">Dipl. Arch. ETH/SIA, Immobilienschätzer</p>
                         <span class="team-link" data-i18n-key="team_link_cta">Profil ansehen</span>
                     </a>
                     <a href="person-b.html" class="team-card">
-                        <img src="https://placehold.co/400x400/E7E5E4/111827?text=Person+B" 
-                             alt="Porträt von [Full Name B]"
+                        <img src="https://placehold.co/400x400/E7E5E4/111827?text=Francoise" 
+                             alt="Porträt von Françoise Ellenberger"
                              loading="lazy" decoding="async" class="team-photo">
-                        <h3 data-i18n-key="team_b_name">[Full Name B]</h3>
-                        <p class="team-title" data-i18n-key="team_b_title">Dipl. Arch. ETH/SIA, Immobilienschätzerin</p>
+                        <h3 data-i18n-key="team_b_name">Françoise Ellenberger</h3>
+                        <p class="team-title" data-i18n-key="team_b_title">Dipl. Arch. ETH/SIA, Immobilienschätzerin</p>
                         <span class="team-link" data-i18n-key="team_link_cta">Profil ansehen</span>
                     </a>
                 </div>
@@ -270,11 +349,27 @@
 
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials reveal-on-scroll">
-             <div class="container">
+            <div class="container">
                 <h2 class="section-title" data-i18n-key="testimonials_title">Kundenstimmen</h2>
+                <!--
+                    Static testimonial cards provide immediate social proof. When the
+                    translation script runs, it will update the texts accordingly.
+                    The horizontal scroller adapts to different screen sizes.
+                -->
                 <div class="testimonials-scroller">
                     <div class="testimonials-wrapper">
-                        <!-- Testimonial items will be populated by i18n.js -->
+                        <div class="testimonial-card">
+                            <blockquote data-i18n-key="testimonials[0].quote">Die Analyse war extrem detailliert und hat uns bei der Preisverhandlung entscheidend geholfen. Absolut professionell.</blockquote>
+                            <footer data-i18n-key="testimonials[0].author">Privater Investor, Zürich</footer>
+                        </div>
+                        <div class="testimonial-card">
+                            <blockquote data-i18n-key="testimonials[1].quote">Immobilien Schätzung + Beratung hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.</blockquote>
+                            <footer data-i18n-key="testimonials[1].author">Familie S., Luzern</footer>
+                        </div>
+                        <div class="testimonial-card">
+                            <blockquote data-i18n-key="testimonials[2].quote">Schnell, zuverlässig und ein Gutachten, das auch für Laien verständlich ist. Uneingeschränkte Empfehlung.</blockquote>
+                            <footer data-i18n-key="testimonials[2].author">Geschäftsführer KMU, Zug</footer>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,8 +379,42 @@
         <section id="faq" class="faq reveal-on-scroll">
             <div class="container">
                 <h2 class="section-title" data-i18n-key="faq_title">Häufige Fragen</h2>
+                <!--
+                    Static FAQ accordion ensures the page communicates core information
+                    about duration, Kosten und Anerkennung ohne JavaScript. The
+                    default state is open so users can scan quickly.
+                -->
                 <div class="accordion faq-accordion">
-                     <!-- FAQ items will be populated by i18n.js from faq array in JSON -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="faq[0].title">Wie lange dauert eine Bewertung?</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="faq[0].description">Ein Standard‑Verkehrswertgutachten für ein Wohnhaus dauert in der Regel 2‑3 Wochen von der Besichtigung bis zur Fertigstellung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="faq[1].title">Was kostet ein Gutachten?</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="faq[1].description">Die Kosten hängen vom Objekttyp, der Komplexität und dem Umfang des Auftrags ab. Wir erstellen Ihnen gerne eine transparente Offerte.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="faq[2].title">Sind Ihre Gutachten bankenanerkannt?</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="faq[2].description">Ja, unsere Gutachten entsprechen den Standards der meisten Schweizer Finanzinstitute und werden breit akzeptiert.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -296,19 +425,41 @@
                 <div class="contact-card">
                     <h2 class="section-title" data-i18n-key="contact_title">Kontaktieren Sie uns</h2>
                     <p data-i18n-key="contact_intro">Wir freuen uns auf Ihre Anfrage für eine unverbindliche Erstberatung.</p>
-                    <div class="contact-details">
-                        <p>
-                            <strong>[Platzhalter Name]</strong><br>
-                            <span data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</span><br>
-                            strasse 00<br>
-                            0000 Bauen, Schweiz
-                        </p>
-                        <p>
-                            <a href="mailto:anfrage@wertwerk.ch">anfrage@email.ch</a><br>
-                            <a href="tel:+41441234567">+41 00 000 00 00</a>
-                        </p>
+                    <div class="contact-grid">
+                        <div class="contact-details">
+                            <p>
+                                <strong data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</strong><br>
+                                Hofstatt 6, 6466 Bauen, Schweiz<br>
+                            </p>
+                            <p>
+                                <a href="mailto:immobilien.schaetzung.beratung@gmail.com">immobilien.schaetzung.beratung@gmail.com</a><br>
+                                <a href="tel:+41418781313">+41 41 878 13 13</a><br>
+                                <a href="tel:+41797273094">+41 79 727 30 94</a>
+                            </p>
+                        </div>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="home-name" data-i18n-key="contact_name_label">Name</label>
+                                <input type="text" id="home-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="home-email" data-i18n-key="contact_email_label">E‑Mail</label>
+                                <input type="email" id="home-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="home-phone" data-i18n-key="contact_phone_label">Telefon (optional)</label>
+                                <input type="tel" id="home-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="home-message" data-i18n-key="contact_message_label">Nachricht</label>
+                                <textarea id="home-message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="YOUR-SITE-KEY-HERE"></div>
+                            </div>
+                            <button type="submit" class="cta-button" data-i18n-key="contact_submit">Nachricht senden</button>
+                        </form>
                     </div>
-                     <a href="mailto:anfrage@wertwerk.ch?subject=Anfrage%20für%20Immobilienbewertung" class="cta-button" data-i18n-key="contact_cta">Angebot anfragen</a>
                 </div>
             </div>
         </section>
@@ -327,6 +478,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Load Google reCAPTCHA script for contact form; replace YOUR-SITE-KEY-HERE with your actual key when deploying -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
 <!-- 
 QA Checklist:

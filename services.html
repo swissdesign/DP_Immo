@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="meta_title_services">Leistungen | Immobilien Schätzung + Beratung</title>
+    <meta name="description" data-i18n-key="meta_description_services" content="Erfahren Sie mehr über unsere Dienstleistungen – Verkehrswertgutachten, Bauzustandsbewertungen, Projektmanagement und Transaktionsberatung.">
+    
+    <!-- PWA & Favicons -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#FAF8F5">
+
+    <!-- Preload Fonts -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/newsreader/v22/cY9tkP-3o2lP-bEljsg9f__2f-r-oA.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Scripts -->
+    <script src="scripts/i18n.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link" aria-label="Homepage">
+                <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
+                    <span class="sr-only" data-i18n-key="nav_toggle">Menü öffnen</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="nav-list">
+                    <li><a href="services.html" data-i18n-key="nav_services">Leistungen</a></li>
+                    <li><a href="projects.html" data-i18n-key="nav_projects">Referenzen</a></li>
+                    <li><a href="about.html" data-i18n-key="nav_about">Über uns</a></li>
+                    <li><a href="contact.html" data-i18n-key="nav_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button data-lang="de" class="active">DE</button>
+                <button data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <section id="services-page" class="services reveal-on-scroll">
+            <div class="container">
+                <h1 class="section-title" data-i18n-key="services_title">Leistungen</h1>
+                <!--
+                    Static accordion content ensures that this page has substance even if
+                    JavaScript is disabled. Each item is pre‑expanded for ease of
+                    reading. The i18n script will override these values if
+                    corresponding translations exist.
+                -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[0].title">Verkehrswertgutachten</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[0].description">Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[1].title">Bauzustandsbewertungen</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[1].description">Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[2].title">Projektmanagement (Neubau/Sanierung)</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[2].description">Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="true">
+                            <span data-i18n-key="services[3].title">Transaktionsberatung</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p data-i18n-key="services[3].description">Umfassende Unterstützung bei Kauf‑, Verkaufs‑ oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-legal">
+                &copy; <span id="current-year"></span> <span data-i18n-key="footer_long_name">Immobilien Schätzung + Beratung</span>.
+                <a href="impressum.html" data-i18n-key="footer_imprint">Impressum</a> | <a href="datenschutz.html" data-i18n-key="footer_privacy">Datenschutz</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="meta_title_contact">Kontakt | Immobilien Schätzung + Beratung</title>
+    <meta name="description" data-i18n-key="meta_description_contact" content="Nehmen Sie Kontakt mit uns auf für eine unverbindliche Erstberatung.">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#FAF8F5">
+
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/i18n.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link" aria-label="Homepage">
+                <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
+                    <span class="sr-only" data-i18n-key="nav_toggle">Menü öffnen</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="nav-list">
+                    <li><a href="services.html" data-i18n-key="nav_services">Leistungen</a></li>
+                    <li><a href="projects.html" data-i18n-key="nav_projects">Referenzen</a></li>
+                    <li><a href="about.html" data-i18n-key="nav_about">Über uns</a></li>
+                    <li><a href="contact.html" data-i18n-key="nav_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button data-lang="de" class="active">DE</button>
+                <button data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <section id="contact-page" class="contact reveal-on-scroll">
+            <div class="container">
+                <div class="contact-card">
+                    <h1 class="section-title" data-i18n-key="contact_title">Kontaktieren Sie uns</h1>
+                    <p data-i18n-key="contact_intro">Wir freuen uns auf Ihre Anfrage für eine unverbindliche Erstberatung.</p>
+                    <div class="contact-grid">
+                        <div class="contact-details">
+                            <p>
+                                <strong data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</strong><br>
+                                Hofstatt 6, 6466 Bauen, Schweiz<br>
+                            </p>
+                            <p>
+                                <a href="mailto:immobilien.schaetzung.beratung@gmail.com">immobilien.schaetzung.beratung@gmail.com</a><br>
+                                <a href="tel:+41418781313">+41 41 878 13 13</a><br>
+                                <a href="tel:+41797273094">+41 79 727 30 94</a>
+                            </p>
+                        </div>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name" data-i18n-key="contact_name_label">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n-key="contact_email_label">E‑Mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n-key="contact_phone_label">Telefon (optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n-key="contact_message_label">Nachricht</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <!-- Placeholder for Google reCAPTCHA -->
+                                <div class="g-recaptcha" data-sitekey="YOUR-SITE-KEY-HERE"></div>
+                            </div>
+                            <button type="submit" class="cta-button" data-i18n-key="contact_submit">Nachricht senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-legal">
+                &copy; <span id="current-year"></span> <span data-i18n-key="footer_long_name">Immobilien Schätzung + Beratung</span>.
+                <a href="impressum.html" data-i18n-key="footer_imprint">Impressum</a> | <a href="datenschutz.html" data-i18n-key="footer_privacy">Datenschutz</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Load Google reCAPTCHA script; replace YOUR-SITE-KEY-HERE with your actual key when deploying -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

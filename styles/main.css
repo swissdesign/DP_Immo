@@ -310,6 +310,8 @@ section {
   gap: 1rem;
   list-style: none;
   scroll-snap-type: x mandatory;
+  /* Reset the counter for numbered steps so static HTML shows 01, 02, 03, 04. */
+  counter-reset: step;
 }
 .process-step {
   flex: 0 0 80%;
@@ -466,6 +468,51 @@ section {
 }
 @media (min-width: 768px) {
     .contact-details { flex-direction: row; justify-content: center; }
+}
+
+/* Contact form enhancements */
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-card {
+    max-width: 900px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form button {
+  justify-self: start;
+}
+.g-recaptcha {
+  margin-top: 0.5rem;
 }
 
 /* Footer */

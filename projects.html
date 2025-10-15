@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="meta_title_projects">Referenzen | Immobilien Schätzung + Beratung</title>
+    <meta name="description" data-i18n-key="meta_description_projects" content="Entdecken Sie ausgewählte Projekte und Referenzen unserer Arbeit – von Wohnbauten über Gewerbeobjekte bis hin zu Neubauprojekten.">
+    
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#FAF8F5">
+
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/i18n.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link" aria-label="Homepage">
+                <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
+                    <span class="sr-only" data-i18n-key="nav_toggle">Menü öffnen</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="nav-list">
+                    <li><a href="services.html" data-i18n-key="nav_services">Leistungen</a></li>
+                    <li><a href="projects.html" data-i18n-key="nav_projects">Referenzen</a></li>
+                    <li><a href="about.html" data-i18n-key="nav_about">Über uns</a></li>
+                    <li><a href="contact.html" data-i18n-key="nav_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button data-lang="de" class="active">DE</button>
+                <button data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <section id="projects-page" class="work reveal-on-scroll">
+            <div class="container">
+                <h1 class="section-title" data-i18n-key="work_title">Referenzen</h1>
+                <div class="work-grid">
+                    <!-- Project cards populated via static markup with translation keys -->
+                    <!-- Project cards are statically defined here to guarantee that
+                         meaningful content appears without relying on JavaScript. When
+                         translations are loaded they will replace the headings and
+                         descriptions via data-i18n-key. Feel free to duplicate cards
+                         below for additional projects. -->
+                    <a href="project-01.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 1" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_1_title">Projekt Titel – 01</h3>
+                            <p data-i18n-key="work_1_desc">Verkehrswertgutachten im Rahmen einer Erbteilung.</p>
+                        </div>
+                    </a>
+                    <a href="project-02.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 2" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_2_title">Projekt Titel – 02</h3>
+                            <p data-i18n-key="work_2_desc">Bauzustandsanalyse und Sanierungsberatung.</p>
+                        </div>
+                    </a>
+                    <a href="project-03.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 3" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_3_title">Projekt Titel – 03</h3>
+                            <p data-i18n-key="work_3_desc">Transaktionsberatung für einen internationalen Käufer.</p>
+                        </div>
+                    </a>
+                    <a href="project-04.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 4" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_4_title">Projekt Titel – 04</h3>
+                            <p data-i18n-key="work_4_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                        </div>
+                    </a>
+                    <a href="project-05.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 5" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_5_title">Projekt Titel – 05</h3>
+                            <p data-i18n-key="work_5_desc">Verkehrswertgutachten bei Erbteilung.</p>
+                        </div>
+                    </a>
+                    <a href="project-06.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 6" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_6_title">Projekt Titel – 06</h3>
+                            <p data-i18n-key="work_6_desc">Projektmanagement und Kostenkontrolle für Bauträger.</p>
+                        </div>
+                    </a>
+                    <a href="project-07.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 7" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_7_title">Projekt Titel – 07</h3>
+                            <p data-i18n-key="work_7_desc">Transaktionsberatung für einen internationalen Käufer.</p>
+                        </div>
+                    </a>
+                    <a href="project-08.html" class="work-card">
+                        <img src="assets/placeholder.png" alt="Projekt 8" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                        <div class="work-card-content">
+                            <h3 data-i18n-key="work_8_title">Projekt Titel – 08</h3>
+                            <p data-i18n-key="work_8_desc">Bauzustandsanalyse für denkmalgeschützte Villa.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-legal">
+                &copy; <span id="current-year"></span> <span data-i18n-key="footer_long_name">Immobilien Schätzung + Beratung</span>.
+                <a href="impressum.html" data-i18n-key="footer_imprint">Impressum</a> | <a href="datenschutz.html" data-i18n-key="footer_privacy">Datenschutz</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
