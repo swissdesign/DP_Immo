@@ -181,8 +181,8 @@ section {
   text-decoration: none;
 }
 .logo-static {
-  height: 80px;
-  width: auto;
+  height: auto;
+  width: 150px;
 }
 .main-nav ul {
   display: none; /* Hidden on mobile */
