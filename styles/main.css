@@ -342,8 +342,8 @@ section {
     gap: 2rem;
 }
 .logo-animated-wrapper {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 800px;
 }
 .hero-title {
   font-size: var(--font-size-4xl);
