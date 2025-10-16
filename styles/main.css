@@ -35,6 +35,9 @@ body {
   background: linear-gradient(to bottom, var(--paper) 0%, var(--gradient-scroll) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Enable vertical scroll snapping for a cleaner, non-overlapping effect. */
+  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 768px) {
@@ -74,15 +77,13 @@ img {
      content can be centred perfectly within the viewport. Padding will
      be handled by nested containers if necessary. */
   padding-block: 0;
-  /* Use sticky positioning for the smooth reveal effect. */
-  position: sticky;
-  top: 0;
+  /* Use scroll snapping instead of sticky positioning to avoid overlap. */
+  scroll-snap-align: start;
 }
 @media (max-width: 768px) {
   .full-screen {
     min-height: auto;
     justify-content: flex-start;
-    position: static; /* Disable sticky on mobile for natural scrolling */
   }
 }
 section {
@@ -989,3 +990,4 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
     transform: none;
   }
 }
+
