@@ -8,33 +8,16 @@
   "nav_projects": "Projects",
   "nav_about": "About",
   "nav_back_home": "Back to Homepage",
-
   "meta_title_home": "Immobilien Schätzung + Beratung | Precise real estate valuation & consulting",
-  /*
-    Expanded meta description to emphasise the independent nature of the firm
-    and its full service offering (valuations, consulting and project
-    management). It also mentions the 1995 founding date and regions served
-    for improved local SEO.
-  */
   "meta_description_home": "Since 1995 Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management. We prepare traffic-value appraisals, conduct building condition assessments and guide your project across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
   "meta_description_person_a": "Profile of Dominik Planzer, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
   "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
   "meta_description_person_b": "Profile of Françoise Ellenberger, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
-
   "hero_subtitle": "Real estate valuation + consulting",
-  /* hero tagline is overridden below */
-  /* A more inviting call to action encouraging visitors to get in touch */
   "hero_cta": "Send Inquiry",
   "hero_title_name": "Immobilien Schätzung + Beratung",
-  /*
-    Updated tagline highlighting the firm’s founding year and its core
-    services: independent valuations, consulting and project management.
-    This phrasing aligns with recommendations to spell out the breadth of
-    services and the longevity of the practice【986185853589315†L138-L145】.
-  */
-  "hero_tagline": "Since 1995 – independent valuations, consulting and project management",
-
+  "hero_tagline": "Since 1995 – independent valuations, consulting and project management",
   "value_1_title": "Precision",
   "value_1_desc": "Detailed analyses and well-founded valuations as a basis for decision-making.",
   "value_2_title": "Independence",
@@ -42,16 +25,30 @@
   "value_3_title": "Discretion",
   "value_3_desc": "Absolute protection of your sensitive data and preservation of your privacy.",
   "value_4_title": "Experience",
-  "value_4_desc": "Experience since 1995 as architects and real estate valuers.",
-
+  "value_4_desc": "Experience since 1995 as architects and real estate valuers.",
   "services_title": "Services",
   "services": [
-    { "id": "s1", "title": "Market Value Appraisals", "description": "We determine the market value of your property according to national and international standards. Ideal for purchases, sales, financing, or inheritances." },
-    { "id": "s2", "title": "Building Condition Assessments", "description": "Detailed analysis of the building fabric to identify defects and plan renovation measures, including cost estimates." },
-    { "id": "s3", "title": "Project Management (New Build/Refurbishment)", "description": "We oversee your construction project from planning to completion, ensuring quality and monitoring costs and deadlines." },
-    { "id": "s4", "title": "Transaction Advisory", "description": "Comprehensive support for purchase, sale, or gift processes, from due diligence to the closing of the contract." }
+    {
+      "id": "s1",
+      "title": "Market Value Appraisals",
+      "description": "We determine the market value of your property according to national and international standards. Ideal for purchases, sales, financing, or inheritances."
+    },
+    {
+      "id": "s2",
+      "title": "Building Condition Assessments",
+      "description": "Detailed analysis of the building fabric to identify defects and plan renovation measures, including cost estimates."
+    },
+    {
+      "id": "s3",
+      "title": "Project Management (New Build/Refurbishment)",
+      "description": "We oversee your construction project from planning to completion, ensuring quality and monitoring costs and deadlines."
+    },
+    {
+      "id": "s4",
+      "title": "Transaction Advisory",
+      "description": "Comprehensive support for purchase, sale, or gift processes, from due diligence to the closing of the contract."
+    }
   ],
-
   "work_title": "Selected References",
   "work_1_title": "Apartment Building, Zurich",
   "work_1_desc": "Market value appraisal in the context of an inheritance.",
@@ -61,58 +58,82 @@
   "work_3_desc": "Transaction advisory for an international buyer.",
   "work_4_title": "New Development, Lucerne",
   "work_4_desc": "Project management and cost control for a developer.",
-
   "process_title": "Our Process",
   "process_steps": [
-    { "title": "Contact & Needs Analysis", "description": "You describe your request. We clarify the objective, scope, and specific requirements of your assignment." },
-    { "title": "Site Inspection & Data Collection", "description": "We conduct a thorough on-site inspection and gather all relevant documents and market data." },
-    { "title": "Analysis & Valuation", "description": "Our experts analyze the collected information and apply the appropriate valuation methods." },
-    { "title": "Report & Debriefing", "description": "You receive a clear, comprehensive report. We discuss the results with you and answer your questions." }
+    {
+      "title": "Contact & Needs Analysis",
+      "description": "You describe your request. We clarify the objective, scope, and specific requirements of your assignment."
+    },
+    {
+      "title": "Site Inspection & Data Collection",
+      "description": "We conduct a thorough on-site inspection and gather all relevant documents and market data."
+    },
+    {
+      "title": "Analysis & Valuation",
+      "description": "Our experts analyze the collected information and apply the appropriate valuation methods."
+    },
+    {
+      "title": "Report & Debriefing",
+      "description": "You receive a clear, comprehensive report. We discuss the results with you and answer your questions."
+    }
   ],
-
   "credentials_methods_title": "Methods",
   "credentials_methods_desc": "Hedonic modelling, DCF (Discounted Cash Flow), comparable sales approach, and other methods according to international standards.",
   "credentials_regions_title": "Regions",
   "credentials_regions_desc": "Zurich, Central Switzerland, Western Switzerland, and by request.",
   "credentials_partners_title": "Partners",
   "credentials_partners_desc": "We regularly collaborate with leading banks, insurance companies, and pension funds.",
-
   "team_title": "The Founders",
   "team_a_name": "Dominik Planzer",
   "team_a_title": "MSc Arch ETH/SIA, Real Estate Valuer",
   "team_b_name": "Françoise Ellenberger",
   "team_b_title": "MSc Arch ETH/SIA, Real Estate Valuer",
   "team_link_cta": "View Profile",
-
   "testimonials_title": "Testimonials",
   "testimonials": [
-    { "quote": "The analysis was extremely detailed and decisively helped us in the price negotiation. Absolutely professional.", "author": "Private Investor, Zurich" },
-    { "quote": "[Placeholder Name] handled the complex case of our community of heirs with great expertise and sensitivity.", "author": "Family S., Lucerne" },
-    { "quote": "Fast, reliable, and a report that is understandable even for non-experts. Unreserved recommendation.", "author": "CEO of an SME, Zug" }
+    {
+      "quote": "The analysis was extremely detailed and decisively helped us in the price negotiation. Absolutely professional.",
+      "author": "Private Investor, Zurich"
+    },
+    {
+      "quote": "[Placeholder Name] handled the complex case of our community of heirs with great expertise and sensitivity.",
+      "author": "Family S., Lucerne"
+    },
+    {
+      "quote": "Fast, reliable, and a report that is understandable even for non-experts. Unreserved recommendation.",
+      "author": "CEO of an SME, Zug"
+    }
   ],
-
   "faq_title": "Frequently Asked Questions",
   "faq": [
-    { "id": "f1", "title": "How long does a valuation take?", "description": "A standard market value appraisal for a residential property typically takes 2-3 weeks from inspection to completion." },
-    { "id": "f2", "title": "What does a report cost?", "description": "The cost depends on the property type, complexity, and scope of the assignment. We would be happy to provide a transparent offer." },
-    { "id": "f3", "title": "Are your reports accepted by banks?", "description": "Yes, our reports comply with the standards of most Swiss financial institutions and are widely accepted." }
+    {
+      "id": "f1",
+      "title": "How long does a valuation take?",
+      "description": "A standard market value appraisal for a residential property typically takes 2-3 weeks from inspection to completion."
+    },
+    {
+      "id": "f2",
+      "title": "What does a report cost?",
+      "description": "The cost depends on the property type, complexity, and scope of the assignment. We would be happy to provide a transparent offer."
+    },
+    {
+      "id": "f3",
+      "title": "Are your reports accepted by banks?",
+      "description": "Yes, our reports comply with the standards of most Swiss financial institutions and are widely accepted."
+    }
   ],
-
   "contact_title": "Contact Us",
   "contact_intro": "We look forward to your inquiry for a non-binding initial consultation.",
   "contact_firm_name": "Immobilien Schätzung + Beratung",
   "contact_cta": "Request an Offer",
-
   "contact_name_label": "Name",
   "contact_email_label": "Email",
   "contact_phone_label": "Phone (optional)",
   "contact_message_label": "Message",
   "contact_submit": "Send Message",
-
   "footer_long_name": "Immobilien Schätzung + Beratung",
   "footer_imprint": "Imprint",
   "footer_privacy": "Privacy Policy",
-
   "meta_title_services": "Services | Immobilien Schätzung + Beratung",
   "meta_description_services": "Learn more about our services – traffic-value appraisals, building-condition assessments, project management and transaction advisory.",
   "meta_title_projects": "Projects | Immobilien Schätzung + Beratung",
@@ -123,36 +144,78 @@
   "meta_description_contact": "Get in touch with us for a non-binding initial consultation.",
   "about_title": "About us",
   "about_intro": "Since 1995, Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management for private and institutional clients. Our values – precision, independence, discretion and experience – guide every assignment. Founded by Dominik Planzer and Françoise Ellenberger, we combine decades of architectural experience with certified valuation expertise.",
-  
   "person_timeline_title": "Career Path",
   "person_motivation_title": "Motivation & Personal",
   "person_expertise_title": "Expertise",
   "person_cv_download": "Download CV",
-
   "person_a": {
     "name": "Dominik Planzer",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
     "bio": "An analytical thinker with a passion for architecture and solid, data-driven valuations. His focus is on complex commercial properties and portfolios.",
-    "motivation": "\"Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.\"",
-    "expertise": ["Commercial Real Estate", "Portfolio Valuation", "DCF Analysis", "Building Law", "Project Development"],
+    "motivation": "'Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.'",
+    "expertise": [
+      "Commercial Real Estate",
+      "Portfolio Valuation",
+      "DCF Analysis",
+      "Building Law",
+      "Project Development"
+    ],
     "timeline": [
-      { "date": "2023 - Present", "title": "Founder & Partner, [Placeholder Name]", "description": "Zurich, Switzerland" },
-      { "date": "2015 - 2023", "title": "Senior Valuer, Major Bank", "description": "Focus on commercial real estate financing." },
-      { "date": "2010 - 2015", "title": "Architect & Project Manager, Renowned Architectural Firm", "description": "Planning and execution of large-scale projects." },
-      { "date": "2004 - 2010", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
+      {
+        "date": "2023 - Present",
+        "title": "Founder & Partner, [Placeholder Name]",
+        "description": "Zurich, Switzerland"
+      },
+      {
+        "date": "2015 - 2023",
+        "title": "Senior Valuer, Major Bank",
+        "description": "Focus on commercial real estate financing."
+      },
+      {
+        "date": "2010 - 2015",
+        "title": "Architect & Project Manager, Renowned Architectural Firm",
+        "description": "Planning and execution of large-scale projects."
+      },
+      {
+        "date": "2004 - 2010",
+        "title": "Studies in Architecture, ETH Zurich",
+        "description": "Master of Science in Architecture."
+      }
     ]
   },
   "person_b": {
     "name": "Françoise Ellenberger",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
     "bio": "Combines design sensibility with methodical valuation competence. Her strength lies in residential properties and advising on inheritances and donations.",
-    "motivation": "\"Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.\"",
-    "expertise": ["Residential Properties", "Inheritance Cases", "Hedonic Valuation", "Condition Analysis", "Historic Preservation"],
+    "motivation": "'Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.'",
+    "expertise": [
+      "Residential Properties",
+      "Inheritance Cases",
+      "Hedonic Valuation",
+      "Condition Analysis",
+      "Historic Preservation"
+    ],
     "timeline": [
-      { "date": "2023 - Present", "title": "Founder & Partner, [Placeholder Name]", "description": "Zurich, Switzerland" },
-      { "date": "2017 - 2023", "title": "Real Estate Valuer, Consulting Firm", "description": "Specialization in residential and special-purpose properties." },
-      { "date": "2012 - 2017", "title": "Architect, Firm specializing in renovations", "description": "Work on historically listed buildings." },
-      { "date": "2006 - 2012", "title": "Studies in Architecture, ETH Zurich", "description": "Master of Science in Architecture." }
+      {
+        "date": "2023 - Present",
+        "title": "Founder & Partner, [Placeholder Name]",
+        "description": "Zurich, Switzerland"
+      },
+      {
+        "date": "2017 - 2023",
+        "title": "Real Estate Valuer, Consulting Firm",
+        "description": "Specialization in residential and special-purpose properties."
+      },
+      {
+        "date": "2012 - 2017",
+        "title": "Architect, Firm specializing in renovations",
+        "description": "Work on historically listed buildings."
+      },
+      {
+        "date": "2006 - 2012",
+        "title": "Studies in Architecture, ETH Zurich",
+        "description": "Master of Science in Architecture."
+      }
     ]
   }
 }
