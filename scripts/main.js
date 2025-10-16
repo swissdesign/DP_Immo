@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, {
-            threshold: 0.25 // FIX: Increased threshold for better timing
+            threshold: 0.15 // Trigger animation slightly earlier
         });
 
         revealElements.forEach(el => {
