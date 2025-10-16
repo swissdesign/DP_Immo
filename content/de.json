@@ -8,34 +8,16 @@
   "nav_projects": "Referenzen",
   "nav_about": "Über uns",
   "nav_back_home": "Zurück zur Startseite",
-
   "meta_title_home": "Immobilien Schätzung + Beratung | Präzise Immobilienbewertung & Beratung",
-  /*
-    Expanded meta description to reinforce the firm’s independent stance
-    and breadth of services. It now explicitly mentions valuations,
-    consulting and project management and reiterates the 1995 founding
-    year. The regions served remain highlighted to improve local SEO.
-  */
   "meta_description_home": "Immobilien Schätzung + Beratung bietet seit 1995 unabhängige Bewertungen, Beratung und Projektleitung. Wir erstellen Verkehrswertgutachten, führen Bauzustandsanalysen durch und unterstützen Sie bei Ihrem Projekt in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
   "meta_description_person_a": "Profil von Dominik Planzer, Dipl. Arch. ETH/SIA und Immobilienschätzer bei Immobilien Schätzung + Beratung.",
   "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
   "meta_description_person_b": "Profil von Françoise Ellenberger, Dipl. Arch. ETH/SIA und Immobilienschätzerin bei Immobilien Schätzung + Beratung.",
-
   "hero_subtitle": "Immobilien Schätzung + Beratung",
-  /* The tagline is defined below with a time marker */
-  /* A more direct call to action that invites visitors to send a request */
   "hero_cta": "Anfrage senden",
-
   "hero_title_name": "Immobilien Schätzung + Beratung",
-  /*
-    Updated tagline emphasising the firm’s heritage (since 1995) and
-    combining valuations, consulting and project management. This mirrors
-    the blueprint’s recommendation to reference independence, consulting
-    and project leadership clearly【986185853589315†L138-L145】.
-  */
-  "hero_tagline": "Seit 1995 – unabhängige Bewertungen, Beratung und Projektleitung",
-
+  "hero_tagline": "Seit 1995 – unabhängige Bewertungen, Beratung und Projektleitung",
   "value_1_title": "Präzision",
   "value_1_desc": "Detailgenaue Analysen und fundierte Bewertungen als Entscheidungsgrundlage.",
   "value_2_title": "Unabhängigkeit",
@@ -43,16 +25,30 @@
   "value_3_title": "Diskretion",
   "value_3_desc": "Absoluter Schutz Ihrer sensiblen Daten und Wahrung Ihrer Privatsphäre.",
   "value_4_title": "Erfahrung",
-  "value_4_desc": "Seit 1995 Erfahrung als Architekten und Immobilienschätzer.",
-  
+  "value_4_desc": "Seit 1995 Erfahrung als Architekten und Immobilienschätzer.",
   "services_title": "Leistungen",
   "services": [
-    { "id": "s1", "title": "Verkehrswertgutachten", "description": "Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung." },
-    { "id": "s2", "title": "Bauzustandsbewertungen", "description": "Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung." },
-    { "id": "s3", "title": "Projektmanagement (Neubau/Sanierung)", "description": "Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine." },
-    { "id": "s4", "title": "Transaktionsberatung", "description": "Umfassende Unterstützung bei Kauf-, Verkaufs- oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss." }
+    {
+      "id": "s1",
+      "title": "Verkehrswertgutachten",
+      "description": "Wir ermitteln den Marktwert Ihrer Immobilie nach nationalen und internationalen Standards. Ideal für Kauf, Verkauf, Finanzierung oder Erbteilung."
+    },
+    {
+      "id": "s2",
+      "title": "Bauzustandsbewertungen",
+      "description": "Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung."
+    },
+    {
+      "id": "s3",
+      "title": "Projektmanagement (Neubau/Sanierung)",
+      "description": "Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine."
+    },
+    {
+      "id": "s4",
+      "title": "Transaktionsberatung",
+      "description": "Umfassende Unterstützung bei Kauf-, Verkaufs- oder Schenkungsprozessen, von der Due Diligence bis zum Vertragsabschluss."
+    }
   ],
-
   "work_title": "Ausgewählte Referenzen",
   "work_1_title": "Mehrfamilienhaus, Zürich",
   "work_1_desc": "Verkehrswertgutachten im Rahmen einer Erbteilung.",
@@ -62,58 +58,82 @@
   "work_3_desc": "Transaktionsberatung für einen internationalen Käufer.",
   "work_4_title": "Neubauprojekt, Luzern",
   "work_4_desc": "Projektmanagement und Kostenkontrolle für Bauträger.",
-
   "process_title": "Unser Prozess",
   "process_steps": [
-      { "title": "Kontaktaufnahme & Bedarfsanalyse", "description": "Sie schildern uns Ihr Anliegen. Wir klären die Zielsetzung, den Umfang und die spezifischen Anforderungen Ihres Auftrags." },
-      { "title": "Objektbesichtigung & Datenerhebung", "description": "Wir führen eine gründliche Besichtigung vor Ort durch und sammeln alle relevanten Dokumente und Marktdaten." },
-      { "title": "Analyse & Bewertung", "description": "Unsere Experten analysieren die gesammelten Informationen und wenden die passenden Bewertungsmethoden an." },
-      { "title": "Gutachtenerstellung & Besprechung", "description": "Sie erhalten ein verständliches, nachvollziehbares Gutachten. Wir besprechen die Ergebnisse und beantworten Ihre Fragen." }
+    {
+      "title": "Kontaktaufnahme & Bedarfsanalyse",
+      "description": "Sie schildern uns Ihr Anliegen. Wir klären die Zielsetzung, den Umfang und die spezifischen Anforderungen Ihres Auftrags."
+    },
+    {
+      "title": "Objektbesichtigung & Datenerhebung",
+      "description": "Wir führen eine gründliche Besichtigung vor Ort durch und sammeln alle relevanten Dokumente und Marktdaten."
+    },
+    {
+      "title": "Analyse & Bewertung",
+      "description": "Unsere Experten analysieren die gesammelten Informationen und wenden die passenden Bewertungsmethoden an."
+    },
+    {
+      "title": "Gutachtenerstellung & Besprechung",
+      "description": "Sie erhalten ein verständliches, nachvollziehbares Gutachten. Wir besprechen die Ergebnisse und beantworten Ihre Fragen."
+    }
   ],
-
   "credentials_methods_title": "Methoden",
   "credentials_methods_desc": "Hedonische Bewertung, DCF (Discounted Cashflow), Vergleichswertverfahren und weitere nach internationalem Standard.",
   "credentials_regions_title": "Regionen",
   "credentials_regions_desc": "Zürich, Zentralschweiz, Westschweiz und auf Anfrage.",
   "credentials_partners_title": "Partner",
   "credentials_partners_desc": "Wir arbeiten regelmässig mit führenden Banken, Versicherungen und Pensionskassen zusammen.",
-
   "team_title": "Die Gründer",
   "team_a_name": "Dominik Planzer",
   "team_a_title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
   "team_b_name": "Françoise Ellenberger",
   "team_b_title": "Dipl. Arch. ETH/SIA, Immobilienschätzerin",
   "team_link_cta": "Profil ansehen",
-
   "testimonials_title": "Kundenstimmen",
   "testimonials": [
-    { "quote": "Die Analyse war extrem detailliert und hat uns bei der Preisverhandlung entscheidend geholfen. Absolut professionell.", "author": "Privater Investor, Zürich" },
-    { "quote": "[Platzhalter Name] hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.", "author": "Familie S., Luzern" },
-    { "quote": "Schnell, zuverlässig und ein Gutachten, das auch für Laien verständlich ist. Uneingeschränkte Empfehlung.", "author": "Geschäftsführer KMU, Zug" }
+    {
+      "quote": "Die Analyse war extrem detailliert und hat uns bei der Preisverhandlung entscheidend geholfen. Absolut professionell.",
+      "author": "Privater Investor, Zürich"
+    },
+    {
+      "quote": "[Platzhalter Name] hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.",
+      "author": "Familie S., Luzern"
+    },
+    {
+      "quote": "Schnell, zuverlässig und ein Gutachten, das auch für Laien verständlich ist. Uneingeschränkte Empfehlung.",
+      "author": "Geschäftsführer KMU, Zug"
+    }
   ],
-
   "faq_title": "Häufige Fragen",
   "faq": [
-    { "id": "f1", "title": "Wie lange dauert eine Bewertung?", "description": "Ein Standard-Verkehrswertgutachten für ein Wohnhaus dauert in der Regel 2-3 Wochen von der Besichtigung bis zur Fertigstellung." },
-    { "id": "f2", "title": "Was kostet ein Gutachten?", "description": "Die Kosten hängen vom Objekttyp, der Komplexität und dem Umfang des Auftrags ab. Wir erstellen Ihnen gerne eine transparente Offerte." },
-    { "id": "f3", "title": "Sind Ihre Gutachten bankenanerkannt?", "description": "Ja, unsere Gutachten entsprechen den Standards der meisten Schweizer Finanzinstitute und werden breit akzeptiert." }
+    {
+      "id": "f1",
+      "title": "Wie lange dauert eine Bewertung?",
+      "description": "Ein Standard-Verkehrswertgutachten für ein Wohnhaus dauert in der Regel 2-3 Wochen von der Besichtigung bis zur Fertigstellung."
+    },
+    {
+      "id": "f2",
+      "title": "Was kostet ein Gutachten?",
+      "description": "Die Kosten hängen vom Objekttyp, der Komplexität und dem Umfang des Auftrags ab. Wir erstellen Ihnen gerne eine transparente Offerte."
+    },
+    {
+      "id": "f3",
+      "title": "Sind Ihre Gutachten bankenanerkannt?",
+      "description": "Ja, unsere Gutachten entsprechen den Standards der meisten Schweizer Finanzinstitute und werden breit akzeptiert."
+    }
   ],
-
   "contact_title": "Kontaktieren Sie uns",
   "contact_intro": "Wir freuen uns auf Ihre Anfrage für eine unverbindliche Erstberatung.",
   "contact_firm_name": "Immobilien Schätzung + Beratung",
   "contact_cta": "Angebot anfragen",
-
   "contact_name_label": "Name",
-  "contact_email_label": "E‑Mail",
+  "contact_email_label": "E-Mail",
   "contact_phone_label": "Telefon (optional)",
   "contact_message_label": "Nachricht",
   "contact_submit": "Nachricht senden",
-  
   "footer_long_name": "Immobilien Schätzung + Beratung",
   "footer_imprint": "Impressum",
   "footer_privacy": "Datenschutz",
-
   "meta_title_services": "Leistungen | Immobilien Schätzung + Beratung",
   "meta_description_services": "Erfahren Sie mehr über unsere Dienstleistungen – Verkehrswertgutachten, Bauzustandsbewertungen, Projektmanagement und Transaktionsberatung.",
   "meta_title_projects": "Referenzen | Immobilien Schätzung + Beratung",
@@ -123,37 +143,79 @@
   "meta_title_contact": "Kontakt | Immobilien Schätzung + Beratung",
   "meta_description_contact": "Nehmen Sie Kontakt mit uns auf für eine unverbindliche Erstberatung.",
   "about_title": "Über uns",
-  "about_intro": "Seit 1995 bietet Immobilien Schätzung + Beratung unabhängige Bewertungen, Beratung und Projektleitung für private und institutionelle Auftraggeber. Unsere Werte – Präzision, Unabhängigkeit, Diskretion und Erfahrung – leiten uns bei jedem Auftrag. Gegründet von Dominik Planzer und Françoise Ellenberger, vereinen wir jahrzehntelange Architekturerfahrung mit zertifiziertem Bewertungsknowhow.",
-  
+  "about_intro": "Seit 1995 bietet Immobilien Schätzung + Beratung unabhängige Bewertungen, Beratung und Projektleitung für private und institutionelle Auftraggeber. Unsere Werte – Präzision, Unabhängigkeit, Diskretion und Erfahrung – leiten uns bei jedem Auftrag. Gegründet von Dominik Planzer und Françoise Ellenberger, vereinen wir jahrzehntelange Architekturerfahrung mit zertifiziertem Bewertungsknowhow.",
   "person_timeline_title": "Werdegang",
   "person_motivation_title": "Motivation & Persönliches",
   "person_expertise_title": "Expertise",
   "person_cv_download": "CV Herunterladen",
-  
   "person_a": {
     "name": "Dominik Planzer",
     "title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
     "bio": "Ein analytischer Denker mit Leidenschaft für Architektur und solide, datenbasierte Bewertungen. Sein Fokus liegt auf komplexen Gewerbeimmobilien und Portfolios.",
-    "motivation": "\"Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens.\"",
-    "expertise": ["Gewerbeimmobilien", "Portfoliobewertung", "DCF-Analyse", "Baurecht", "Projektentwicklung"],
+    "motivation": "'Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens.'",
+    "expertise": [
+      "Gewerbeimmobilien",
+      "Portfoliobewertung",
+      "DCF-Analyse",
+      "Baurecht",
+      "Projektentwicklung"
+    ],
     "timeline": [
-      { "date": "2023 - Heute", "title": "Gründer & Partner, [Platzhalter Name]", "description": "Zürich, Schweiz" },
-      { "date": "2015 - 2023", "title": "Senior Bewerter, Grossbank", "description": "Fokus auf kommerzielle Immobilienfinanzierung." },
-      { "date": "2010 - 2015", "title": "Architekt & Projektleiter, Renommiertes Architekturbüro", "description": "Planung und Realisierung von Grossprojekten." },
-      { "date": "2004 - 2010", "title": "Architekturstudium, ETH Zürich", "description": "Master of Science in Architektur." }
+      {
+        "date": "2023 - Heute",
+        "title": "Gründer & Partner, [Platzhalter Name]",
+        "description": "Zürich, Schweiz"
+      },
+      {
+        "date": "2015 - 2023",
+        "title": "Senior Bewerter, Grossbank",
+        "description": "Fokus auf kommerzielle Immobilienfinanzierung."
+      },
+      {
+        "date": "2010 - 2015",
+        "title": "Architekt & Projektleiter, Renommiertes Architekturbüro",
+        "description": "Planung und Realisierung von Grossprojekten."
+      },
+      {
+        "date": "2004 - 2010",
+        "title": "Architekturstudium, ETH Zürich",
+        "description": "Master of Science in Architektur."
+      }
     ]
   },
   "person_b": {
     "name": "Françoise Ellenberger",
     "title": "Dipl. Arch. ETH/SIA, Immobilienschätzerin",
     "bio": "Kombiniert gestalterische Sensibilität mit methodischer Bewertungskompetenz. Ihre Stärke liegt in Wohnimmobilien und der Beratung bei Erbteilungen und Schenkungen.",
-    "motivation": "\"Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Wandern in den Alpen und in der Beschäftigung mit moderner Kunst.\"",
-    "expertise": ["Wohnimmobilien", "Erbteilungen", "Hedonische Bewertung", "Bauzustandsanalyse", "Denkmalpflege"],
+    "motivation": "'Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Wandern in den Alpen und in der Beschäftigung mit moderner Kunst.'",
+    "expertise": [
+      "Wohnimmobilien",
+      "Erbteilungen",
+      "Hedonische Bewertung",
+      "Bauzustandsanalyse",
+      "Denkmalpflege"
+    ],
     "timeline": [
-        { "date": "2023 - Heute", "title": "Gründerin & Partnerin, [Platzhalter Name]", "description": "Zürich, Schweiz" },
-        { "date": "2017 - 2023", "title": "Immobilienschätzerin, Beratungsunternehmen", "description": "Spezialisierung auf Wohn- und Spezialliegenschaften." },
-        { "date": "2012 - 2017", "title": "Architektin, Architekturbüro mit Fokus auf Sanierungen", "description": "Arbeit an denkmalgeschützten Objekten." },
-        { "date": "2006 - 2012", "title": "Architekturstudium, ETH Zürich", "description": "Master of Science in Architektur." }
+      {
+        "date": "2023 - Heute",
+        "title": "Gründerin & Partnerin, [Platzhalter Name]",
+        "description": "Zürich, Schweiz"
+      },
+      {
+        "date": "2017 - 2023",
+        "title": "Immobilienschätzerin, Beratungsunternehmen",
+        "description": "Spezialisierung auf Wohn- und Spezialliegenschaften."
+      },
+      {
+        "date": "2012 - 2017",
+        "title": "Architektin, Architekturbüro mit Fokus auf Sanierungen",
+        "description": "Arbeit an denkmalgeschützten Objekten."
+      },
+      {
+        "date": "2006 - 2012",
+        "title": "Architekturstudium, ETH Zürich",
+        "description": "Master of Science in Architektur."
+      }
     ]
   }
 }
