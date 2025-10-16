@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const type = element.getAttribute('data-i18n-type');
             const translation = getTranslation(key);
 
-            if (translation) {
+            if (translation !== undefined && translation !== null) {
                 if (type === 'tags') {
                     element.innerHTML = translation.map(tag => `<span>${tag}</span>`).join('');
                 } else {
@@ -45,11 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // Populate dynamic lists
-        populateList('.services .accordion', 'services', createAccordionItem);
+        // Populate dynamic lists that do NOT have static HTML placeholders
         populateList('.process-steps', 'process_steps', createProcessStep);
         populateList('.testimonials-wrapper', 'testimonials', createTestimonialCard);
-        populateList('.faq-accordion', 'faq', createAccordionItem);
         
         const pagePath = window.location.pathname;
         // Support both original and renamed profile pages
@@ -61,8 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    /**
+     * Retrieves a translation string from the translations object.
+     * FIX: This function now correctly handles nested keys with array indices, 
+     * e.g., 'services[0].title'.
+     */
     const getTranslation = (key) => {
-        return key.split('.').reduce((obj, k) => obj && obj[k], translations);
+        return key.replace(/\[(\d+)\]/g, '.$1').split('.').reduce((obj, k) => {
+            return obj && obj[k];
+        }, translations);
     };
     
     const populateList = (selector, key, itemFactory) => {
@@ -73,19 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
             container.innerHTML = items.map(itemFactory).join('');
         }
     };
-
-    const createAccordionItem = (item) => `
-        <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false" aria-controls="accordion-content-${item.id}" id="accordion-header-${item.id}">
-                ${item.title}
-            </button>
-            <div class="accordion-content" role="region" aria-labelledby="accordion-header-${item.id}" id="accordion-content-${item.id}">
-                <div class="accordion-content-inner">
-                    <p>${item.description}</p>
-                </div>
-            </div>
-        </div>
-    `;
 
     const createProcessStep = (item) => `
         <li class="process-step">
@@ -110,27 +102,50 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     const setLanguage = (lang) => {
-        if (!supportedLangs.includes(lang)) return;
+        // Prevent function from running if the language is not supported or already active.
+        if (!supportedLangs.includes(lang) || lang === currentLang) {
+            return;
+        }
+        
         currentLang = lang;
         document.documentElement.lang = lang;
         localStorage.setItem('lang', lang);
 
-        langSwitcher.querySelectorAll('button').forEach(button => {
-            button.classList.toggle('active', button.dataset.lang === lang);
-        });
-
+        // Update the active state of the language switcher buttons
+        if(langSwitcher) {
+            langSwitcher.querySelectorAll('button').forEach(button => {
+                button.classList.remove('active');
+                if (button.dataset.lang === lang) {
+                    button.classList.add('active');
+                }
+            });
+        }
+        
         fetchTranslations(lang);
     };
+    
+    const initialize = () => {
+        // Set initial language without triggering a fetch yet
+        currentLang = getInitialLang();
+        document.documentElement.lang = currentLang;
 
-    langSwitcher.addEventListener('click', (e) => {
-        if (e.target.tagName === 'BUTTON') {
-            const lang = e.target.dataset.lang;
-            if (lang !== currentLang) {
-                setLanguage(lang);
-            }
+        if (langSwitcher) {
+            langSwitcher.addEventListener('click', (e) => {
+                const button = e.target.closest('button');
+                if (button && button.dataset.lang) {
+                    setLanguage(button.dataset.lang);
+                }
+            });
+            
+            // Set the correct button to active on load
+            langSwitcher.querySelectorAll('button').forEach(button => {
+                button.classList.toggle('active', button.dataset.lang === currentLang);
+            });
         }
-    });
 
-    // Initial load
-    setLanguage(getInitialLang());
+        // Fetch translations for the initial language
+        fetchTranslations(currentLang);
+    };
+
+    initialize();
 });
