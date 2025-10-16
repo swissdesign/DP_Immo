@@ -181,7 +181,7 @@ section {
   text-decoration: none;
 }
 .logo-static {
-  height: auto;
+  height: 60px;
   width: 150px;
 }
 .main-nav ul {
