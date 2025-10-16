@@ -10,7 +10,7 @@
 
     #logo path {
         /* Animation for the main logo paths: draw for 2.5s, then fill in */
-        animation: draw 1.5.0s ease-in-out forwards, fill-in 2.0s ease-in forwards 2.5s;
+        animation: draw 1.5s ease-in-out forwards, fill-in 2.0s ease-in forwards 2.5s;
     }
 
     #text path {
