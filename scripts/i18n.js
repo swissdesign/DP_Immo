@@ -61,10 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * Retrieves a translation string from the translations object.
-     * FIX: This function now correctly handles nested keys with array indices, 
+     * This function correctly handles nested keys with array indices, 
      * e.g., 'services[0].title'.
      */
     const getTranslation = (key) => {
+        // Replace array notation [i] with dot notation .i and split
         return key.replace(/\[(\d+)\]/g, '.$1').split('.').reduce((obj, k) => {
             return obj && obj[k];
         }, translations);
@@ -102,16 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     const setLanguage = (lang) => {
-        // Prevent function from running if the language is not supported or already active.
         if (!supportedLangs.includes(lang) || lang === currentLang) {
             return;
         }
         
         currentLang = lang;
-        document.documentElement.lang = lang;
+        document.documentElement.lang = lang; // FIX: Ensure HTML lang attribute is updated
         localStorage.setItem('lang', lang);
 
-        // Update the active state of the language switcher buttons
         if(langSwitcher) {
             langSwitcher.querySelectorAll('button').forEach(button => {
                 button.classList.remove('active');
@@ -125,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     const initialize = () => {
-        // Set initial language without triggering a fetch yet
         currentLang = getInitialLang();
         document.documentElement.lang = currentLang;
 
@@ -137,13 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             
-            // Set the correct button to active on load
             langSwitcher.querySelectorAll('button').forEach(button => {
                 button.classList.toggle('active', button.dataset.lang === currentLang);
             });
         }
 
-        // Fetch translations for the initial language
         fetchTranslations(currentLang);
     };
 
