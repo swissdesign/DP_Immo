@@ -828,9 +828,12 @@ section {
 }
 .accordion-content-inner {
   overflow: hidden;
-  padding: 0 1.25rem 1.5rem 1.25rem;
 }
-.accordion-content-inner p { color: var(--muted); }
+.accordion-content-inner p {
+  color: var(--muted);
+  padding: 0 1.25rem 1.5rem 1.25rem;
+  margin-bottom: 0;
+}
 
 /* 7. Person Page Styles */
 body.person-page { background-color: #fff; } /* Override paper for full white */
