@@ -2,7 +2,7 @@
   <style>
     #logo path, #text path {
       stroke: #ffffff;
-      stroke-width: 0.5;
+      stroke-width: 0.2;
       stroke-dasharray: 1500;
       stroke-dashoffset: 1500;
       fill-opacity: 0;
@@ -10,7 +10,7 @@
 
     #logo path {
         /* Animation for the main logo paths: draw for 2.5s, then fill in */
-        animation: draw 2.5s ease-in-out forwards, fill-in 0.5s ease-in forwards 2.5s;
+        animation: draw 1.5.0s ease-in-out forwards, fill-in 2.0s ease-in forwards 2.5s;
     }
 
     #text path {
