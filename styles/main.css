@@ -35,12 +35,6 @@ body {
   background: linear-gradient(to bottom, var(--paper) 0%, var(--gradient-scroll) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Enable vertical scroll snapping for full-screen sections. Each section
-     will snap to the viewport when scrolling, creating a smooth, page-like
-     progression. This is disabled on small screens to maintain natural
-     scrolling behaviour. */
-  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 768px) {
@@ -80,15 +74,15 @@ img {
      content can be centred perfectly within the viewport. Padding will
      be handled by nested containers if necessary. */
   padding-block: 0;
-  /* Use scroll snapping instead of sticky positioning. Each section
-     naturally snaps to the start of the viewport when scrolled, creating
-     a controlled reveal without overlapping layers. */
-  scroll-snap-align: start;
+  /* Use sticky positioning for the smooth reveal effect. */
+  position: sticky;
+  top: 0;
 }
 @media (max-width: 768px) {
   .full-screen {
     min-height: auto;
     justify-content: flex-start;
+    position: static; /* Disable sticky on mobile for natural scrolling */
   }
 }
 section {
@@ -981,8 +975,8 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
 /* Reveal on Scroll */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(10px); /* Make the upward movement more subtle */
+  transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .reveal-on-scroll.is-visible {
   opacity: 1;
