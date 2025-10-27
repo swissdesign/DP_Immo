@@ -155,7 +155,7 @@ section {
 
 /* 3. Header & Navigation */
 .site-header {
-  padding-block: 1rem;
+  padding-block: clamp(0.5rem, 0.35rem + 0.4vw, 0.85rem);
   border-bottom: 1px solid var(--line);
   background-color: var(--paper);
   position: sticky;
@@ -176,8 +176,8 @@ section {
   text-decoration: none;
 }
 .logo-static {
-  height: 60px;
-  width: 150px;
+  height: clamp(3rem, 2.4rem + 1.5vw, 4.5rem);
+  width: auto;
 }
 .main-nav ul {
   display: none; /* Hidden on mobile */
@@ -317,16 +317,27 @@ section {
   text-align: center;
   /*
     Use the custom hero illustration provided by the client. The dark base
-    colour in the SVG sets a calm, professional tone while the lines
+    colour in the artwork sets a calm, professional tone while the lines
     reference architecture and precision. An additional semi–transparent
     overlay ensures sufficient contrast for the headline and call‑to‑action.
     The relative path ascends once from styles/ to reach the assets folder.
   */
-  background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.6)), url('../assets/isb_bg.svg');
+  background-color: #111827;
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.65), rgba(17, 24, 39, 0.65)),
+    image-set(
+      url('../assets/isb_bg.webp') type('image/webp') 1x,
+      url('../assets/hero.svg') type('image/svg+xml') 1x
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: var(--paper); /* Ensures all text inside defaults to light */
+}
+@supports not (background-image: image-set(url('x') type('image/webp') 1x)) {
+  .hero {
+    background-image: linear-gradient(rgba(17, 24, 39, 0.65), rgba(17, 24, 39, 0.65)), url('../assets/hero.svg');
+  }
 }
 .hero-content {
     display: flex;
@@ -337,8 +348,11 @@ section {
     gap: 2rem;
 }
 .logo-animated-wrapper {
-  width: 800px;
-  height: 800px;
+  width: min(70vw, 520px);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-title {
   font-size: var(--font-size-4xl);
@@ -404,15 +418,12 @@ section {
 
 /* Work */
 /*
-  Work/Projects Scroller
-  ---------------------
-  The selected projects section uses a horizontal scroller inspired
-  by portfolio sites. Each card snaps neatly into place as the user
-  swipes, providing an intuitive way to browse through references.
-  On all screen sizes, we use a horizontal scroller to emphasise
-  exploration and reduce vertical bulk. The scroll bar remains
-  visible as an affordance, and cards snap to the centre for a
-  focused reading experience.
+  Work/Projects Layout
+  --------------------
+  On mobile we keep the swipeable horizontal scroller so cards remain
+  easy to explore with touch. From tablet upwards the container
+  progressively enhances into a grid, giving the references a more
+  editorial presentation while preserving hover animations.
 */
 .work-scroller {
   overflow-x: auto;
@@ -456,6 +467,90 @@ section {
 .work-card-content p {
   color: var(--muted);
   margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .work-scroller {
+    overflow: visible;
+    padding-bottom: 0;
+    scroll-snap-type: none;
+  }
+  .work-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  .work-card {
+    flex: none;
+    scroll-snap-align: unset;
+    height: 100%;
+  }
+  .work-card:hover,
+  .work-card:focus {
+    transform: translateY(-6px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .work-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  gap: 1.5rem;
+}
+.projects-grid .work-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.projects-grid .work-card img {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-grid .work-card .work-card-content {
+  padding: 1.25rem 1.5rem;
+}
+.projects-grid .project-tile.tile-wide {
+  grid-column: span 2;
+}
+.projects-grid .project-tile.tile-tall {
+  grid-row: span 2;
+}
+.projects-grid .project-tile.tile-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-auto-rows: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-auto-rows: 240px;
+  }
+}
+
+@media (max-width: 599px) {
+  .projects-grid .project-tile.tile-wide,
+  .projects-grid .project-tile.tile-large {
+    grid-column: span 1;
+  }
+  .projects-grid .project-tile.tile-tall,
+  .projects-grid .project-tile.tile-large {
+    grid-row: span 1;
+  }
 }
 
 /* Process */
