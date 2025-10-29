@@ -83,6 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Project Gallery Lightbox ---
+    const projectGalleryImages = document.querySelectorAll('.project-page .gallery img');
+    if (projectGalleryImages.length) {
+        projectGalleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                const overlay = document.createElement('div');
+                overlay.className = 'lightbox-overlay';
+
+                const figure = document.createElement('figure');
+                const largeImage = document.createElement('img');
+                largeImage.src = img.currentSrc || img.src;
+                largeImage.alt = img.alt;
+                figure.appendChild(largeImage);
+                overlay.appendChild(figure);
+
+                const handleKey = (event) => {
+                    if (event.key === 'Escape') {
+                        closeOverlay();
+                    }
+                };
+
+                const closeOverlay = () => {
+                    overlay.remove();
+                    document.removeEventListener('keydown', handleKey);
+                };
+
+                overlay.addEventListener('click', closeOverlay);
+                document.addEventListener('keydown', handleKey);
+
+                document.body.appendChild(overlay);
+            });
+        });
+    }
+
     // --- Animated Logo Injection ---
     const logoWrapper = document.querySelector('.logo-animated-wrapper');
     if (logoWrapper && !prefersReducedMotion) {
