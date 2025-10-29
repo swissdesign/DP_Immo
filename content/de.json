@@ -50,14 +50,14 @@
     }
   ],
   "work_title": "Ausgewählte Referenzen",
-  "work_1_title": "Mehrfamilienhaus, Zürich",
-  "work_1_desc": "Verkehrswertgutachten im Rahmen einer Erbteilung.",
-  "work_2_title": "Bürogebäude, Zug",
-  "work_2_desc": "Bauzustandsanalyse und Sanierungsberatung.",
-  "work_3_title": "Villa, Genfersee",
-  "work_3_desc": "Transaktionsberatung für einen internationalen Käufer.",
-  "work_4_title": "Neubauprojekt, Luzern",
-  "work_4_desc": "Projektmanagement und Kostenkontrolle für Bauträger.",
+  "work_1_title": "Projektentwicklung, Zürich",
+  "work_1_desc": "Gesamtüberbauung mit Wettbewerbsverfahren und 100 Miet- und Eigentumswohnungen.",
+  "work_2_title": "Erneuerung, Altdorf",
+  "work_2_desc": "Bauherrenseitige Projektleitung für die Sanierung eines 70-jährigen Wohnhauses.",
+  "work_3_title": "Forschungscampus, Davos",
+  "work_3_desc": "Neubau eines Büro- und Laborgebäudes nach Minergie-P-Eco und SNBS Platin.",
+  "work_4_title": "Innenarchitektur, Zürich",
+  "work_4_desc": "Neugestaltung der Stadtbibliothek mit zoniertem Raumkonzept und Projektleitung.",
   "process_title": "Unser Prozess",
   "process_steps": [
     {
@@ -217,5 +217,13 @@
         "description": "Master of Science in Architektur."
       }
     ]
-  }
+  },
+  "work_5_title": "Wertgutachten, Zugersee",
+  "work_5_desc": "Verkehrswertgutachten für eine Seeliegenschaft als Grundlage einer Erbteilung.",
+  "work_6_title": "Gewerbepark, St. Gallen",
+  "work_6_desc": "Machbarkeitsstudie und Marktanalyse für einen neuen Gewerbepark.",
+  "work_7_title": "Mehrfamilienhaus, Lausanne",
+  "work_7_desc": "Transaktionsberatung für einen internationalen Käufer in der Westschweiz.",
+  "work_8_title": "Stadthaus, Bern",
+  "work_8_desc": "Bauzustandsanalyse für ein denkmalgeschütztes Stadthaus in Bern."
 }

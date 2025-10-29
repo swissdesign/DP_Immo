@@ -50,14 +50,14 @@
     }
   ],
   "work_title": "Selected References",
-  "work_1_title": "Apartment Building, Zurich",
-  "work_1_desc": "Market value appraisal in the context of an inheritance.",
-  "work_2_title": "Office Building, Zug",
-  "work_2_desc": "Building condition assessment and refurbishment consulting.",
-  "work_3_title": "Villa, Lake Geneva",
-  "work_3_desc": "Transaction advisory for an international buyer.",
-  "work_4_title": "New Development, Lucerne",
-  "work_4_desc": "Project management and cost control for a developer.",
+  "work_1_title": "Project Development, Zurich",
+  "work_1_desc": "Masterplan and competition for 100 rental and owner-occupied apartments.",
+  "work_2_title": "Renovation, Altdorf",
+  "work_2_desc": "Owner-side project management for refurbishing a 70-year-old home.",
+  "work_3_title": "Research Campus, Davos",
+  "work_3_desc": "New office and laboratory building certified Minergie-P-Eco and SNBS Platinum.",
+  "work_4_title": "Interior Architecture, Zurich",
+  "work_4_desc": "Library redesign with zoned concept and full project leadership.",
   "process_title": "Our Process",
   "process_steps": [
     {
@@ -217,5 +217,13 @@
         "description": "Master of Science in Architecture."
       }
     ]
-  }
+  },
+  "work_5_title": "Valuation, Lake Zug",
+  "work_5_desc": "Market valuation for a lakeside property as the basis for an estate settlement.",
+  "work_6_title": "Business Park, St. Gallen",
+  "work_6_desc": "Feasibility and market analysis for a new business park.",
+  "work_7_title": "Apartment Building, Lausanne",
+  "work_7_desc": "Transaction advisory for an international buyer in Western Switzerland.",
+  "work_8_title": "Townhouse, Bern",
+  "work_8_desc": "Condition assessment for a listed townhouse in Bern."
 }
