@@ -10,28 +10,31 @@
     <link rel="stylesheet" href="styles/typography.css">
     <link rel="stylesheet" href="styles/main.css">
     <style>
-        /* Dark theme overrides */
-        body { background-color:#111827; color:#F3F4F6; }
-        .site-header, .site-footer { background-color:transparent; border-color:#374151; }
-        .site-header a, .site-footer a { color:#9CA3AF; }
-        .cta-button { background-color:#2563EB; border-color:#2563EB; color:#F3F4F6; }
-        .cta-button:hover, .cta-button:focus { background-color:transparent; color:#60A5FA; }
-        .project-title { font-size: var(--font-size-3xl); margin-top:1.5rem; margin-bottom:0.5rem; }
-        .project-meta { color:#9CA3AF; margin-bottom:2rem; }
-        .project-description { max-width:60ch; margin-bottom:2rem; font-size:var(--font-size-lg); line-height:1.6; }
-        .project-details { display:flex; flex-wrap:wrap; gap:2rem; margin-bottom:3rem; }
-        .project-details div { flex:1 1 200px; }
-        .project-details h4 { font-size:var(--font-size-lg); margin-bottom:0.25rem; color:#D1D5DB; }
-        .project-details p { margin:0; color:#9CA3AF; }
-        .gallery { display:grid; gap:1rem; }
-        .gallery img { width:100%; height:100%; object-fit:cover; border-radius:6px; cursor:pointer; }
-        @media(min-width:768px){ .gallery { grid-template-columns:repeat(3,1fr); } }
-        /* Lightbox styles */
-        .lightbox-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center; z-index:1000; }
-        .lightbox-overlay img { max-width:90%; max-height:90%; border-radius:6px; }
+        body { background-color: var(--paper); color: var(--ink); }
+        .site-header, .site-footer { background-color: transparent; border-color: var(--line); }
+        .site-header a, .site-footer a { color: var(--muted); }
+        .project-title { font-size: var(--font-size-3xl); margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .project-meta { color: var(--muted); margin-bottom: 2rem; }
+        .project-hero img { border-radius: 12px; margin-bottom: 1.5rem; }
+        .project-overview, .project-gallery, .project-cta { background-color: rgba(255, 255, 255, 0.9); padding: clamp(1.5rem, 1.2rem + 1vw, 2.5rem); border-radius: 16px; box-shadow: 0 20px 45px rgba(17, 24, 39, 0.08); margin-bottom: 2.5rem; }
+        .project-description { max-width: 60ch; margin-bottom: 2rem; font-size: var(--font-size-lg); line-height: 1.65; color: var(--ink); }
+        .project-details { display: flex; flex-wrap: wrap; gap: 2rem; }
+        .project-details div { flex: 1 1 200px; }
+        .project-details h4 { font-size: var(--font-size-lg); margin-bottom: 0.25rem; color: var(--ink); }
+        .project-details p { margin: 0; color: var(--muted); }
+        .project-gallery h2 { color: var(--ink); margin-bottom: 1.5rem; }
+        .gallery { display: grid; gap: 1rem; }
+        .gallery img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; cursor: pointer; box-shadow: 0 10px 25px rgba(17, 24, 39, 0.08); }
+        @media(min-width:768px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+        .project-cta { text-align: center; background-color: rgba(247, 244, 239, 0.95); }
+        .project-cta p { margin-bottom: 1.5rem; color: var(--muted); }
+        .cta-button { background-color: var(--ink); border-color: var(--ink); color: #fff; }
+        .cta-button:hover, .cta-button:focus { background-color: transparent; color: var(--ink); }
+        .lightbox-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .lightbox-overlay img { max-width: 90%; max-height: 90%; border-radius: 6px; }
     </style>
 </head>
-<body class="project-page-dark">
+<body class="project-page">
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <header class="site-header sticky-header">
         <div class="header-container">
@@ -44,7 +47,7 @@
     <main id="main-content">
         <div class="container">
             <section class="project-hero reveal-on-scroll">
-                <img src="../assets/05_PHD.webp" alt="Projektentwicklung Zürich" loading="lazy" decoding="async">
+                <img src="assets/05_PHD.webp" alt="Projektentwicklung Zürich" loading="lazy" decoding="async">
                 <h1 class="project-title">Projektentwicklung</h1>
                 <p class="project-meta">Zürich • 2021 • Miet- und Eigentumswohnungen</p>
             </section>
@@ -68,15 +71,15 @@
                 </div>
             </section>
             <section class="project-gallery reveal-on-scroll">
-                <h2 class="section-title-small" style="color:#D1D5DB; margin-bottom:1rem;">Galerie</h2>
+                <h2 class="section-title-small">Galerie</h2>
                 <div class="gallery">
-                    <img src="../assets/13_PHD.webp" alt="Projektentwicklung Zürich Bild 1">
-                    <img src="../assets/09_PHD.webp" alt="Projektentwicklung Zürich Bild 2">
-                    <img src="../assets/07_PHD.webp" alt="Projektentwicklung Zürich Bild 3">
+                    <img src="assets/13_PHD.webp" alt="Projektentwicklung Zürich Bild 1">
+                    <img src="assets/09_PHD.webp" alt="Projektentwicklung Zürich Bild 2">
+                    <img src="assets/07_PHD.webp" alt="Projektentwicklung Zürich Bild 3">
                 </div>
             </section>
-            <section class="project-cta reveal-on-scroll" style="margin-top:3rem; text-align:center;">
-                <p style="margin-bottom:1.5rem; color:#9CA3AF;">Realisation von 100 Wohnungen der BEP Baugenossenschaft mit der Generalunternehmung Steiner AG Zürich</p>
+            <section class="project-cta reveal-on-scroll">
+                <p>Realisation von 100 Wohnungen der BEP Baugenossenschaft mit der Generalunternehmung Steiner AG Zürich</p>
                 <a href="contact.html" class="cta-button">Kontakt aufnehmen</a>
             </section>
         </div>
