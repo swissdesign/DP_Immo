@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wertwerk.ch/</loc>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/</loc>
     <lastmod>2025-10-01</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://wertwerk.ch/person-a.html</loc>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/services.html</loc>
     <lastmod>2025-10-01</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://wertwerk.ch/person-b.html</loc>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/projects.html</loc>
     <lastmod>2025-10-01</lastmod>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/about.html</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/contact.html</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/dominik-planzer.html</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.immobilien-schaetzung-beratung.ch/francoise-ellenberger.html</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url><loc>https://www.immobilien-schaetzung-beratung.ch/projektentwicklung.html</loc><lastmod>2025-10-01</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.immobilien-schaetzung-beratung.ch/erneuerung.html</loc><lastmod>2025-10-01</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.immobilien-schaetzung-beratung.ch/forschung.html</loc><lastmod>2025-10-01</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.immobilien-schaetzung-beratung.ch/innenarchitektur.html</loc><lastmod>2025-10-01</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.immobilien-schaetzung-beratung.ch/wertgutachten.html</loc><lastmod>2025-10-01</lastmod><priority>0.60</priority></url>
 </urlset>

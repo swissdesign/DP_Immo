@@ -176,7 +176,7 @@ section {
   text-decoration: none;
 }
 .logo-static {
-  height: clamp(3rem, 2.4rem + 1.5vw, 4.5rem);
+  height: clamp(3.75rem, 3rem + 2vw, 6rem);
   width: auto;
 }
 .main-nav ul {
@@ -353,6 +353,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logo-animated-wrapper svg,
+.logo-animated-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.logo-animated-wrapper img {
+  object-fit: contain;
 }
 .hero-title {
   font-size: var(--font-size-4xl);
@@ -931,7 +939,6 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
   border-bottom: 1px solid var(--line);
 }
 .sticky-header .logo-link { font-weight: 400; font-size: var(--font-size-base); }
-.mini-logo { height: 28px; }
 .person-profile { max-width: 800px; }
 .person-hero {
   display: flex;
@@ -1086,3 +1093,138 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
   }
 }
 
+
+/* 9. Project Page Styles (Moved from inline <style> tags) */
+.project-page {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+.project-page .site-header,
+.project-page .site-footer {
+  background-color: transparent;
+  border-color: var(--line);
+}
+
+.project-page .site-header a,
+.project-page .site-footer a {
+  color: var(--muted);
+}
+
+.project-page .project-title {
+  font-size: var(--font-size-3xl);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-page .project-meta {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.project-page .project-hero img {
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.project-page .project-overview,
+.project-page .project-gallery,
+.project-page .project-cta {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(17, 24, 39, 0.08);
+  margin-bottom: 2.5rem;
+}
+
+.project-page .project-description {
+  max-width: 60ch;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-lg);
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.project-page .project-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-page .project-details div {
+  flex: 1 1 200px;
+}
+
+.project-page .project-details h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.25rem;
+  color: var(--ink);
+}
+
+.project-page .project-details p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.project-page .project-gallery h2 {
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.project-page .gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-page .gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.08);
+}
+
+@media (min-width: 768px) {
+  .project-page .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-page .project-cta {
+  text-align: center;
+  background-color: rgba(247, 244, 239, 0.95);
+}
+
+.project-page .project-cta p {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+
+.project-page .cta-button {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.project-page .cta-button:hover,
+.project-page .cta-button:focus {
+  background-color: transparent;
+  color: var(--ink);
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
