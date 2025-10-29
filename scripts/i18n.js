@@ -50,11 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
         populateList('.testimonials-wrapper', 'testimonials', createTestimonialCard);
         
         const pagePath = window.location.pathname;
-        // Support both original and renamed profile pages
-        if (pagePath.includes('person-a.html') || pagePath.includes('dominik-planzer.html')) {
+        if (pagePath.includes('dominik-planzer.html')) {
             populateList('.timeline-list', 'person_a.timeline', createTimelineItem);
         }
-        if (pagePath.includes('person-b.html') || pagePath.includes('francoise-ellenberger.html')) {
+        if (pagePath.includes('francoise-ellenberger.html')) {
             populateList('.timeline-list', 'person_b.timeline', createTimelineItem);
         }
     };
