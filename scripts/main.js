@@ -119,15 +119,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Animated Logo Injection ---
     const logoWrapper = document.querySelector('.logo-animated-wrapper');
-    if (logoWrapper && !prefersReducedMotion) {
+    if (logoWrapper) {
         fetch('assets/logo.svg')
             .then(response => response.text())
             .then(svgData => {
                 logoWrapper.innerHTML = svgData;
+            })
+            .catch(() => {
+                logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo">`;
             });
-    } else if (logoWrapper) {
-        // Fallback to static logo if reduced motion is on or fetch fails
-        logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" style="width:150px; height:auto;">`;
     }
 
     // --- Dynamic Scroll Effects ---
