@@ -315,7 +315,7 @@
                              alt="Porträt von Dominik Planzer"
                              loading="lazy" decoding="async" class="team-photo">
                         <h3 data-i18n-key="team_a_name">Dominik Planzer</h3>
-                        <p class="team-title" data-i18n-key="team_a_title">Verkehrswertschätzungen, Bauherrenberatung, Energieberatung</p>
+                        <p class="team-title" data-i18n-key="team_a_title">Dipl. Arch. ETH/SIA, Immobilienschätzer</p>
                         <span class="team-link" data-i18n-key="team_link_cta">Profil ansehen</span>
                     </a>
                     <a href="francoise-ellenberger.html" class="team-card">
@@ -408,41 +408,85 @@
                 <div class="contact-card">
                     <h2 class="section-title" data-i18n-key="contact_title">Kontaktieren Sie uns</h2>
                     <p data-i18n-key="contact_intro">Wir freuen uns auf Ihre Anfrage für eine unverbindliche Erstberatung.</p>
+
                     <div class="contact-grid">
                         <div class="contact-details">
                             <p>
-                                <strong data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</strong><br>
-                                Hofstatt 6, 6466 Bauen, Schweiz<br>
+                                <strong data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</strong><br>
                             </p>
-                            <p>
-                                <a href="mailto:immobilien.schaetzung.beratung@gmail.com">immobilien.schaetzung.beratung@gmail.com</a><br>
-                                <a href="tel:+41418781313">+41 41 878 13 13</a><br>
-                                <a href="tel:+41797273094">+41 79 727 30 94</a>
-                            </p>
+
+                            <div class="contact-actions" aria-live="polite">
+                                <p class="muted" data-i18n-key="contact_pref">Bevorzugt: Nutzen Sie das Formular rechts.</p>
+
+                                <p>
+                                    <strong>E-Mail:</strong>
+                                    <button id="reveal-mail" type="button" aria-controls="mail-out" aria-expanded="false" rel="nofollow">anzeigen</button>
+                                    <span id="mail-out" class="sr-only" aria-hidden="true"></span>
+                                    <noscript>immobilien.schaetzung.beratung&nbsp;(at)&nbsp;g&nbsp;mail&nbsp;.&nbsp;com</noscript>
+                                </p>
+
+                                <p>
+                                    <strong>Telefon:</strong>
+                                    <button id="reveal-phone" type="button" aria-controls="phone-out" aria-expanded="false">anzeigen</button>
+                                    <span id="phone-out" class="sr-only" aria-hidden="true"></span>
+                                    <noscript>+41&nbsp;41&nbsp;878&nbsp;13&nbsp;13&nbsp;/&nbsp;+41&nbsp;79&nbsp;727&nbsp;30&nbsp;94</noscript>
+                                </p>
+                            </div>
                         </div>
-                        <form class="contact-form" action="#" method="post">
-                            <div class="form-group">
-                                <label for="home-name" data-i18n-key="contact_name_label">Name</label>
-                                <input type="text" id="home-name" name="name" required>
+
+                        <form class="contact-form" action="#" method="post" autocomplete="on" novalidate>
+                            <div class="sr-only" aria-hidden="true">
+                                <label for="company">Firma</label>
+                                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
                             </div>
+
+                            <input type="hidden" id="startedAt" name="startedAt" value="">
+
                             <div class="form-group">
-                                <label for="home-email" data-i18n-key="contact_email_label">E‑Mail</label>
-                                <input type="email" id="home-email" name="email" required>
+                                <label for="name" data-i18n-key="contact_name_label">Name</label>
+                                <input type="text" id="name" name="name" required inputmode="text" autocomplete="name">
                             </div>
+
                             <div class="form-group">
-                                <label for="home-phone" data-i18n-key="contact_phone_label">Telefon (optional)</label>
-                                <input type="tel" id="home-phone" name="phone">
+                                <label for="email" data-i18n-key="contact_email_label">E-Mail</label>
+                                <input type="email" id="email" name="email" required inputmode="email" autocomplete="email">
                             </div>
+
                             <div class="form-group">
-                                <label for="home-message" data-i18n-key="contact_message_label">Nachricht</label>
-                                <textarea id="home-message" name="message" rows="4" required></textarea>
+                                <label for="phone" data-i18n-key="contact_phone_label">Telefon (optional)</label>
+                                <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel">
                             </div>
+
                             <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="YOUR-SITE-KEY-HERE"></div>
+                                <label for="service" data-i18n-key="contact_service_label">Anliegen</label>
+                                <select id="service" name="service" required>
+                                    <option value="" selected disabled data-i18n-key="contact_service_placeholder">Bitte wählen…</option>
+                                    <option value="01 Verkehrswertgutachten">01 Verkehrswertgutachten</option>
+                                    <option value="02 Bauzustandsbewertungen">02 Bauzustandsbewertungen</option>
+                                    <option value="03 Projektmanagement (Neubau/Sanierung)">03 Projektmanagement (Neubau/Sanierung)</option>
+                                    <option value="04 Transaktionsberatung">04 Transaktionsberatung</option>
+                                </select>
                             </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n-key="contact_message_label">Nachricht</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="human" data-i18n-key="contact_human_label">Bitte gib die Summe 3 + 4 ein</label>
+                                <input type="number" id="human" name="human" inputmode="numeric" pattern="[0-9]*" required>
+                            </div>
+
                             <button type="submit" class="cta-button" data-i18n-key="contact_submit">Nachricht senden</button>
+
+                            <p id="form-note" class="muted" aria-live="polite"></p>
                         </form>
                     </div>
+
+                    <p class="muted" style="margin-top:1rem">
+                        Verantwortlich für den Inhalt: Dominik Planzer &amp; Françoise C. Ellenberger
+                    </p>
                 </div>
             </div>
         </section>
@@ -462,9 +506,71 @@
         </div>
     </footer>
 
-    <!-- Load Google reCAPTCHA script for contact form; replace YOUR-SITE-KEY-HERE with your actual key when deploying -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+    <script>
+      // Year fallback for footer
+      (function(){var y=document.getElementById('current-year'); if(y) y.textContent=new Date().getFullYear();})();
+
+      function zwj(str){return str.split('').join('\u200B');}
+
+      (function(){
+        var btn=document.getElementById('reveal-mail'), out=document.getElementById('mail-out');
+        if(!btn||!out) return;
+        var u=['immobilien','schaetzung','beratung'].join('.');
+        var h=['g','mail'].join('');
+        var t='com';
+        var addr=u+'@'+h+'.'+t;
+        btn.addEventListener('click',function(){
+          btn.setAttribute('aria-expanded','true');
+          out.className=''; out.removeAttribute('aria-hidden');
+          out.innerHTML='<a rel="nofollow" href="mailto:'+addr+'">'+zwj(addr)+'</a>';
+          btn.remove();
+        });
+      })();
+
+      (function(){
+        var btn=document.getElementById('reveal-phone'), out=document.getElementById('phone-out');
+        if(!btn||!out) return;
+        var prefix=['+4','1'].join('');
+        var n1=['41',' ','878',' ','13',' ','13'].join('');
+        var n2=['79',' ','727',' ','30',' ','94'].join('');
+        btn.addEventListener('click',function(){
+          btn.setAttribute('aria-expanded','true');
+          out.className=''; out.removeAttribute('aria-hidden');
+          var a1=document.createElement('a'); a1.href='tel:+41418781313'; a1.textContent=prefix+' '+n1;
+          var sep=document.createTextNode(' / ');
+          var a2=document.createElement('a'); a2.href='tel:+41797273094'; a2.textContent='+'+n2;
+          out.append(a1,sep,a2);
+          btn.remove();
+        });
+      })();
+
+      (function(){
+        var start=Date.now();
+        var form=document.querySelector('#contact .contact-form');
+        var startedAt=document.getElementById('startedAt');
+        if(startedAt) startedAt.value=String(start);
+        if(!form) return;
+        form.addEventListener('submit',function(e){
+          var note=document.getElementById('form-note');
+          var company=document.getElementById('company');
+          if(company && company.value.trim()!==''){
+            e.preventDefault(); if(note) note.textContent='Hinweis: Bitte Formular korrekt ausfüllen.'; return;
+          }
+          if(Date.now()-start<5000){
+            e.preventDefault(); if(note) note.textContent='Bitte prüfe deine Eingaben und sende erneut.'; return;
+          }
+          var svc=document.getElementById('service');
+          if(!svc || !svc.value){
+            e.preventDefault(); if(note) note.textContent='Bitte wähle ein Anliegen aus.'; return;
+          }
+          var human=document.getElementById('human');
+          if(!human || String(human.value).trim()!=='7'){
+            e.preventDefault(); if(note) note.textContent='Bitte gib die korrekte Summe ein.'; return;
+          }
+        });
+      })();
+    </script>
+
 <!-- 
 QA Checklist:
 - [x] Keyboard tab order OK
