@@ -219,7 +219,11 @@
         "title": "MSc Architecture, ETH Zurich",
         "description": "Architectural design and project development."
       }
-    ]
+    ],
+    "quickfacts": "<div>Focus areas</div><div>Market value appraisals, condition assessments, owner’s representation, energy consulting</div><div>Industries / contexts</div><div>Research (Empa/Eawag/WSL), cooperative housing (BEP), academic environment (ETH), large-scale projects</div><div>Roles</div><div>Owner / managing director, owner’s representative, project manager</div><div>Engagement</div><div>Cantonal valuation commission (2002–2022); municipal council Seedorf-Bauen, schools & culture (since 2025)</div><div>Education</div><div>MSc Arch ETH; MBA HSLU; CAS real estate valuation; IPMA project management</div>",
+    "methods_title": "Methods & Standards",
+    "methods_summary": "Transparent, traceable valuation (expand)",
+    "methods_list": "<li>Methods: sales comparison, income and cost approaches; combined to suit asset and market</li><li>Data basis: condition analysis, cost and life-cycle assessments, energy metrics</li><li>Documentation: explicit assumptions, sensitivities, sources</li><li>Practice: neutral reports (no proprietary trading), advisory for transactions and development</li>"
   },
   "person_b": {
     "name": "Françoise C. Ellenberger",
@@ -268,7 +272,11 @@
         "title": "Matura Type B, Kollegium Karl Borromäus",
         "description": "Humanistic foundation for architectural studies."
       }
-    ]
+    ],
+    "quickfacts": "<div>Focus areas</div><div>Sustainability strategies in real estate, owner’s representation, certified valuations, energy & water concessions</div><div>Roles</div><div>Independent owner’s advisor; owner’s representative (Suva, 2011–2022); cantonal architect / head of energy office (OW, 2006–2011); managing partner architecture (Delta Architekten, 1991–2006)</div><div>Education</div><div>MSc Arch ETH; Matura Type B (Kollegium Karl Borromäus); association work: SIA, SIV, BPW</div><div>Working style</div><div>Strategic, user-centred, measurably sustainable; clear prioritisation of impact, cost and quality</div>",
+    "methods_title": "Methods & Sustainability",
+    "methods_summary": "Sustainability with practical impact (expand)",
+    "methods_list": "<li>Sustainability strategies for portfolios and single assets (incl. CO₂ pathways, energy roadmaps, target systems)</li><li>Valuation methodology: sales, income and cost approaches enriched with energy and ecological indicators</li><li>Owner’s representation: user needs, operations, life-cycle costing, permits (incl. water / heat where relevant)</li><li>Governance & reporting: transparent assumptions, KPI tracking, client communication</li>"
   },
   "contact_pref": "Preferred: please use the form on the right.",
   "contact_service_label": "Request",
@@ -279,5 +287,58 @@
     "02 Building condition assessment",
     "03 Project management (new build / refurbishment)",
     "04 Transaction advisory"
-  ]
+  ],
+  "person_quickfacts_title": "Quick Facts",
+  "person_contact_note": "Please direct enquiries via the <a href=\"contact.html\">contact form</a>.",
+  "social.linkedin": "LinkedIn",
+  "legal": {
+    "imprint": {
+      "meta_title": "Impressum | Immobilien Schätzung + Beratung",
+      "meta_description": "Rechtliche Hinweise und Kontaktangaben für Immobilien Schätzung + Beratung.",
+      "title": "Impressum",
+      "company": "<strong>Firmenname:</strong> Immobilien Schätzung + Beratung",
+      "address": "<strong>Adresse:</strong> Hofstatt&nbsp;6, 6466&nbsp;Bauen, Schweiz",
+      "contact": "<strong>Kontakt (bevorzugt):</strong> <a href=\"contact.html\">Kontaktformular</a>",
+      "reveal_button": "anzeigen",
+      "responsible": "<strong>Verantwortlich für den Inhalt:</strong> Dominik Planzer &amp; Françoise C. Ellenberger",
+      "optional_note": "Optionale Angaben (z. B. UID/MwSt-Nr.) auf anfrage "
+    },
+    "privacy": {
+      "meta_title": "Datenschutz | Immobilien Schätzung + Beratung",
+      "meta_description": "Datenschutzerklärung für die Website von Immobilien Schätzung + Beratung.",
+      "title": "Datenschutzerklärung",
+      "status": "<strong>Stand:</strong> <span id=\"ds-stand\">31.10.2025</span>",
+      "section1.title": "1. Verantwortlicher",
+      "section1.body": "Verantwortlich für die in dieser Datenschutzerklärung beschriebenen Datenbearbeitungen ist:<br/><strong>[Firma/Rechtsform]</strong><br/>[Adresse]<br/>E‑Mail: <a href=\"mailto:[E-Mail]\">immobilien.schaetzung.beratung&nbsp;(at)&nbsp;g&nbsp;mail&nbsp;.&nbsp;com</a><br/>Website: <a href=\"[Webseite-URL]\">https://www.immobilien-schaetzung-beratung.ch/</a>",
+      "section2.title": "2. Zweck und Umfang der Datenbearbeitung",
+      "section2.body": "Wir betreiben diese Website, um unser Unternehmen und unsere Dienstleistungen im Bereich Immobilien‑schätzung und Beratung vorzustellen. Es finden <strong>keine Online‑Verkäufe</strong>, <strong>keine Benutzerkonten</strong> und <strong>kein Tracking</strong> statt. Personendaten bearbeiten wir insbesondere zu folgenden Zwecken:",
+      "section2.list": "<li>Kommunikation und Bearbeitung von Anfragen (Kontaktformular, E‑Mail, Telefon)</li><li>Bereitstellung, Sicherheit und Optimierung der Website</li><li>Erfüllung gesetzlicher Pflichten</li>",
+      "section3.title": "3. Kategorien von Personendaten",
+      "section3.list": "<li><strong>Kommunikationsdaten:</strong> Name, E‑Mail, Telefonnummer sowie der Inhalt Ihrer Nachricht</li><li><strong>Technische Daten:</strong> IP‑Adresse, Datum/Zeit des Zugriffs, Referrer, User‑Agent (sofern durch das Hosting protokolliert)</li><li><strong>Nutzungsdaten:</strong> ausschliesslich anonyme, aggregierte Angaben zur Sicherstellung des Betriebs (keine Profilbildung)</li>",
+      "section4.title": "4. Rechtsgrundlagen nach Schweizer Recht",
+      "section4.body": "Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht (DSG) und – falls anwendbar – nach den Grundsätzen der DSGVO. Die Bearbeitung stützt sich je nach Situation auf <em>Vertragsanbahnung/Vertragserfüllung</em>, <em>berechtigte Interessen</em> (Betrieb/Sicherheit der Website, Kommunikation) oder Ihre <em>Einwilligung</em> (freiwillige Angaben).",
+      "section5.title": "5. Hosting (GitHub Pages) und Protokollierung",
+      "section5.body": "Diese Website wird auf <strong>GitHub Pages</strong> gehostet (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA). Beim Aufruf der Seiten kann der Hosting‑Provider technische Protokolle (Server‑Logs) führen, um die Stabilität und Sicherheit zu gewährleisten. Dabei können u. a. IP‑Adresse, Datum/Zeit, angeforderte Ressource und User‑Agent anfallen. Die Bearbeitung liegt in unserem <em>berechtigten Interesse</em> am sicheren Betrieb der Website. Daten können dabei in die USA übermittelt werden. GitHub setzt eigene Sicherheitsstandards um. Wir verwenden <strong>keine</strong> externen Analyse‑ oder Werbedienste.",
+      "section6.title": "6. Kontaktformular und E‑Mail",
+      "section6.body": "Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Angaben per E‑Mail an uns übermittelt. Wir speichern diese Nachrichten zur Bearbeitung Ihrer Anfrage und zur späteren Nachvollziehbarkeit. Ohne Ihre Einwilligung geben wir diese Daten nicht an Dritte weiter. Die Aufbewahrung erfolgt gemäss Ziff. 10.",
+      "section7.title": "7. Cookies, Local Storage und externe Inhalte",
+      "section7.list": "<li><strong>Cookies:</strong> Wir setzen keine Tracking‑ oder Marketing‑Cookies ein.</li><li><strong>Local Storage:</strong> Die Sprachumschaltung kann eine lokale Einstellung in Ihrem Browser speichern (funktional, nicht personenbezogen).</li><li><strong>Externe Inhalte:</strong> Wir binden keine externen Analyse‑ oder Werbedienste ein. Eingebettete Inhalte (z. B. Maps, Videos) werden derzeit nicht verwendet.</li>",
+      "section8.title": "8. Empfänger und Auftragsbearbeiter",
+      "section8.body": "Wir geben Personendaten grundsätzlich nicht an Dritte weiter. Für das Hosting nutzen wir GitHub Pages (s. Ziff. 5). Zusätzlich können wir <em>Auftragsbearbeiter</em> (z. B. E‑Mail‑/IT‑Dienstleister) einsetzen, die vertraglich auf Datenschutz und Vertraulichkeit verpflichtet sind.",
+      "section9.title": "9. Datensicherheit",
+      "section9.body": "Wir treffen angemessene technische und organisatorische Massnahmen (TOM), um Ihre Daten gegen unbefugte Bearbeitung, Verlust oder Zugriff zu schützen. Die Datenübertragung im Web kann dennoch Sicherheitslücken aufweisen.",
+      "section10.title": "10. Aufbewahrung und Löschung",
+      "section10.body": "Wir bearbeiten und speichern Personendaten nur so lange, wie es für die jeweiligen Zwecke erforderlich ist, oder solange gesetzliche Pflichten bestehen. Kontaktanfragen löschen wir regelmässig, sobald sie erledigt sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+      "section11.title": "11. Ihre Rechte",
+      "section11.body": "Sie haben die folgenden Rechte nach schweizerischem Recht (und – falls anwendbar – nach DSGVO):",
+      "section11.list": "<li>Recht auf Auskunft, Berichtigung und Löschung</li><li>Recht auf Datenherausgabe bzw. ‑übertragung (Art. 25 DSG)</li><li>Recht auf Widerspruch gegen Bearbeitungen, die auf berechtigten Interessen beruhen</li><li>Recht auf Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft</li>",
+      "section11.note": "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: <a href=\"mailto:[E-Mail]\">immobilien.schaetzung.beratung&nbsp;(at)&nbsp;g&nbsp;mail&nbsp;.&nbsp;com</a>. Zur Identifikation können wir geeignete Nachweise verlangen.",
+      "section12.title": "12. Pflicht zur Bereitstellung",
+      "section12.body": "Die Bereitstellung Ihrer Kommunikationsdaten ist freiwillig. Ohne sie können wir Ihre Anfrage jedoch nicht bearbeiten.",
+      "section13.title": "13. Externe Links",
+      "section13.body": "Diese Website kann Links zu Websites Dritter enthalten. Für deren Inhalte und Datenschutzpraktiken sind die jeweiligen Betreiber verantwortlich.",
+      "section14.title": "14. Änderungen dieser Datenschutzerklärung",
+      "section14.body": "Wir können diese Datenschutzerklärung jederzeit anpassen. Es gilt die auf dieser Website veröffentlichte Version."
+    }
+  }
 }

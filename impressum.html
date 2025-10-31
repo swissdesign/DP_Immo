@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum | Immobilien Schätzung + Beratung</title>
-  <meta name="description" content="Rechtliche Hinweise und Kontaktangaben für Immobilien Schätzung + Beratung.">
+  <title data-i18n-key="legal.imprint.meta_title">Impressum | Immobilien Schätzung + Beratung</title>
+  <meta name="description" data-i18n-key="legal.imprint.meta_description" content="Rechtliche Hinweise und Kontaktangaben für Immobilien Schätzung + Beratung.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#FAF8F5">
@@ -43,18 +43,18 @@
 
   <main id="main-content" class="legal-page">
     <div class="container">
-      <h1>Impressum</h1>
+      <h1 data-i18n-key="legal.imprint.title">Impressum</h1>
 
-      <p><strong>Firmenname:</strong> Immobilien Schätzung + Beratung</p>
-      <p><strong>Adresse:</strong> Hofstatt&nbsp;6, 6466&nbsp;Bauen, Schweiz</p>
+      <p data-i18n-key="legal.imprint.company"><strong>Firmenname:</strong> Immobilien Schätzung + Beratung</p>
+      <p data-i18n-key="legal.imprint.address"><strong>Adresse:</strong> Hofstatt&nbsp;6, 6466&nbsp;Bauen, Schweiz</p>
 
       <!-- Kontakt: bevorzugt Formular, E-Mail und Telefon nur auf Klick -->
-      <p><strong>Kontakt (bevorzugt):</strong> <a href="contact.html">Kontaktformular</a></p>
+      <p data-i18n-key="legal.imprint.contact"><strong>Kontakt (bevorzugt):</strong> <a href="contact.html">Kontaktformular</a></p>
 
       <div class="contact-reveal" aria-live="polite">
         <p>
           <strong>E-Mail:</strong>
-          <button id="reveal-mail" type="button" aria-expanded="false" aria-controls="mail-out" rel="nofollow">anzeigen</button>
+          <button id="reveal-mail" type="button" aria-expanded="false" aria-controls="mail-out" rel="nofollow" data-i18n-key="legal.imprint.reveal_button">anzeigen</button>
           <span id="mail-out" class="sr-only" aria-hidden="true"></span>
           <noscript>
             <!-- Fallback: menschlich gut lesbar, für einfache Bots schlechter -->
@@ -64,7 +64,7 @@
 
         <p>
           <strong>Telefon:</strong>
-          <button id="reveal-phone" type="button" aria-expanded="false" aria-controls="phone-out">anzeigen</button>
+          <button id="reveal-phone" type="button" aria-expanded="false" aria-controls="phone-out" data-i18n-key="legal.imprint.reveal_button">anzeigen</button>
           <span id="phone-out" class="sr-only" aria-hidden="true"></span>
           <noscript>
             +41&nbsp;41&nbsp;878&nbsp;13&nbsp;13&nbsp;/&nbsp;+41&nbsp;79&nbsp;727&nbsp;30&nbsp;94
@@ -72,9 +72,9 @@
         </p>
       </div>
 
-      <p><strong>Verantwortlich für den Inhalt:</strong> Dominik Planzer &amp; Françoise C. Ellenberger</p>
+      <p data-i18n-key="legal.imprint.responsible"><strong>Verantwortlich für den Inhalt:</strong> Dominik Planzer &amp; Françoise C. Ellenberger</p>
       <!-- Optionalfelder bewusst weggelassen; bei Bedarf ergänzen: UID/MwSt, Handelsregister, Mitgliedschaften -->
-      <p class="muted">Optionale Angaben (z. B. UID/MwSt-Nr.) auf anfrage </p>
+      <p class="muted" data-i18n-key="legal.imprint.optional_note">Optionale Angaben (z. B. UID/MwSt-Nr.) auf anfrage </p>
     </div>
   </main>
 
