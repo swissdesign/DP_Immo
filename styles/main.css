@@ -178,6 +178,9 @@ section {
 .logo-static {
   height: clamp(3.75rem, 3rem + 2vw, 6rem);
   width: auto;
+  transform: scale(1.15);
+  transform-origin: left center;
+  will-change: transform;
 }
 .main-nav ul {
   display: none; /* Hidden on mobile */
@@ -742,6 +745,12 @@ section {
     line-height: 1.5;
     /* Allow the details panel to grow and shrink within the flex container. */
     flex: 1 1 300px;
+}
+.contact-actions button {
+    cursor: pointer;
+}
+.muted {
+    opacity: 0.72;
 }
 @media (min-width: 768px) {
     /*

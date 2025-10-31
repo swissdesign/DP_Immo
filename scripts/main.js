@@ -124,6 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(svgData => {
                 logoWrapper.innerHTML = svgData;
+                const svgElement = logoWrapper.querySelector('svg');
+                if (svgElement) {
+                    const logoGroup = svgElement.querySelector('#logo');
+                    const textGroup = svgElement.querySelector('#text');
+                    if (logoGroup) {
+                        logoGroup.style.animationDuration = '1.4s';
+                        logoGroup.style.animationDelay = '0.2s';
+                    }
+                    if (textGroup) {
+                        textGroup.style.animationDuration = '1.4s';
+                        textGroup.style.animationDelay = '0.6s';
+                    }
+                }
             })
             .catch(() => {
                 logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo">`;
