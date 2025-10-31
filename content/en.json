@@ -50,14 +50,16 @@
     }
   ],
   "work_title": "Selected References",
-  "work_1_title": "Project Development, Zurich",
-  "work_1_desc": "Masterplan and competition for 100 rental and owner-occupied apartments.",
-  "work_2_title": "Renovation, Altdorf",
-  "work_2_desc": "Owner-side project management for refurbishing a 70-year-old home.",
-  "work_3_title": "Research Campus, Davos",
-  "work_3_desc": "New office and laboratory building certified Minergie-P-Eco and SNBS Platinum.",
-  "work_4_title": "Interior Architecture, Zurich",
-  "work_4_desc": "Library redesign with zoned concept and full project leadership.",
+  "work_1_title": "Project Development",
+  "work_1_desc": "Competition-driven masterplan for 100 rental and owner-occupied apartments in Zurich-Manegg.",
+  "work_2_title": "Renovation",
+  "work_2_desc": "Client-side project management for the concept and refurbishment of a 70-year-old home in Altdorf.",
+  "work_3_title": "Research",
+  "work_3_desc": "Project leadership for the new SLF office and laboratory building House D in Davos, certified Minergie-P-Eco and SNBS Platinum.",
+  "work_4_title": "Interior Architecture",
+  "work_4_desc": "Project management for redesigning the WSL library with 40 contemporary workspaces.",
+  "work_5_title": "Valuation",
+  "work_5_desc": "Valuation and refurbishment strategy for the former Genossenschaft Druckerei Zürich buildings.",
   "process_title": "Our Process",
   "process_steps": [
     {
@@ -217,13 +219,5 @@
         "description": "Master of Science in Architecture."
       }
     ]
-  },
-  "work_5_title": "Valuation, Lake Zug",
-  "work_5_desc": "Market valuation for a lakeside property as the basis for an estate settlement.",
-  "work_6_title": "Business Park, St. Gallen",
-  "work_6_desc": "Feasibility and market analysis for a new business park.",
-  "work_7_title": "Apartment Building, Lausanne",
-  "work_7_desc": "Transaction advisory for an international buyer in Western Switzerland.",
-  "work_8_title": "Townhouse, Bern",
-  "work_8_desc": "Condition assessment for a listed townhouse in Bern."
+  }
 }

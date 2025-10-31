@@ -50,14 +50,16 @@
     }
   ],
   "work_title": "Ausgewählte Referenzen",
-  "work_1_title": "Projektentwicklung, Zürich",
-  "work_1_desc": "Gesamtüberbauung mit Wettbewerbsverfahren und 100 Miet- und Eigentumswohnungen.",
-  "work_2_title": "Erneuerung, Altdorf",
-  "work_2_desc": "Bauherrenseitige Projektleitung für die Sanierung eines 70-jährigen Wohnhauses.",
-  "work_3_title": "Forschungscampus, Davos",
-  "work_3_desc": "Neubau eines Büro- und Laborgebäudes nach Minergie-P-Eco und SNBS Platin.",
-  "work_4_title": "Innenarchitektur, Zürich",
-  "work_4_desc": "Neugestaltung der Stadtbibliothek mit zoniertem Raumkonzept und Projektleitung.",
+  "work_1_title": "Projektentwicklung",
+  "work_1_desc": "Wettbewerbsverfahren für eine Gesamtüberbauung mit 100 Miet- und Eigentumswohnungen in Zürich-Manegg.",
+  "work_2_title": "Erneuerung",
+  "work_2_desc": "Bauherrenseitige Projektleitung für Konzept und Umbau eines 70-jährigen Wohnhauses in Altdorf.",
+  "work_3_title": "Forschung",
+  "work_3_desc": "Projektleitung für den Neubau des Büro- und Laborgebäudes Haus D des SLF in Davos, zertifiziert nach Minergie-P-Eco und SNBS Platin.",
+  "work_4_title": "Innenarchitektur",
+  "work_4_desc": "Projektleitung für die Neugestaltung der WSL-Bibliothek mit 40 zeitgemässen Arbeitsplätzen.",
+  "work_5_title": "Wertgutachten",
+  "work_5_desc": "Wertgutachten und Umbaustrategie für die Gebäude der ehemaligen Genossenschaft Druckerei Zürich.",
   "process_title": "Unser Prozess",
   "process_steps": [
     {
@@ -217,13 +219,5 @@
         "description": "Master of Science in Architektur."
       }
     ]
-  },
-  "work_5_title": "Wertgutachten, Zugersee",
-  "work_5_desc": "Verkehrswertgutachten für eine Seeliegenschaft als Grundlage einer Erbteilung.",
-  "work_6_title": "Gewerbepark, St. Gallen",
-  "work_6_desc": "Machbarkeitsstudie und Marktanalyse für einen neuen Gewerbepark.",
-  "work_7_title": "Mehrfamilienhaus, Lausanne",
-  "work_7_desc": "Transaktionsberatung für einen internationalen Käufer in der Westschweiz.",
-  "work_8_title": "Stadthaus, Bern",
-  "work_8_desc": "Bauzustandsanalyse für ein denkmalgeschütztes Stadthaus in Bern."
+  }
 }
