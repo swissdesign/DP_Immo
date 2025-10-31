@@ -49,54 +49,50 @@
             <div class="container">
                 <h1 class="section-title" data-i18n-key="work_title">Referenzen</h1>
                 <!--
-                    The full projects listing uses a masonry-inspired grid that
-                    auto-fills the available width with tiles of varying spans.
-                    This keeps the page visually engaging on desktop while the
-                    layout collapses gracefully for tablets and mobile devices.
+                    Align the project listing with the home page carousel so that
+                    Referenzen appear identisch auf allen Seiten. Die Work-Scroller-
+                    Komponente bleibt auf Mobilgeräten wischbar und staffelt sich auf
+                    grösseren Bildschirmen automatisch in ein responsives Grid.
                 -->
-                <div class="projects-grid">
-                    <!-- Project cards populated via static markup with translation keys -->
-                    <!-- Project cards are statically defined here to guarantee that
-                         meaningful content appears without relying on JavaScript. When
-                         translations are loaded they will replace the headings and
-                         descriptions via data-i18n-key. Feel free to duplicate cards
-                         below for additional projects. -->
-                    <a href="projektentwicklung.html" class="work-card project-tile tile-large" tabindex="0">
-                        <img src="assets/05_PHD.webp" alt="Projektentwicklung" loading="lazy" decoding="async" style="aspect-ratio: 3/2; border-radius: 12px;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_1_title">Projektentwicklung</h3>
-                            <p data-i18n-key="work_1_desc">Gesamtüberbauung mit Wettbewerbsverfahren und 100 Miet- und Eigentumswohnungen.</p>
-                        </div>
-                    </a>
-                    <a href="erneuerung.html" class="work-card project-tile tile-tall" tabindex="0">
-                        <img src="assets/23_PHD.webp" alt="Erneuerung" loading="lazy" decoding="async" style="aspect-ratio: 3/2; border-radius: 12px;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_2_title">Erneuerung</h3>
-                            <p data-i18n-key="work_2_desc">Bauherrenseitige Projektleitung für die Sanierung eines 70-jährigen Wohnhauses.</p>
-                        </div>
-                    </a>
-                    <a href="forschung.html" class="work-card project-tile" tabindex="0">
-                        <img src="assets/24_PHD.webp" alt="Forschungscampus" loading="lazy" decoding="async" style="aspect-ratio: 3/2; border-radius: 12px;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_3_title">Forschung</h3>
-                            <p data-i18n-key="work_3_desc">Neubau eines Büro- und Laborgebäudes nach Minergie-P-Eco und SNBS Platin.</p>
-                        </div>
-                    </a>
-                    <a href="innenarchitektur.html" class="work-card project-tile tile-wide" tabindex="0">
-                        <img src="assets/28_PHD.webp" alt="Innenarchitektur" loading="lazy" decoding="async" style="aspect-ratio: 3/2; border-radius: 12px;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_4_title">Innenarchitektur</h3>
-                            <p data-i18n-key="work_4_desc">Projektleitung für die Neugestaltung eine Bibliothek.</p>
-                        </div>
-                    </a>
-                    <a href="wertgutachten.html" class="work-card project-tile" tabindex="0">
-                        <img src="assets/22_PHD.webp" alt="Wertgutachten" loading="lazy" decoding="async" style="aspect-ratio: 3/2; border-radius: 12px;">
-                        <div class="work-card-content">
-                            <h3 data-i18n-key="work_5_title">Wertgutachten</h3>
-                            <p data-i18n-key="work_5_desc">Wertgutachten und Bestimmung der Umbaumassnahmen für die Gebäude der ehemaligen Genossenschaft Druckerei Zürich.</p>
-                        </div>
-                    </a>
-                </div><!-- end projects-grid -->
+                <div class="work-scroller">
+                    <div class="work-cards">
+                        <a href="projektentwicklung.html" class="work-card" tabindex="0">
+                            <img src="assets/05_PHD.webp" alt="Projektentwicklung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_1_title">Projektentwicklung</h3>
+                                <p data-i18n-key="work_1_desc">Wettbewerbsverfahren für eine Gesamtüberbauung mit 100 Miet- und Eigentumswohnungen in Zürich-Manegg.</p>
+                            </div>
+                        </a>
+                        <a href="erneuerung.html" class="work-card" tabindex="0">
+                            <img src="assets/23_PHD.webp" alt="Erneuerung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_2_title">Erneuerung</h3>
+                                <p data-i18n-key="work_2_desc">Bauherrenseitige Projektleitung für Konzept und Umbau eines 70-jährigen Wohnhauses in Altdorf.</p>
+                            </div>
+                        </a>
+                        <a href="forschung.html" class="work-card" tabindex="0">
+                            <img src="assets/24_PHD.webp" alt="Forschung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_3_title">Forschung</h3>
+                                <p data-i18n-key="work_3_desc">Projektleitung für den Neubau des Büro- und Laborgebäudes Haus D des SLF in Davos, zertifiziert nach Minergie-P-Eco und SNBS Platin.</p>
+                            </div>
+                        </a>
+                        <a href="innenarchitektur.html" class="work-card" tabindex="0">
+                            <img src="assets/28_PHD.webp" alt="Innenarchitektur" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_4_title">Innenarchitektur</h3>
+                                <p data-i18n-key="work_4_desc">Projektleitung für die Neugestaltung der WSL-Bibliothek mit 40 zeitgemässen Arbeitsplätzen.</p>
+                            </div>
+                        </a>
+                        <a href="wertgutachten.html" class="work-card" tabindex="0">
+                            <img src="assets/22_PHD.webp" alt="Wertgutachten" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <div class="work-card-content">
+                                <h3 data-i18n-key="work_5_title">Wertgutachten</h3>
+                                <p data-i18n-key="work_5_desc">Wertgutachten und Umbaustrategie für die Gebäude der ehemaligen Genossenschaft Druckerei Zürich.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div><!-- end container -->
         </section>
     </main>
