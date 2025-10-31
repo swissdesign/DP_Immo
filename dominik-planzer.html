@@ -1,105 +1,200 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n-key="meta_title_person_a">Dominik Planzer | Immobilien Schätzung + Beratung</title>
-    <meta name="description" data-i18n-key="meta_description_person_a" content="Profil von Dominik Planzer, Dipl. Arch. ETH/SIA und Immobilienschätzer bei Immobilien Schätzung + Beratung.">
-    
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#FAF8F5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-key="meta_title_person_a">Dominik Planzer | Immobilien Schätzung + Beratung</title>
+  <meta name="description" data-i18n-key="meta_description_person_a" content="Profil von Dominik Planzer, Dipl. Arch. ETH/SIA und Immobilienschätzer bei Immobilien Schätzung + Beratung.">
 
-    <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/typography.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#FAF8F5">
 
-    <script src="scripts/i18n.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="styles/colors.css">
+  <link rel="stylesheet" href="styles/typography.css">
+  <link rel="stylesheet" href="styles/main.css">
 
-    <!-- Structured Data for Person A -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Dominik Planzer",
-      "givenName": "Dominik",
-      "familyName": "Planzer",
-      "jobTitle": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
-      "worksFor": {
-        "@type": "LocalBusiness",
-        "name": "Immobilien Schätzung + Beratung"
-      },
-      "alumniOf": "ETH Zürich",
-      "image": "../assets/DP_01.webp",
-      "url": "https://www.immobilien-schaetzung-beratung.ch/dominik-planzer.html",
-      "sameAs": []
-    }
-    </script>
+  <script src="scripts/i18n.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+
+  <!-- Structured Data (no E-Mail/Telefon) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dominik Planzer",
+    "givenName": "Dominik",
+    "familyName": "Planzer",
+    "jobTitle": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
+    "worksFor": { "@type": "LocalBusiness", "name": "Immobilien Schätzung + Beratung" },
+    "alumniOf": ["ETH Zürich", "HSLU Hochschule Luzern", "SGO Business School"],
+    "image": "assets/DP_01.webp",
+    "url": "https://www.immobilien-schaetzung-beratung.ch/dominik-planzer.html",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* Minimal micro-interactions; keeps your existing look */
+    .muted { opacity:.72 }
+    .tag { display:inline-block; padding:.25rem .5rem; border-radius:999px; background:var(--chip-bg, #f2f2f2); margin:.2rem .3rem 0 0; font-size:.9rem }
+    .timeline-list { list-style:none; padding:0; margin:0 }
+    .timeline-item { opacity:0; transform:translateY(8px); transition:opacity .4s ease, transform .4s ease; border-left:2px solid #ddd; padding:.5rem 0 .5rem 1rem; position:relative }
+    .timeline-item::before { content:""; position:absolute; left:-6px; top:.9rem; width:.6rem; height:.6rem; background:#bbb; border-radius:50% }
+    .timeline-item.is-visible { opacity:1; transform:none }
+    details { border:1px solid #eee; border-radius:12px; padding:1rem; background:#fafafa }
+    details > summary { cursor:pointer; font-weight:600; outline:none; list-style:none }
+    details > summary::-webkit-details-marker { display:none }
+    .kv { display:grid; grid-template-columns: 160px 1fr; gap:.25rem .75rem }
+    .kv div:nth-child(odd) { color:var(--text-muted,#666) }
+    .person-links .social-link { text-decoration:underline }
+  </style>
 </head>
 <body class="person-page">
-    <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
-    <header class="site-header sticky-header">
-        <div class="header-container">
-            <a href="index.html" class="logo-link" aria-label="Zurück zur Homepage">
-                <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
-                <span data-i18n-key="nav_back_home">Zurück zur Startseite</span>
-            </a>
-            <div class="lang-switcher">
-                <button data-lang="de" class="active">DE</button>
-                <button data-lang="en">EN</button>
-            </div>
+  <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
+
+  <header class="site-header sticky-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link" aria-label="Zurück zur Homepage">
+        <img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo" class="logo-static">
+        <span data-i18n-key="nav_back_home">Zurück zur Startseite</span>
+      </a>
+      <div class="lang-switcher">
+        <button data-lang="de" class="active">DE</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container person-profile">
+
+      <!-- HERO -->
+      <section class="person-hero reveal-on-scroll">
+        <img src="assets/DP_01.webp" alt="Porträt von Dominik Planzer" class="person-photo" loading="lazy" decoding="async">
+        <div class="person-intro">
+          <h1 class="person-name" data-i18n-key="person_a.name">Dominik Planzer</h1>
+          <p class="person-title" data-i18n-key="person_a.title">Dipl. Arch. ETH/SIA, Immobilienschätzer</p>
+          <p class="person-bio" data-i18n-key="person_a.bio">
+            Baufachmann und Bauherrenvertreter mit langjähriger Erfahrung in komplexen Projekten von Forschung, Genossenschaften und öffentlicher Hand.
+            Ich verbinde Architekturverständnis mit systematischer Bewertung: kostenbewusst, qualitätsorientiert und nachhaltig.
+          </p>
         </div>
-    </header>
-    <main id="main-content">
-        <div class="container person-profile">
-            <section class="person-hero reveal-on-scroll">
-                <img src="../assets/DP_01.webp" alt="Porträt von Dominik Planzer" class="person-photo">
-                <div class="person-intro">
-                    <h1 class="person-name" data-i18n-key="person_a.name">Dominik Planzer</h1>
-                    <p class="person-title" data-i18n-key="person_a.title">Dipl. Arch. ETH/SIA, Immobilienschätzer</p>
-                    <p class="person-bio" data-i18n-key="person_a.bio">Ein analytischer Denker mit Leidenschaft für Architektur und solide, datenbasierte Bewertungen. Sein Fokus liegt auf komplexen Gewerbeimmobilien und Portfolios.</p>
-                </div>
-            </section>
-            <section class="person-timeline reveal-on-scroll">
-                <h2 class="section-title-small" data-i18n-key="person_timeline_title">Werdegang</h2>
-                <ol class="timeline-list">
-                    <!-- Timeline items populated by i18n.js -->
-                </ol>
-            </section>
-            <div class="person-details-grid">
-                <section class="person-motivations reveal-on-scroll">
-                    <h2 class="section-title-small" data-i18n-key="person_motivation_title">Motivation & Persönliches</h2>
-                    <p data-i18n-key="person_a.motivation">"Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens."</p>
-                </section>
-                <section class="person-expertise reveal-on-scroll">
-                    <h2 class="section-title-small" data-i18n-key="person_expertise_title">Expertise</h2>
-                    <div class="expertise-tags" data-i18n-key="person_a.expertise" data-i18n-type="tags">
-                        <span>Gewerbeimmobilien</span>
-                        <span>Portfoliobewertung</span>
-                        <span>DCF-Analyse</span>
-                        <span>Baurecht</span>
-                        <span>Projektentwicklung</span>
-                    </div>
-                </section>
-            </div>
-            <section class="person-contact-cta reveal-on-scroll">
-                <div class="person-links">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Xing</a>
-                </div>
-                <div class="person-download">
-                    <a href="#" class="cta-button" data-i18n-key="person_cv_download" download>CV Herunterladen</a>
-                </div>
-            </section>
+      </section>
+
+      <!-- QUICK FACTS (compact, factual) -->
+      <section class="reveal-on-scroll" aria-labelledby="facts">
+        <h2 id="facts" class="section-title-small">Kurzprofil</h2>
+        <div class="kv">
+          <div>Schwerpunkte</div><div>Verkehrswertschätzungen, Zustandsbeurteilungen, Bauherrenvertretung, Energieberatung</div>
+          <div>Branchen/Umfelder</div><div>Forschung (Empa/Eawag/WSL), Genossenschaftsbau (BEP), Hochschulumfeld (ETH), Grossprojekte</div>
+          <div>Rollen</div><div>Inhaber/GL, Bauherrenvertreter, Projektmanager</div>
+          <div>Engagement</div><div>Kantonale Schätzungskommission (2002–2022); Gemeinderat Seedorf-Bauen, Ressort Schulen & Kultur (seit 2025)</div>
+          <div>Ausbildung</div><div>Dipl. Arch. ETH; MBA HSLU; CAS Immobilienschätzung; IPMA Projektleitung</div>
         </div>
-    </main>
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-legal">
-                &copy; <span id="current-year"></span> <span data-i18n-key="footer_long_name">Immobilien Schätzung + Beratung</span>.
-            </div>
+      </section>
+
+      <!-- INTERACTIVE: Methoden & Standards -->
+      <section class="reveal-on-scroll" aria-labelledby="methods">
+        <h2 id="methods" class="section-title-small">Methoden & Standards</h2>
+        <details>
+          <summary>Transparente, nachvollziehbare Bewertung (aufklappen)</summary>
+          <ul class="list">
+            <li>Methoden: Vergleichswert, Ertragswert, Sachwert; objekt- und marktgerecht kombiniert</li>
+            <li>Datenbasis: Zustandsbeurteilung, Kosten- und Lebenszyklusbetrachtung, energetische Kennwerte</li>
+            <li>Dokumentation: klare Annahmen, Sensitivitaeten, Quellenlage</li>
+            <li>Praxis: neutrale Gutachten (kein Eigenhandel), Beratung bei Kauf/Verkauf und Projektentwicklung</li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- EXPERTISE TAGS -->
+      <section class="person-expertise reveal-on-scroll">
+        <h2 class="section-title-small" data-i18n-key="person_expertise_title">Expertise</h2>
+        <div class="expertise-tags" aria-label="Fachgebiete">
+          <span class="tag">Verkehrswertschätzung</span>
+          <span class="tag">Zustandsbeurteilung</span>
+          <span class="tag">Bauherrenvertretung</span>
+          <span class="tag">Projektmanagement</span>
+          <span class="tag">Kostenplanung</span>
+          <span class="tag">Materialtechnik</span>
+          <span class="tag">Energieberatung</span>
+          <span class="tag">Laborbau</span>
+          <span class="tag">Wohnungsbau</span>
+          <span class="tag">Transaktionsberatung</span>
+          <span class="tag">Due Diligence</span>
         </div>
-    </footer>
+      </section>
+
+      <!-- TIMELINE (now rendered in-page; still compatible with i18n if you want) -->
+      <section class="person-timeline reveal-on-scroll">
+        <h2 class="section-title-small" data-i18n-key="person_timeline_title">Werdegang</h2>
+        <ol class="timeline-list" id="timeline">
+          <!-- injected by script -->
+        </ol>
+      </section>
+
+      <!-- LINKS / CTA (keine direkten Kontaktdaten) -->
+      <section class="person-contact-cta reveal-on-scroll">
+        <div class="person-links">
+          <a href="#" class="social-link" rel="me noopener">LinkedIn</a>
+          <a href="#" class="social-link" rel="me noopener">Xing</a>
+        </div>
+        <div class="person-download">
+          <a href="#" class="cta-button" data-i18n-key="person_cv_download" download>CV Herunterladen</a>
+        </div>
+        <p class="muted" style="margin-top:.5rem">Anfragen bitte über das <a href="contact.html">Kontaktformular</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-legal">
+        &copy; <span id="current-year"></span> <span data-i18n-key="footer_long_name">Immobilien Schätzung + Beratung</span>.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Jahr
+    (function(){var y=document.getElementById('current-year'); if(y) y.textContent=new Date().getFullYear();})();
+
+    // Populate timeline (keine externen Abhaengigkeiten)
+    (function(){
+      var items = [
+        { period: "seit 09/2024", role: "Inhaber / GL, Immobilien Schätzungen + Beratung, Bauen" },
+        { period: "01/2021–09/2024", role: "Bauherrenvertreter, Empa Materials Science and Technology (Dübendorf, ZH) – Projekte u. a. für Empa, Eawag, WSL" },
+        { period: "12/2018–09/2024", role: "Bauherrenvertreter, BEP Baugenossenschaft des eidgenössischen Personals (Zürich und Umgebung)" },
+        { period: "12/2015–11/2018", role: "Projektmanager, Takt Baumanagement AG (Zürich) – Bauprojektmanagement für Grossprojekte" },
+        { period: "10/2011–11/2015", role: "Bauherrenvertreter, ETH Zürich (Zürich und Umgebung)" },
+        { period: "1999–2000", role: "MBA Luzern, Unternehmensführung für Architekt:innen und Ingenieur:innen (HSLU)" },
+        { period: "2006–2007", role: "CAS Immobilienschätzung (HSLU)" },
+        { period: "1984–1990", role: "Dipl. Arch. ETH, Architektur (ETH Zürich)" },
+        { period: "2002–2022", role: "Mitglied, Kantonale Schätzungskommission" },
+        { period: "seit 01/2025", role: "Gemeinderat Seedorf-Bauen, Ressort Schulen und Kultur" }
+      ];
+      var list = document.getElementById('timeline');
+      if(!list) return;
+      items.forEach(function(it){
+        var li = document.createElement('li');
+        li.className = 'timeline-item';
+        li.innerHTML = '<div><strong>'+it.period+'</strong></div><div>'+it.role+'</div>';
+        list.appendChild(li);
+      });
+    })();
+
+    // Reveal on scroll (subtle)
+    (function(){
+      var els = [].slice.call(document.querySelectorAll('.timeline-item'));
+      if(!('IntersectionObserver' in window) || !els.length){ els.forEach(e=>e.classList.add('is-visible')); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.1 });
+      els.forEach(function(el){ io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
