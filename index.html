@@ -210,35 +210,35 @@
                 <div class="work-scroller">
                     <div class="work-cards">
                         <a href="projektentwicklung.html" class="work-card" tabindex="0">
-                            <img src="assets/05_PHD.webp" alt="Projektentwicklung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <img src="assets/05_PHD.webp" alt="Projektentwicklung" loading="lazy" decoding="async" class="work-card-image aspect-3-2">
                             <div class="work-card-content">
                                 <h3 data-i18n-key="work_1_title">Projektentwicklung</h3>
                                 <p data-i18n-key="work_1_desc">Wettbewerbsverfahren für eine Gesamtüberbauung mit 100 Miet- und Eigentumswohnungen in Zürich-Manegg.</p>
                             </div>
                         </a>
                         <a href="erneuerung.html" class="work-card" tabindex="0">
-                            <img src="assets/23_PHD.webp" alt="Erneuerung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <img src="assets/23_PHD.webp" alt="Erneuerung" loading="lazy" decoding="async" class="work-card-image aspect-3-2">
                             <div class="work-card-content">
                                 <h3 data-i18n-key="work_2_title">Erneuerung</h3>
                                 <p data-i18n-key="work_2_desc">Bauherrenseitige Projektleitung für Konzept und Umbau eines 70-jährigen Wohnhauses in Altdorf.</p>
                             </div>
                         </a>
                         <a href="forschung.html" class="work-card" tabindex="0">
-                            <img src="assets/24_PHD.webp" alt="Forschung" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <img src="assets/24_PHD.webp" alt="Forschung" loading="lazy" decoding="async" class="work-card-image aspect-3-2">
                             <div class="work-card-content">
                                 <h3 data-i18n-key="work_3_title">Forschung</h3>
                                 <p data-i18n-key="work_3_desc">Projektleitung für den Neubau des Büro- und Laborgebäudes Haus D des SLF in Davos, zertifiziert nach Minergie-P-Eco und SNBS Platin.</p>
                             </div>
                         </a>
                         <a href="innenarchitektur.html" class="work-card" tabindex="0">
-                            <img src="assets/28_PHD.webp" alt="Innenarchitektur" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <img src="assets/28_PHD.webp" alt="Innenarchitektur" loading="lazy" decoding="async" class="work-card-image aspect-3-2">
                             <div class="work-card-content">
                                 <h3 data-i18n-key="work_4_title">Innenarchitektur</h3>
                                 <p data-i18n-key="work_4_desc">Projektleitung für die Neugestaltung der WSL-Bibliothek mit 40 zeitgemässen Arbeitsplätzen.</p>
                             </div>
                         </a>
                         <a href="wertgutachten.html" class="work-card" tabindex="0">
-                            <img src="assets/22_PHD.webp" alt="Wertgutachten" loading="lazy" decoding="async" style="aspect-ratio: 3/2;">
+                            <img src="assets/22_PHD.webp" alt="Wertgutachten" loading="lazy" decoding="async" class="work-card-image aspect-3-2">
                             <div class="work-card-content">
                                 <h3 data-i18n-key="work_5_title">Wertgutachten</h3>
                                 <p data-i18n-key="work_5_desc">Wertgutachten und Umbaustrategie für die Gebäude der ehemaligen Genossenschaft Druckerei Zürich.</p>
@@ -459,13 +459,13 @@
 
                             <div class="form-group">
                                 <label for="service" data-i18n-key="contact_service_label">Anliegen</label>
-                                <select id="service" name="service" required>
-                                    <option value="" selected disabled data-i18n-key="contact_service_placeholder">Bitte wählen…</option>
-                                    <option value="01 Verkehrswertgutachten">01 Verkehrswertgutachten</option>
-                                    <option value="02 Bauzustandsbewertungen">02 Bauzustandsbewertungen</option>
-                                    <option value="03 Projektmanagement (Neubau/Sanierung)">03 Projektmanagement (Neubau/Sanierung)</option>
-                                    <option value="04 Transaktionsberatung">04 Transaktionsberatung</option>
-                                </select>
+                            <select id="service" name="service" required>
+                              <option value="" selected disabled data-i18n-key="contact_service_placeholder">Bitte wählen…</option>
+                              <option value="01 Verkehrswertgutachten" data-i18n-key="contact_service_options[0]">01 Verkehrswertgutachten</option>
+                              <option value="02 Bauzustandsbewertungen" data-i18n-key="contact_service_options[1]">02 Bauzustandsbewertungen</option>
+                              <option value="03 Projektmanagement (Neubau/Sanierung)" data-i18n-key="contact_service_options[2]">03 Projektmanagement (Neubau/Sanierung)</option>
+                              <option value="04 Transaktionsberatung" data-i18n-key="contact_service_options[3]">04 Transaktionsberatung</option>
+                            </select>
                             </div>
 
                             <div class="form-group">
@@ -484,7 +484,7 @@
                         </form>
                     </div>
 
-                    <p class="muted" style="margin-top:1rem">
+                    <p class="muted contact-note">
                         Verantwortlich für den Inhalt: Dominik Planzer &amp; Françoise C. Ellenberger
                     </p>
                 </div>
@@ -505,71 +505,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-      // Year fallback for footer
-      (function(){var y=document.getElementById('current-year'); if(y) y.textContent=new Date().getFullYear();})();
-
-      function zwj(str){return str.split('').join('\u200B');}
-
-      (function(){
-        var btn=document.getElementById('reveal-mail'), out=document.getElementById('mail-out');
-        if(!btn||!out) return;
-        var u=['immobilien','schaetzung','beratung'].join('.');
-        var h=['g','mail'].join('');
-        var t='com';
-        var addr=u+'@'+h+'.'+t;
-        btn.addEventListener('click',function(){
-          btn.setAttribute('aria-expanded','true');
-          out.className=''; out.removeAttribute('aria-hidden');
-          out.innerHTML='<a rel="nofollow" href="mailto:'+addr+'">'+zwj(addr)+'</a>';
-          btn.remove();
-        });
-      })();
-
-      (function(){
-        var btn=document.getElementById('reveal-phone'), out=document.getElementById('phone-out');
-        if(!btn||!out) return;
-        var prefix=['+4','1'].join('');
-        var n1=['41',' ','878',' ','13',' ','13'].join('');
-        var n2=['79',' ','727',' ','30',' ','94'].join('');
-        btn.addEventListener('click',function(){
-          btn.setAttribute('aria-expanded','true');
-          out.className=''; out.removeAttribute('aria-hidden');
-          var a1=document.createElement('a'); a1.href='tel:+41418781313'; a1.textContent=prefix+' '+n1;
-          var sep=document.createTextNode(' / ');
-          var a2=document.createElement('a'); a2.href='tel:+41797273094'; a2.textContent='+'+n2;
-          out.append(a1,sep,a2);
-          btn.remove();
-        });
-      })();
-
-      (function(){
-        var start=Date.now();
-        var form=document.querySelector('#contact .contact-form');
-        var startedAt=document.getElementById('startedAt');
-        if(startedAt) startedAt.value=String(start);
-        if(!form) return;
-        form.addEventListener('submit',function(e){
-          var note=document.getElementById('form-note');
-          var company=document.getElementById('company');
-          if(company && company.value.trim()!==''){
-            e.preventDefault(); if(note) note.textContent='Hinweis: Bitte Formular korrekt ausfüllen.'; return;
-          }
-          if(Date.now()-start<5000){
-            e.preventDefault(); if(note) note.textContent='Bitte prüfe deine Eingaben und sende erneut.'; return;
-          }
-          var svc=document.getElementById('service');
-          if(!svc || !svc.value){
-            e.preventDefault(); if(note) note.textContent='Bitte wähle ein Anliegen aus.'; return;
-          }
-          var human=document.getElementById('human');
-          if(!human || String(human.value).trim()!=='7'){
-            e.preventDefault(); if(note) note.textContent='Bitte gib die korrekte Summe ein.'; return;
-          }
-        });
-      })();
-    </script>
 
 <!-- 
 QA Checklist:

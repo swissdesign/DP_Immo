@@ -977,23 +977,36 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
 .timeline-list {
     list-style: none;
     border-left: 2px solid var(--line);
-    padding-left: 2rem;
+    padding-left: 1.75rem;
+    margin: 0;
 }
 .timeline-item {
     position: relative;
-    padding-bottom: 2rem;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item + .timeline-item {
+    margin-top: 0.25rem;
+}
+.timeline-item:last-child {
+    padding-bottom: 0.75rem;
+}
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -2.6rem;
-    top: 0.25rem;
-    width: 12px;
-    height: 12px;
+    left: -2.05rem;
+    top: 1.1rem;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: var(--paper);
     border: 2px solid var(--line);
     border-radius: 50%;
+}
+.reveal-on-scroll.is-visible .timeline-item {
+    opacity: 1;
+    transform: none;
 }
 .timeline-date {
     font-weight: 700;
@@ -1008,6 +1021,59 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
 .timeline-desc {
     color: var(--muted);
     margin: 0;
+}
+
+/* Person Profile Enhancements (2024-05) */
+.person-profile .kv {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 2.2fr;
+    gap: 0.5rem 1.5rem;
+    margin-block: 1.5rem;
+}
+.person-profile .kv div:nth-child(odd) {
+    color: var(--muted);
+    font-weight: 600;
+}
+@media (max-width: 720px) {
+    .person-profile .kv {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: var(--chip-bg, rgba(0, 0, 0, 0.04));
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.person-profile details {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    background: var(--paper);
+    margin-top: 1.25rem;
+}
+
+.person-profile details > summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+.person-profile details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.person-profile .person-links .social-link {
+    text-decoration: underline;
+}
+
+.contact-note {
+    margin-top: 1rem;
 }
 
 /* Person details grid */
@@ -1046,6 +1112,7 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
 }
 .person-links { display: flex; gap: 1rem; }
 .social-link { color: var(--ink); font-weight: 500; }
+.aspect-3-2 { aspect-ratio: 3 / 2; }
 
 @media (min-width: 768px) {
     .person-contact-cta { flex-direction: row; }

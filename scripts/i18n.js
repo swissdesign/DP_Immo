@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (translation !== undefined && translation !== null) {
                 if (type === 'tags') {
-                    element.innerHTML = translation.map(tag => `<span>${tag}</span>`).join('');
+                    element.innerHTML = translation.map(tag => `<span class="tag">${tag}</span>`).join('');
                 } else {
                    element.innerHTML = translation;
                 }
