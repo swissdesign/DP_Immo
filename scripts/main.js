@@ -178,4 +178,117 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         updateScrollEffects();
     }
+
+    // --- Contact detail reveal (email & phone) ---
+    const insertZeroWidthJoiner = (value) => value.split('').join('\u200B');
+
+    const initContactReveal = () => {
+        const emailButton = document.getElementById('reveal-mail');
+        const emailOutput = document.getElementById('mail-out');
+        if (emailButton && emailOutput) {
+            const emailAddress = `${['immobilien', 'schaetzung', 'beratung'].join('.')}@${['g', 'mail'].join('')}.com`;
+            emailButton.addEventListener('click', () => {
+                emailButton.setAttribute('aria-expanded', 'true');
+                emailOutput.className = '';
+                emailOutput.removeAttribute('aria-hidden');
+                emailOutput.innerHTML = `<a rel="nofollow" href="mailto:${emailAddress}">${insertZeroWidthJoiner(emailAddress)}</a>`;
+                emailButton.remove();
+            });
+        }
+
+        const phoneButton = document.getElementById('reveal-phone');
+        const phoneOutput = document.getElementById('phone-out');
+        if (phoneButton && phoneOutput) {
+            const primary = '+41 41 878 13 13';
+            const secondary = '+41 79 727 30 94';
+            phoneButton.addEventListener('click', () => {
+                phoneButton.setAttribute('aria-expanded', 'true');
+                phoneOutput.className = '';
+                phoneOutput.removeAttribute('aria-hidden');
+                phoneOutput.innerHTML = '';
+
+                const first = document.createElement('a');
+                first.href = 'tel:+41418781313';
+                first.textContent = primary;
+
+                const second = document.createElement('a');
+                second.href = 'tel:+41797273094';
+                second.textContent = secondary;
+
+                phoneOutput.append(first, document.createTextNode(' / '), second);
+                phoneButton.remove();
+            });
+        }
+    };
+
+    // --- Contact form safeguards (honeypot, timing, math check) ---
+    const contactMessages = {
+        de: {
+            honeypot: 'Hinweis: Bitte Formular korrekt ausfüllen.',
+            speed: 'Bitte prüfe deine Eingaben und sende erneut.',
+            service: 'Bitte wähle ein Anliegen aus.',
+            human: 'Bitte gib die korrekte Summe ein.'
+        },
+        en: {
+            honeypot: 'Please complete the form correctly before sending.',
+            speed: 'Please review your details and submit again.',
+            service: 'Please choose a request from the list.',
+            human: 'Please enter the correct sum.'
+        }
+    };
+
+    const initContactForms = () => {
+        const locale = document.documentElement.lang || 'de';
+        const copy = contactMessages[locale] || contactMessages.de;
+
+        document.querySelectorAll('.contact-form').forEach(form => {
+            const start = Date.now();
+            const note = form.querySelector('#form-note');
+            if (note) {
+                note.textContent = '';
+            }
+
+            const startField = form.querySelector('input[name="startedAt"]');
+            if (startField) {
+                startField.value = String(start);
+            }
+
+            form.addEventListener('submit', (event) => {
+                const setNote = (message) => {
+                    if (note) {
+                        note.textContent = message;
+                    }
+                };
+
+                const honeypot = form.querySelector('input[name="company"]');
+                if (honeypot && honeypot.value.trim() !== '') {
+                    event.preventDefault();
+                    setNote(copy.honeypot);
+                    return;
+                }
+
+                if (Date.now() - start < 5000) {
+                    event.preventDefault();
+                    setNote(copy.speed);
+                    return;
+                }
+
+                const service = form.querySelector('[name="service"]');
+                if (service && !service.value) {
+                    event.preventDefault();
+                    setNote(copy.service);
+                    return;
+                }
+
+                const human = form.querySelector('[name="human"]');
+                if (human && String(human.value).trim() !== '7') {
+                    event.preventDefault();
+                    setNote(copy.human);
+                }
+            });
+        });
+    };
+
+    initContactReveal();
+    initContactForms();
 });

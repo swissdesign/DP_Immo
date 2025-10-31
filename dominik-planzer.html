@@ -34,21 +34,6 @@
   }
   </script>
 
-  <style>
-    /* Minimal micro-interactions; keeps your existing look */
-    .muted { opacity:.72 }
-    .tag { display:inline-block; padding:.25rem .5rem; border-radius:999px; background:var(--chip-bg, #f2f2f2); margin:.2rem .3rem 0 0; font-size:.9rem }
-    .timeline-list { list-style:none; padding:0; margin:0 }
-    .timeline-item { opacity:0; transform:translateY(8px); transition:opacity .4s ease, transform .4s ease; border-left:2px solid #ddd; padding:.5rem 0 .5rem 1rem; position:relative }
-    .timeline-item::before { content:""; position:absolute; left:-6px; top:.9rem; width:.6rem; height:.6rem; background:#bbb; border-radius:50% }
-    .timeline-item.is-visible { opacity:1; transform:none }
-    details { border:1px solid #eee; border-radius:12px; padding:1rem; background:#fafafa }
-    details > summary { cursor:pointer; font-weight:600; outline:none; list-style:none }
-    details > summary::-webkit-details-marker { display:none }
-    .kv { display:grid; grid-template-columns: 160px 1fr; gap:.25rem .75rem }
-    .kv div:nth-child(odd) { color:var(--text-muted,#666) }
-    .person-links .social-link { text-decoration:underline }
-  </style>
 </head>
 <body class="person-page">
   <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
@@ -111,7 +96,7 @@
       <!-- EXPERTISE TAGS -->
       <section class="person-expertise reveal-on-scroll">
         <h2 class="section-title-small" data-i18n-key="person_expertise_title">Expertise</h2>
-        <div class="expertise-tags" aria-label="Fachgebiete">
+        <div class="expertise-tags" aria-label="Fachgebiete" data-i18n-key="person_a.expertise" data-i18n-type="tags">
           <span class="tag">Verkehrswertschätzung</span>
           <span class="tag">Zustandsbeurteilung</span>
           <span class="tag">Bauherrenvertretung</span>
@@ -142,7 +127,7 @@
         <div class="person-download">
           <a href="#" class="cta-button" data-i18n-key="person_cv_download" download>CV Herunterladen</a>
         </div>
-        <p class="muted" style="margin-top:.5rem">Anfragen bitte über das <a href="contact.html">Kontaktformular</a>.</p>
+        <p class="muted contact-note">Anfragen bitte über das <a href="contact.html">Kontaktformular</a>.</p>
       </section>
     </div>
   </main>
@@ -155,45 +140,5 @@
     </div>
   </footer>
 
-  <script>
-    // Jahr
-    (function(){var y=document.getElementById('current-year'); if(y) y.textContent=new Date().getFullYear();})();
-
-    // Populate timeline (keine externen Abhaengigkeiten)
-    (function(){
-      var items = [
-        { period: "seit 09/2024", role: "Inhaber / GL, Immobilien Schätzungen + Beratung, Bauen" },
-        { period: "01/2021–09/2024", role: "Bauherrenvertreter, Empa Materials Science and Technology (Dübendorf, ZH) – Projekte u. a. für Empa, Eawag, WSL" },
-        { period: "12/2018–09/2024", role: "Bauherrenvertreter, BEP Baugenossenschaft des eidgenössischen Personals (Zürich und Umgebung)" },
-        { period: "12/2015–11/2018", role: "Projektmanager, Takt Baumanagement AG (Zürich) – Bauprojektmanagement für Grossprojekte" },
-        { period: "10/2011–11/2015", role: "Bauherrenvertreter, ETH Zürich (Zürich und Umgebung)" },
-        { period: "1999–2000", role: "MBA Luzern, Unternehmensführung für Architekt:innen und Ingenieur:innen (HSLU)" },
-        { period: "2006–2007", role: "CAS Immobilienschätzung (HSLU)" },
-        { period: "1984–1990", role: "Dipl. Arch. ETH, Architektur (ETH Zürich)" },
-        { period: "2002–2022", role: "Mitglied, Kantonale Schätzungskommission" },
-        { period: "seit 01/2025", role: "Gemeinderat Seedorf-Bauen, Ressort Schulen und Kultur" }
-      ];
-      var list = document.getElementById('timeline');
-      if(!list) return;
-      items.forEach(function(it){
-        var li = document.createElement('li');
-        li.className = 'timeline-item';
-        li.innerHTML = '<div><strong>'+it.period+'</strong></div><div>'+it.role+'</div>';
-        list.appendChild(li);
-      });
-    })();
-
-    // Reveal on scroll (subtle)
-    (function(){
-      var els = [].slice.call(document.querySelectorAll('.timeline-item'));
-      if(!('IntersectionObserver' in window) || !els.length){ els.forEach(e=>e.classList.add('is-visible')); return; }
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(entry){
-          if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
-        });
-      }, { threshold: 0.1 });
-      els.forEach(function(el){ io.observe(el); });
-    })();
-  </script>
 </body>
 </html>

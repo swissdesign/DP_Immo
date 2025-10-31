@@ -13,10 +13,6 @@
   <link rel="stylesheet" href="styles/main.css">
   <script src="scripts/i18n.js" defer></script>
   <script src="scripts/main.js" defer></script>
-  <style>
-    .contact-reveal button { cursor: pointer; }
-    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n-key="skip_link">Zum Hauptinhalt springen</a>
@@ -95,48 +91,5 @@
     </div>
   </footer>
 
-  <script>
-    // Year
-    (function(){var y=document.getElementById('current-year'); if(y) y.textContent=new Date().getFullYear();})();
-
-    // Helper: insert zero-width joiners to break naive scrapers but keep copy-paste OK
-    function zwj(str){return str.split('').join('\u200B');} // &#8203;
-
-    // E-Mail reveal: parts are never present as a full string in initial HTML
-    (function () {
-      var btn = document.getElementById('reveal-mail');
-      var out = document.getElementById('mail-out');
-      if (!btn || !out) return;
-      // split into harmless tokens
-      var u = ['immobilien','schaetzung','beratung'].join('.');
-      var h = ['g','mail'].join('');
-      var t = 'com';
-      var addr = u + '@' + h + '.' + t;
-      btn.addEventListener('click', function () {
-        btn.setAttribute('aria-expanded','true');
-        out.className = '';            // make visible
-        out.removeAttribute('aria-hidden');
-        out.innerHTML = '<a rel="nofollow" href="mailto:'+addr+'">'+zwj(addr)+'</a>';
-        btn.remove();                  // remove trigger to avoid duplicate exposure
-      });
-    })();
-
-    // Phone reveal: store as scrambled tokens to avoid simple regex harvesters
-    (function () {
-      var btn = document.getElementById('reveal-phone');
-      var out = document.getElementById('phone-out');
-      if (!btn || !out) return;
-      var p1 = ['+4','1'].join('');
-      var n1 = ['41',' ','878',' ','13',' ','13'].join('');
-      var n2 = ['79',' ','727',' ','30',' ','94'].join('');
-      btn.addEventListener('click', function () {
-        btn.setAttribute('aria-expanded','true');
-        out.className = '';
-        out.removeAttribute('aria-hidden');
-        out.textContent = [p1, ' ', n1, ' / ', '+', n2].join('');
-        btn.remove();
-      });
-    })();
-  </script>
 </body>
 </html>

@@ -11,9 +11,9 @@
   "meta_title_home": "Immobilien Schätzung + Beratung | Precise real estate valuation & consulting",
   "meta_description_home": "Since 1995 Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management. We prepare traffic-value appraisals, conduct building condition assessments and guide your project across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
-  "meta_description_person_a": "Profile of Dominik Planzer, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
+  "meta_description_person_a": "Profile of Dominik Planzer, MSc Arch ETH/SIA – owner’s representative and certified valuer focused on research, cooperatives and the public sector.",
   "meta_title_person_b": "Françoise Ellenberger | Immobilien Schätzung + Beratung",
-  "meta_description_person_b": "Profile of Françoise Ellenberger, Dipl. Arch. ETH/SIA and real estate valuer at Immobilien Schätzung + Beratung.",
+  "meta_description_person_b": "Profile of Françoise C. Ellenberger, MSc Arch ETH/SIA and federally certified real estate valuer specialising in sustainability and owner representation.",
   "hero_subtitle": "Real estate valuation + consulting",
   "hero_cta": "Send Inquiry",
   "hero_title_name": "Immobilien Schätzung + Beratung",
@@ -153,71 +153,131 @@
   "person_a": {
     "name": "Dominik Planzer",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
-    "bio": "An analytical thinker with a passion for architecture and solid, data-driven valuations. His focus is on complex commercial properties and portfolios.",
+    "bio": "Construction expert and owner's representative with many years of experience in complex projects for research institutions, cooperatives and the public sector. I combine architectural insight with systematic valuation—cost-conscious, quality-driven and sustainable.",
     "motivation": "'Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.'",
     "expertise": [
-      "Commercial Real Estate",
-      "Portfolio Valuation",
-      "DCF Analysis",
-      "Building Law",
-      "Project Development"
+      "Market value appraisal",
+      "Condition assessment",
+      "Owner’s representation",
+      "Project management",
+      "Cost planning",
+      "Materials engineering",
+      "Energy consulting",
+      "Laboratory buildings",
+      "Residential development",
+      "Transaction advisory",
+      "Due diligence"
     ],
     "timeline": [
       {
-        "date": "2023 - Present",
-        "title": "Founder & Partner, [Placeholder Name]",
-        "description": "Zurich, Switzerland"
+        "date": "since 09/2024",
+        "title": "Owner / Managing Director",
+        "description": "Immobilien Schätzung + Beratung, Bauen."
       },
       {
-        "date": "2015 - 2023",
-        "title": "Senior Valuer, Major Bank",
-        "description": "Focus on commercial real estate financing."
+        "date": "since 01/2025",
+        "title": "Municipal Councillor Seedorf-Bauen",
+        "description": "Schools & culture portfolio (elected mandate)."
       },
       {
-        "date": "2010 - 2015",
-        "title": "Architect & Project Manager, Renowned Architectural Firm",
-        "description": "Planning and execution of large-scale projects."
+        "date": "01/2021 – 09/2024",
+        "title": "Owner's Representative, Empa Materials Science and Technology (Dübendorf, Zurich)",
+        "description": "Major research projects for Empa, Eawag and WSL."
       },
       {
-        "date": "2004 - 2010",
-        "title": "Studies in Architecture, ETH Zurich",
-        "description": "Master of Science in Architecture."
+        "date": "12/2018 – 09/2024",
+        "title": "Owner's Representative, BEP Federal Personnel Housing Cooperative",
+        "description": "Residential development and refurbishments in Greater Zurich."
+      },
+      {
+        "date": "12/2015 – 11/2018",
+        "title": "Project Manager, Takt Baumanagement AG, Zurich",
+        "description": "Project management for complex large-scale builds."
+      },
+      {
+        "date": "10/2011 – 11/2015",
+        "title": "Owner's Representative, ETH Zurich",
+        "description": "Planning and delivery of university facilities."
+      },
+      {
+        "date": "2002 – 2022",
+        "title": "Member, Cantonal Valuation Commission Uri",
+        "description": "Valuations on behalf of the canton."
+      },
+      {
+        "date": "2006 – 2007",
+        "title": "CAS Real Estate Valuation, HSLU",
+        "description": "Advanced valuation methods."
+      },
+      {
+        "date": "1999 – 2000",
+        "title": "MBA in Corporate Management, HSLU Lucerne",
+        "description": "Management focus for architecture and engineering firms."
+      },
+      {
+        "date": "1984 – 1990",
+        "title": "MSc Architecture, ETH Zurich",
+        "description": "Architectural design and project development."
       }
     ]
   },
   "person_b": {
     "name": "Françoise Ellenberger",
-    "title": "MSc Arch ETH/SIA, Real Estate Valuer",
-    "bio": "Combines design sensibility with methodical valuation competence. Her strength lies in residential properties and advising on inheritances and donations.",
+    "title": "MSc Arch ETH/SIA, Federal Diploma Real Estate Valuer",
+    "bio": "Owner’s representative and sustainability specialist with deep expertise in real estate, energy and water concessions. I blend architectural practice with measurable impact: strategy, valuation and delivery—from CO₂ reduction pathways to user-centred planning.",
     "motivation": "'Every property tells a story—about the people who lived in it and its structural evolution. Assigning an objective value to these stories is a task of great responsibility. I find balance hiking in the Alps and engaging with modern art.'",
     "expertise": [
-      "Residential Properties",
-      "Inheritance Cases",
-      "Hedonic Valuation",
-      "Condition Analysis",
-      "Historic Preservation"
+      "Owner’s representation",
+      "Sustainability",
+      "Certified real estate valuation",
+      "Energy & CO₂ strategies",
+      "Water concessions",
+      "Portfolio strategy",
+      "Residential development",
+      "Public sector",
+      "Cooperative housing"
     ],
     "timeline": [
       {
-        "date": "2023 - Present",
-        "title": "Founder & Partner, [Placeholder Name]",
-        "description": "Zurich, Switzerland"
+        "date": "since 01/2023",
+        "title": "Independent Owner’s Representative",
+        "description": "Development, planning, construction & sustainability; CO₂ pathways; real estate valuations."
       },
       {
-        "date": "2017 - 2023",
-        "title": "Real Estate Valuer, Consulting Firm",
-        "description": "Specialization in residential and special-purpose properties."
+        "date": "11/2011 – 12/2022",
+        "title": "Owner’s Representative, Suva Real Estate (Lucerne)",
+        "description": "Lead for sustainability across the property portfolio."
       },
       {
-        "date": "2012 - 2017",
-        "title": "Architect, Firm specializing in renovations",
-        "description": "Work on historically listed buildings."
+        "date": "10/2006 – 09/2011",
+        "title": "Cantonal Architect & Head of Energy Office, Canton of Obwalden",
+        "description": "Set-up of the energy office and approval processes."
       },
       {
-        "date": "2006 - 2012",
-        "title": "Studies in Architecture, ETH Zurich",
-        "description": "Master of Science in Architecture."
+        "date": "09/1991 – 09/2006",
+        "title": "Managing Partner, Delta Architekten AG (Altdorf)",
+        "description": "Planning and delivery of new builds and refurbishments."
+      },
+      {
+        "date": "1980 – 1988",
+        "title": "MSc Architecture, ETH Zurich",
+        "description": "Professional memberships: SIA, SIV, BPW."
+      },
+      {
+        "date": "1972 – 1980",
+        "title": "Matura Type B, Kollegium Karl Borromäus",
+        "description": "Humanistic foundation for architectural studies."
       }
     ]
-  }
+  },
+  "contact_pref": "Preferred: please use the form on the right.",
+  "contact_service_label": "Request",
+  "contact_service_placeholder": "Please choose…",
+  "contact_human_label": "Please enter the sum 3 + 4",
+  "contact_service_options": [
+    "01 Market value appraisal",
+    "02 Building condition assessment",
+    "03 Project management (new build / refurbishment)",
+    "04 Transaction advisory"
+  ]
 }
