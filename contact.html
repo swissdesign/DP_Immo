@@ -58,11 +58,9 @@
             <div class="contact-details">
               <p>
                 <strong data-i18n-key="contact_firm_name">Immobilien Schätzung + Beratung</strong><br>
-                Hofstatt 6, 6466 Bauen, Schweiz
               </p>
 
               <div class="contact-actions" aria-live="polite">
-                <!-- Prefer form; email/phone revealed on click -->
                 <p class="muted" data-i18n-key="contact_pref">Bevorzugt: Nutzen Sie das Formular rechts.</p>
 
                 <p>
@@ -107,6 +105,18 @@
                 <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel">
               </div>
 
+              <!-- NEW: Pflichtfeld Dropdown -->
+              <div class="form-group">
+                <label for="service" data-i18n-key="contact_service_label">Anliegen</label>
+                <select id="service" name="service" required>
+                  <option value="" selected disabled data-i18n-key="contact_service_placeholder">Bitte wählen…</option>
+                  <option value="01 Verkehrswertgutachten">01 Verkehrswertgutachten</option>
+                  <option value="02 Bauzustandsbewertungen">02 Bauzustandsbewertungen</option>
+                  <option value="03 Projektmanagement (Neubau/Sanierung)">03 Projektmanagement (Neubau/Sanierung)</option>
+                  <option value="04 Transaktionsberatung">04 Transaktionsberatung</option>
+                </select>
+              </div>
+
               <div class="form-group">
                 <label for="message" data-i18n-key="contact_message_label">Nachricht</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
@@ -118,8 +128,6 @@
                 <input type="number" id="human" name="human" inputmode="numeric" pattern="[0-9]*" required>
               </div>
 
-              <!-- If you later need Google reCAPTCHA, add it here and update your Datenschutzerklärung accordingly. -->
-
               <button type="submit" class="cta-button" data-i18n-key="contact_submit">Nachricht senden</button>
 
               <p id="form-note" class="muted" aria-live="polite"></p>
@@ -127,7 +135,7 @@
           </div>
 
           <p class="muted" style="margin-top:1rem">
-            Verantwortlich für den Inhalt: Dominik Planzer &amp; Françoise Ellenberger
+            Verantwortlich für den Inhalt: Dominik Planzer &amp; Françoise C. Ellenberger
           </p>
         </div>
       </div>
@@ -189,7 +197,7 @@
       })
     })();
 
-    // Anti-spam: set start time; block ultra-fast submits + honeypot check + simple math
+    // Anti-spam: set start time; block ultra-fast submits + honeypot check + simple math + required select
     (function(){
       var start=Date.now();
       var f=document.querySelector('.contact-form');
@@ -199,6 +207,7 @@
       if(!f) return;
       f.addEventListener('submit',function(e){
         var note=document.getElementById('form-note');
+
         // honeypot
         if(document.getElementById('company').value.trim()!==''){
           e.preventDefault(); if(note) note.textContent='Hinweis: Bitte Formular korrekt ausfüllen.'; return;
@@ -207,13 +216,18 @@
         if(Date.now()-start<5000){
           e.preventDefault(); if(note) note.textContent='Bitte prüfe deine Eingaben und sende erneut.'; return;
         }
+        // required dropdown
+        var svc=document.getElementById('service');
+        if(!svc || !svc.value){
+          e.preventDefault(); if(note) note.textContent='Bitte wähle ein Anliegen aus.'; return;
+        }
         // simple human check
         var h=document.getElementById('human');
         if(!h || String(h.value).trim()!=='7'){
           e.preventDefault(); if(note) note.textContent='Bitte gib die korrekte Summe ein.'; return;
         }
         // If you have no backend on GitHub Pages, handle via JS/email service here.
-        // e.preventDefault(); // Uncomment and integrate with your form handler (e.g. Formspree, Netlify, Xano).
+        // e.preventDefault(); // Integrate with your form handler (Formspree, Netlify, Xano, etc.).
       });
     })();
   </script>
