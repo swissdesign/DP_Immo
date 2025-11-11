@@ -11,9 +11,9 @@
   "meta_title_home": "Immobilien Schätzung + Beratung | Precise real estate valuation & consulting",
   "meta_description_home": "Since 1995 Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management. We prepare traffic-value appraisals, conduct building condition assessments and guide your project across Central Switzerland, Zurich and Western Switzerland. Precision, discretion and experience.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
-  "meta_description_person_a": "Profile of Dominik Planzer, MSc Arch ETH/SIA – owner’s representative and certified valuer focused on research, cooperatives and the public sector.",
+  "meta_description_person_a": "Profile of Dominik Planzer, Dipl. Arch. ETH/SIA – owner representative and real estate appraiser focusing on research and teaching, housing projects and owner representation.",
   "meta_title_person_b": "Françoise C. Ellenberger | Immobilien Schätzung + Beratung",
-  "meta_description_person_b": "Profile of Françoise C. Ellenberger, MSc Arch ETH/SIA and federally certified real estate valuer specialising in sustainability and owner representation.",
+  "meta_description_person_b": "Profile of Françoise C. Ellenberger, Dipl. Arch. ETH/SIA and federally certified real estate valuer specialising in sustainability and public-sector projects.",
   "hero_subtitle": "Real estate valuation + consulting",
   "hero_cta": "Send Inquiry",
   "hero_title_name": "Immobilien Schätzung + Beratung",
@@ -25,7 +25,7 @@
   "value_3_title": "Discretion",
   "value_3_desc": "Absolute protection of your sensitive data and preservation of your privacy.",
   "value_4_title": "Experience",
-  "value_4_desc": "Experience since 1995 as architects and real estate valuers.",
+  "value_4_desc": "Experience since 1995 as architects, real estate appraisers and owner representatives.",
   "services_title": "Services",
   "services": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "id": "s3",
-      "title": "Project Management (New Build/Refurbishment)",
-      "description": "We oversee your construction project from planning to completion, ensuring quality and monitoring costs and deadlines."
+      "title": "Project Management",
+      "description": "We oversee your construction project from preliminary assessment through planning to completion, ensuring quality and monitoring costs and deadlines."
     },
     {
       "id": "s4",
@@ -51,13 +51,13 @@
   ],
   "work_title": "Selected References",
   "work_1_title": "Project Development",
-  "work_1_desc": "Competition-driven masterplan for 100 rental and owner-occupied apartments in Zurich-Manegg.",
+  "work_1_desc": "Competition-driven masterplan for over 100 rental and owner-occupied apartments in Zurich-Manegg.",
   "work_2_title": "Renovation",
   "work_2_desc": "Client-side project management for the concept and refurbishment of a 70-year-old home in Altdorf.",
   "work_3_title": "Research",
-  "work_3_desc": "Project leadership for the new SLF office and laboratory building House D in Davos, certified Minergie-P-Eco and SNBS Platinum.",
+  "work_3_desc": "Project leadership for the new office and laboratory building of the WSL Institute for Snow and Avalanche Research in Davos, certified Minergie-P-Eco and SNBS Platinum.",
   "work_4_title": "Interior Architecture",
-  "work_4_desc": "Project management for redesigning the WSL library with 40 contemporary workspaces.",
+  "work_4_desc": "Project management for the redesign of the WSL library in Birmensdorf with contemporary workspaces.",
   "work_5_title": "Valuation",
   "work_5_desc": "Valuation and refurbishment strategy for the former Genossenschaft Druckerei Zürich buildings.",
   "process_title": "Our Process",
@@ -72,19 +72,19 @@
     },
     {
       "title": "Analysis & Valuation",
-      "description": "Our experts analyze the collected information and apply the appropriate valuation methods."
+      "description": "Our experts analyze the collected information and apply the appropriate valuation method."
     },
     {
       "title": "Report & Debriefing",
-      "description": "You receive a clear, comprehensive report. We discuss the results with you and answer your questions."
+      "description": "You receive a detailed and comprehensible report. We discuss the results and answer your questions."
     }
   ],
   "credentials_methods_title": "Methods",
-  "credentials_methods_desc": "Hedonic modelling, DCF (Discounted Cash Flow), comparable sales approach, and other methods according to international standards.",
+  "credentials_methods_desc": "Income approach, DCF (Discounted Cash Flow), comparable sales approach and other widely recognized methods.",
   "credentials_regions_title": "Regions",
-  "credentials_regions_desc": "Zurich, Central Switzerland, Western Switzerland, and by request.",
+  "credentials_regions_desc": "Central Switzerland, Zurich, Western Switzerland and Ticino.",
   "credentials_partners_title": "Partners",
-  "credentials_partners_desc": "We regularly collaborate with leading banks, insurance companies, and pension funds.",
+  "credentials_partners_desc": "We work according to the rules of the Swiss Association of Real Estate Appraisers (SIV) and the Swiss Society of Engineers and Architects (SIA).",
   "team_title": "The Founders",
   "team_a_name": "Dominik Planzer",
   "team_a_title": "MSc Arch ETH/SIA, Real Estate Valuer",
@@ -94,16 +94,16 @@
   "testimonials_title": "Testimonials",
   "testimonials": [
     {
-      "quote": "The analysis was extremely detailed and decisively helped us in the price negotiation. Absolutely professional.",
-      "author": "Private Investor, Zurich"
+      "quote": "The analysis of our properties was very detailed and decisively helped us in our next steps and the price negotiation. Absolutely professional.",
+      "author": "Private investor, Zurich"
     },
     {
-      "quote": "[Placeholder Name] handled the complex case of our community of heirs with great expertise and sensitivity.",
-      "author": "Family S., Lucerne"
+      "quote": "Ms. Ellenberger advanced the complex case of our real estate development with great expertise and tact.",
+      "author": "Family S., Baar"
     },
     {
-      "quote": "Fast, reliable, and a report that is understandable even for non-experts. Unreserved recommendation.",
-      "author": "CEO of an SME, Zug"
+      "quote": "Fast, reliable and a report that is understandable even for laypeople. Unreserved recommendation.",
+      "author": "Private owner of a holiday home, Steinhausen"
     }
   ],
   "faq_title": "Frequently Asked Questions",
@@ -121,7 +121,7 @@
     {
       "id": "f3",
       "title": "Are your reports accepted by banks?",
-      "description": "Yes, our reports comply with the standards of most Swiss financial institutions and are widely accepted."
+      "description": "Yes, our reports follow the guidelines of the Swiss Association of Real Estate Appraisers (SIV) and are therefore widely accepted by banks."
     }
   ],
   "contact_title": "Contact Us",
@@ -137,7 +137,7 @@
   "footer_imprint": "Imprint",
   "footer_privacy": "Privacy Policy",
   "meta_title_services": "Services | Immobilien Schätzung + Beratung",
-  "meta_description_services": "Learn more about our services – traffic-value appraisals, building-condition assessments, project management and transaction advisory.",
+  "meta_description_services": "Learn more about our services – market value appraisals, building condition assessments, project development and transaction advisory.",
   "meta_title_projects": "Projects | Immobilien Schätzung + Beratung",
   "meta_description_projects": "Explore selected projects and references – from residential buildings and commercial properties to new developments.",
   "meta_title_about": "About | Immobilien Schätzung + Beratung",
@@ -145,7 +145,7 @@
   "meta_title_contact": "Contact | Immobilien Schätzung + Beratung",
   "meta_description_contact": "Get in touch with us for a non-binding initial consultation.",
   "about_title": "About us",
-  "about_intro": "Since 1995, Immobilien Schätzung + Beratung has provided independent valuations, consulting and project management for private and institutional clients. Our values – precision, independence, discretion and experience – guide every assignment. Founded by Dominik Planzer and Françoise Ellenberger, we combine decades of architectural experience with certified valuation expertise.",
+  "about_intro": "Since 1995, Dominik Planzer and Françoise Ellenberger have offered independent valuations, owner representation and project management for private and institutional clients. Our values – precision, independence, discretion and experience – guide us in every assignment. With our diverse knowledge we combine decades of architectural experience with certified appraisal expertise.",
   "person_timeline_title": "Career Path",
   "person_motivation_title": "Motivation & Personal",
   "person_expertise_title": "Expertise",
@@ -153,8 +153,8 @@
   "person_a": {
     "name": "Dominik Planzer",
     "title": "MSc Arch ETH/SIA, Real Estate Valuer",
-    "bio": "Construction expert and owner's representative with many years of experience in complex projects for research institutions, cooperatives and the public sector. I combine architectural insight with systematic valuation—cost-conscious, quality-driven and sustainable.",
-    "motivation": "'Architecture is the art of shaping space. Valuation is the science of determining its worth. I find it fascinating how the two complement each other to define a property holistically. In my free time, I enjoy sailing on Lake Zurich and the precision of target shooting.'",
+    "bio": "Construction professional and owner representative with long-standing experience in complex projects for research institutes, housing cooperatives and the public sector. I combine architectural understanding with economics – cost-conscious, quality-oriented and sustainable.",
+    "motivation": "'Architecture is the art of shaping space. Valuation is the science of determining its value. I find it fascinating how the two complement each other and define a property holistically. In my free time I enjoy skiing in the Swiss mountains and the precision of good architecture.'",
     "expertise": [
       "Market value appraisal",
       "Condition assessment",
@@ -182,48 +182,53 @@
       {
         "date": "01/2021 – 09/2024",
         "title": "Owner's Representative, Empa Materials Science and Technology (Dübendorf, Zurich)",
-        "description": "Major research projects for Empa, Eawag and WSL."
+        "description": "Project management for research institutes in the ETH Domain: Empa, Eawag and WSL."
       },
       {
-        "date": "12/2018 – 09/2024",
+        "date": "12/2018 – 12/2020",
         "title": "Owner's Representative, BEP Federal Personnel Housing Cooperative",
         "description": "Residential development and refurbishments in Greater Zurich."
       },
       {
         "date": "12/2015 – 11/2018",
         "title": "Project Manager, Takt Baumanagement AG, Zurich",
-        "description": "Project management for complex large-scale builds."
+        "description": "Project management for complex large-scale projects."
       },
       {
         "date": "10/2011 – 11/2015",
         "title": "Owner's Representative, ETH Zurich",
-        "description": "Planning and delivery of university facilities."
+        "description": "Planning and realisation of university buildings."
+      },
+      {
+        "date": "01/1995 – 09/2011",
+        "title": "Managing Director & Co-Owner, Delta Architekten AG (Altdorf)",
+        "description": "Planning and delivery of new and refurbished buildings."
       },
       {
         "date": "2002 – 2022",
         "title": "Member, Cantonal Valuation Commission Uri",
-        "description": "Valuations on behalf of the canton."
+        "description": "Valuations on behalf of the public sector (part-time)."
       },
       {
         "date": "2006 – 2007",
         "title": "CAS Real Estate Valuation, HSLU",
-        "description": "Advanced valuation methods."
+        "description": "Advanced valuation methodology."
       },
       {
         "date": "1999 – 2000",
         "title": "MBA in Corporate Management, HSLU Lucerne",
-        "description": "Management focus for architecture and engineering firms."
+        "description": "Management for architects and engineers."
       },
       {
         "date": "1984 – 1990",
         "title": "MSc Architecture, ETH Zurich",
-        "description": "Architectural design and project development."
+        "description": "Degree in architecture and project realisation at ETH Zurich."
       }
     ],
-    "quickfacts": "<div>Focus areas</div><div>Market value appraisals, condition assessments, owner’s representation, energy consulting</div><div>Industries / contexts</div><div>Research (Empa/Eawag/WSL), cooperative housing (BEP), academic environment (ETH), large-scale projects</div><div>Roles</div><div>Owner / managing director, owner’s representative, project manager</div><div>Engagement</div><div>Cantonal valuation commission (2002–2022); municipal council Seedorf-Bauen, schools & culture (since 2025)</div><div>Education</div><div>MSc Arch ETH; MBA HSLU; CAS real estate valuation; IPMA project management</div>",
+    "quickfacts": "<div>Focus areas</div><div>Market value appraisals, condition assessments, owner representation, energy consulting</div><div>Industries / contexts</div><div>Research institutes (Empa/Eawag/WSL), cooperative housing (BEP), university (ETH), major projects</div><div>Roles</div><div>Owner / managing director, owner representative, project manager</div><div>Engagement</div><div>Cantonal valuation commission (2002–2022); municipal council Seedorf-Bauen, schools & culture (since 2025)</div><div>Education</div><div>Dipl. Arch ETH; MBA HSLU; CAS real estate valuation; IPMA project management</div>",
     "methods_title": "Methods & Standards",
     "methods_summary": "Transparent, traceable valuation (expand)",
-    "methods_list": "<li>Methods: sales comparison, income and cost approaches; combined to suit asset and market</li><li>Data basis: condition analysis, cost and life-cycle assessments, energy metrics</li><li>Documentation: explicit assumptions, sensitivities, sources</li><li>Practice: neutral reports (no proprietary trading), advisory for transactions and development</li>"
+    "methods_list": "<li>Methods: sales comparison, income and cost approaches; combined to suit asset and market</li><li>Data basis: condition analysis, cost and life-cycle assessments, energy metrics</li><li>Documentation: explicit assumptions, sensitivities, sources</li><li>Practice: neutral reports (no proprietary trading), advisory for purchase/sale and project development</li>"
   },
   "person_b": {
     "name": "Françoise C. Ellenberger",
@@ -239,12 +244,12 @@
       "Portfolio strategy",
       "Residential development",
       "Public sector",
-      "Cooperative housing"
+      "Investment strategy"
     ],
     "timeline": [
       {
         "date": "since 01/2023",
-        "title": "Independent Owner’s Representative",
+        "title": "Owner advisor",
         "description": "Development, planning, construction & sustainability; CO₂ pathways; real estate valuations."
       },
       {
@@ -273,10 +278,10 @@
         "description": "Humanistic foundation for architectural studies."
       }
     ],
-    "quickfacts": "<div>Focus areas</div><div>Sustainability strategies in real estate, owner’s representation, certified valuations, energy & water concessions</div><div>Roles</div><div>Independent owner’s advisor; owner’s representative (Suva, 2011–2022); cantonal architect / head of energy office (OW, 2006–2011); managing partner architecture (Delta Architekten, 1991–2006)</div><div>Education</div><div>MSc Arch ETH; Matura Type B (Kollegium Karl Borromäus); association work: SIA, SIV, BPW</div><div>Working style</div><div>Strategic, user-centred, measurably sustainable; clear prioritisation of impact, cost and quality</div>",
+    "quickfacts": "<div>Focus areas</div><div>Sustainability strategies in real estate, owner representation, certified valuations, energy & water concessions</div><div>Roles</div><div>Independent owner advisor; owner representative (Suva, 2011–2022); cantonal architect / head of energy office (OW, 2006–2011); managing partner architecture (Delta Architekten, 1991–2006)</div><div>Education</div><div>Dipl. Arch ETH; association activities: SIA, SIV, BPW</div><div>Working style</div><div>Strategic, user-centred, measurably sustainable; clear prioritisation of impact, cost and quality</div>",
     "methods_title": "Methods & Sustainability",
     "methods_summary": "Sustainability with practical impact (expand)",
-    "methods_list": "<li>Sustainability strategies for portfolios and single assets (incl. CO₂ pathways, energy roadmaps, target systems)</li><li>Valuation methodology: sales, income and cost approaches enriched with energy and ecological indicators</li><li>Owner’s representation: user needs, operations, life-cycle costing, permits (incl. water / heat where relevant)</li><li>Governance & reporting: transparent assumptions, KPI tracking, client communication</li>"
+    "methods_list": "<li>Sustainability strategies for portfolios and single assets (incl. CO₂ pathways, energy roadmaps, target systems)</li><li>Valuation methodology: sales, income and cost approaches enriched with energy and ecological indicators</li><li>Owner representation: user needs, operations, life-cycle costs, permits</li><li>Governance & reporting: transparent assumptions, KPI tracking, client communication</li>"
   },
   "contact_pref": "Preferred: please use the form on the right.",
   "contact_service_label": "Request",
@@ -285,7 +290,7 @@
   "contact_service_options": [
     "01 Market value appraisal",
     "02 Building condition assessment",
-    "03 Project management (new build / refurbishment)",
+    "03 Project management",
     "04 Transaction advisory"
   ],
   "person_quickfacts_title": "Quick Facts",
@@ -301,7 +306,7 @@
       "contact": "<strong>Kontakt (bevorzugt):</strong> <a href=\"contact.html\">Kontaktformular</a>",
       "reveal_button": "anzeigen",
       "responsible": "<strong>Verantwortlich für den Inhalt:</strong> Dominik Planzer &amp; Françoise C. Ellenberger",
-      "optional_note": "Optionale Angaben (z. B. UID/MwSt-Nr.) auf anfrage "
+      "optional_note": "Optional details (e.g. VAT number) on request"
     },
     "privacy": {
       "meta_title": "Datenschutz | Immobilien Schätzung + Beratung",

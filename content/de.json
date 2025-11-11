@@ -8,12 +8,12 @@
   "nav_projects": "Referenzen",
   "nav_about": "Über uns",
   "nav_back_home": "Zurück zur Startseite",
-  "meta_title_home": "Immobilien Schätzung + Beratung | Präzise Immobilienbewertung & Beratung",
-  "meta_description_home": "Immobilien Schätzung + Beratung bietet seit 1995 unabhängige Bewertungen, Beratung und Projektleitung. Wir erstellen Verkehrswertgutachten, führen Bauzustandsanalysen durch und unterstützen Sie bei Ihrem Projekt in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung.",
+  "meta_title_home": "Immobilien Schätzung + Beratung | Unabhängige Immobilienbewertung & Immobilien Beratung",
+  "meta_description_home": "Immobilien Schätzung + Beratung bietet seit 1995 unabhängige Bewertungen, Beratung und Projektleitung. Wir erstellen Verkehrswertgutachten, führen Bauzustandsanalysen durch und unterstützen Sie bei Ihrem Projekt in der Zentralschweiz, Zürich und Westschweiz. Präzision, Diskretion und Erfahrung auf Deutsch, Englisch und Französisch.",
   "meta_title_person_a": "Dominik Planzer | Immobilien Schätzung + Beratung",
-  "meta_description_person_a": "Profil von Dominik Planzer, Dipl. Arch. ETH/SIA, Bauherrenvertreter und Immobilienschätzer mit Fokus auf Forschung, Genossenschaften und öffentliche Hand.",
+  "meta_description_person_a": "Profil von Dominik Planzer, Dipl. Arch. ETH/SIA, Bauherrenvertreter und Immobilienschätzer mit Fokus auf Forschung und Lehre, Wohnbauten und Bauherrenvertretung.",
   "meta_title_person_b": "Françoise C. Ellenberger | Immobilien Schätzung + Beratung",
-  "meta_description_person_b": "Profil von Françoise C. Ellenberger, Dipl. Arch. ETH/SIA und Immobilienbewerterin eidg. FA mit Schwerpunkt Nachhaltigkeit und Bauherrenvertretung.",
+  "meta_description_person_b": "Profil von Françoise C. Ellenberger, Dipl. Arch. ETH/SIA und Immobilienbewerterin eidg. FA mit Schwerpunkt Nachhaltigkeit und Projekte der öffentlichen Hand.",
   "hero_subtitle": "Immobilien Schätzung + Beratung",
   "hero_cta": "Anfrage senden",
   "hero_title_name": "Immobilien Schätzung + Beratung",
@@ -25,7 +25,7 @@
   "value_3_title": "Diskretion",
   "value_3_desc": "Absoluter Schutz Ihrer sensiblen Daten und Wahrung Ihrer Privatsphäre.",
   "value_4_title": "Erfahrung",
-  "value_4_desc": "Seit 1995 Erfahrung als Architekten und Immobilienschätzer.",
+  "value_4_desc": "Seit 1995 Erfahrung als Architekten, Immobilienschätzer und Bauherrenvertreter.",
   "services_title": "Leistungen",
   "services": [
     {
@@ -36,13 +36,13 @@
     {
       "id": "s2",
       "title": "Bauzustandsbewertungen",
-      "description": "Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen inkl. Kostenschätzung."
+      "description": "Detaillierte Analyse der Bausubstanz zur Identifikation von Mängeln und zur Planung von Sanierungsmassnahmen mit Kostenschätzung."
     },
-    {
-      "id": "s3",
-      "title": "Projektmanagement (Neubau/Sanierung)",
-      "description": "Wir begleiten Ihr Bauvorhaben von der Planung bis zur Fertigstellung, sichern die Qualität, kontrollieren Kosten und Termine."
-    },
+      {
+        "id": "s3",
+        "title": "Projektmanagement",
+        "description": "Wir begleiten Ihr Bauvorhaben von der Grundlagenerhebung zur Planung bis zur Fertigstellung. Wir sichern die Qualität, kontrollieren Kosten und Termine."
+      },
     {
       "id": "s4",
       "title": "Transaktionsberatung",
@@ -51,13 +51,13 @@
   ],
   "work_title": "Ausgewählte Referenzen",
   "work_1_title": "Projektentwicklung",
-  "work_1_desc": "Wettbewerbsverfahren für eine Gesamtüberbauung mit 100 Miet- und Eigentumswohnungen in Zürich-Manegg.",
+  "work_1_desc": "Wettbewerbsverfahren für eine Gesamtüberbauung mit über 100 Miet- und Eigentumswohnungen in Zürich-Manegg.",
   "work_2_title": "Erneuerung",
   "work_2_desc": "Bauherrenseitige Projektleitung für Konzept und Umbau eines 70-jährigen Wohnhauses in Altdorf.",
   "work_3_title": "Forschung",
-  "work_3_desc": "Projektleitung für den Neubau des Büro- und Laborgebäudes Haus D des SLF in Davos, zertifiziert nach Minergie-P-Eco und SNBS Platin.",
+  "work_3_desc": "Projektleitung für den Neubau des Büro- und Laborgebäudes des WSL-Institut für Schnee- und Lawinenforschung in Davos, zertifiziert nach Minergie-P-Eco und SNBS Platin.",
   "work_4_title": "Innenarchitektur",
-  "work_4_desc": "Projektleitung für die Neugestaltung der WSL-Bibliothek mit 40 zeitgemässen Arbeitsplätzen.",
+  "work_4_desc": "Projektleitung für die Neugestaltung der WSL-Bibliothek in Birmensdorf mit zeitgemässen Arbeitsplätzen.",
   "work_5_title": "Wertgutachten",
   "work_5_desc": "Wertgutachten und Umbaustrategie für die Gebäude der ehemaligen Genossenschaft Druckerei Zürich.",
   "process_title": "Unser Prozess",
@@ -72,19 +72,19 @@
     },
     {
       "title": "Analyse & Bewertung",
-      "description": "Unsere Experten analysieren die gesammelten Informationen und wenden die passenden Bewertungsmethoden an."
+      "description": "Unsere Experten analysieren die gesammelten Informationen und wenden die passende Bewertungsmethode an."
     },
     {
       "title": "Gutachtenerstellung & Besprechung",
-      "description": "Sie erhalten ein verständliches, nachvollziehbares Gutachten. Wir besprechen die Ergebnisse und beantworten Ihre Fragen."
+      "description": "Sie erhalten ein ausführliches und nachvollziehbares Gutachten. Wir besprechen die Ergebnisse und beantworten Ihre Fragen."
     }
   ],
   "credentials_methods_title": "Methoden",
-  "credentials_methods_desc": "Hedonische Bewertung, DCF (Discounted Cashflow), Vergleichswertverfahren und weitere nach internationalem Standard.",
+  "credentials_methods_desc": "Ertragswertmethode, DCF (Discounted Cashflow), Vergleichswertverfahren und weitere allgemein anerkannte Verfahren.",
   "credentials_regions_title": "Regionen",
-  "credentials_regions_desc": "Zürich, Zentralschweiz, Westschweiz und auf Anfrage.",
+  "credentials_regions_desc": "Zentralschweiz, Zürich, Westschweiz und Tessin.",
   "credentials_partners_title": "Partner",
-  "credentials_partners_desc": "Wir arbeiten regelmässig mit führenden Banken, Versicherungen und Pensionskassen zusammen.",
+  "credentials_partners_desc": "Wir arbeiten nach den Regeln des Schweizer Immobilienschätzer Verbands SIV und des Schweizerischen Ingenieur- und Architektenvereins SIA.",
   "team_title": "Die Gründer",
   "team_a_name": "Dominik Planzer",
   "team_a_title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
@@ -94,16 +94,16 @@
   "testimonials_title": "Kundenstimmen",
   "testimonials": [
     {
-      "quote": "Die Analyse war extrem detailliert und hat uns bei der Preisverhandlung entscheidend geholfen. Absolut professionell.",
+      "quote": "Die Analyse unserer Liegenschaften war sehr detailliert und hat uns beim weiteren Vorgehen und der Preisverhandlung entscheidend geholfen. Absolut professionell.",
       "author": "Privater Investor, Zürich"
     },
     {
-      "quote": "[Platzhalter Name] hat den komplexen Fall unserer Erbengemeinschaft mit viel Fachwissen und Fingerspitzengefühl gelöst.",
-      "author": "Familie S., Luzern"
+      "quote": "Frau Ellenberger hat den komplexen Fall unserer Immobilienentwicklung mit viel Fachwissen und Fingerspitzengefühl vorangetrieben.",
+      "author": "Familie S., Baar"
     },
     {
       "quote": "Schnell, zuverlässig und ein Gutachten, das auch für Laien verständlich ist. Uneingeschränkte Empfehlung.",
-      "author": "Geschäftsführer KMU, Zug"
+      "author": "Privateigentümer eines Ferienhauses, Steinhausen"
     }
   ],
   "faq_title": "Häufige Fragen",
@@ -111,7 +111,7 @@
     {
       "id": "f1",
       "title": "Wie lange dauert eine Bewertung?",
-      "description": "Ein Standard-Verkehrswertgutachten für ein Wohnhaus dauert in der Regel 2-3 Wochen von der Besichtigung bis zur Fertigstellung."
+      "description": "Die Erstellung eines Standard-Verkehrswertgutachten für ein Wohnhaus dauert in der Regel 2-3 Wochen von der Besichtigung bis zur Fertigstellung."
     },
     {
       "id": "f2",
@@ -121,7 +121,7 @@
     {
       "id": "f3",
       "title": "Sind Ihre Gutachten bankenanerkannt?",
-      "description": "Ja, unsere Gutachten entsprechen den Standards der meisten Schweizer Finanzinstitute und werden breit akzeptiert."
+      "description": "Ja, unsere Gutachten entsprechen den Standards der meisten Schweizer Finanzinstitute, denn sie werden nach den Vorgaben des Schweizer Immobilienschätzer-Verbandes erstellt und sind somit breit akzeptiert."
     }
   ],
   "contact_title": "Kontaktieren Sie uns",
@@ -137,7 +137,7 @@
   "footer_imprint": "Impressum",
   "footer_privacy": "Datenschutz",
   "meta_title_services": "Leistungen | Immobilien Schätzung + Beratung",
-  "meta_description_services": "Erfahren Sie mehr über unsere Dienstleistungen – Verkehrswertgutachten, Bauzustandsbewertungen, Projektmanagement und Transaktionsberatung.",
+  "meta_description_services": "Erfahren Sie mehr über unsere Dienstleistungen – Verkehrswertgutachten, Bauzustandsbewertungen, Projektentwicklung und Transaktionsberatung.",
   "meta_title_projects": "Referenzen | Immobilien Schätzung + Beratung",
   "meta_description_projects": "Entdecken Sie ausgewählte Projekte und Referenzen unserer Arbeit – von Wohnbauten über Gewerbeobjekte bis hin zu Neubauprojekten.",
   "meta_title_about": "Über uns | Immobilien Schätzung + Beratung",
@@ -145,7 +145,7 @@
   "meta_title_contact": "Kontakt | Immobilien Schätzung + Beratung",
   "meta_description_contact": "Nehmen Sie Kontakt mit uns auf für eine unverbindliche Erstberatung.",
   "about_title": "Über uns",
-  "about_intro": "Seit 1995 bietet Immobilien Schätzung + Beratung unabhängige Bewertungen, Beratung und Projektleitung für private und institutionelle Auftraggeber. Unsere Werte – Präzision, Unabhängigkeit, Diskretion und Erfahrung – leiten uns bei jedem Auftrag. Gegründet von Dominik Planzer und Françoise Ellenberger, vereinen wir jahrzehntelange Architekturerfahrung mit zertifiziertem Bewertungsknowhow.",
+  "about_intro": "Seit 1995 bieten Dominik Planzer und Françoise Ellenberger unabhängige Bewertungen, Bauherrenberatung und Projektleitung für private und institutionelle Auftraggeber. Unsere Werte – Präzision, Unabhängigkeit, Diskretion und Erfahrung – leiten uns bei jedem Auftrag. Mit unserem vielfältigen Wissen vereinen wir jahrzehntelange Architekturerfahrung mit zertifiziertem Bewertungsknowhow.",
   "person_timeline_title": "Werdegang",
   "person_motivation_title": "Motivation & Persönliches",
   "person_expertise_title": "Expertise",
@@ -153,8 +153,8 @@
   "person_a": {
     "name": "Dominik Planzer",
     "title": "Dipl. Arch. ETH/SIA, Immobilienschätzer",
-    "bio": "Baufachmann und Bauherrenvertreter mit langjähriger Erfahrung in komplexen Projekten von Forschung, Genossenschaften und öffentlicher Hand. Ich verbinde Architekturverständnis mit systematischer Bewertung – kostenbewusst, qualitätsorientiert und nachhaltig.",
-    "motivation": "'Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Segeln auf dem Zürichsee und die Präzision des Sportschützenwesens.'",
+    "bio": "Baufachmann und Bauherrenvertreter mit langjähriger Erfahrung in komplexen Projekten von Forschungsinstituten, Wohnbaugenossenschaften und öffentlicher Hand. Ich verbinde Architekturverständnis mit Ökonomie – kostenbewusst, qualitätsorientiert und nachhaltig.",
+    "motivation": "'Architektur ist die Kunst, Raum zu formen. Die Bewertung ist die Wissenschaft, seinen Wert zu bestimmen. Ich finde es faszinierend, wie sich beides ergänzt und eine Immobilie ganzheitlich definiert. In meiner Freizeit geniesse ich das Skifahren in den Schweizer Bergen und die Präzision von guter Architektur.'",
     "expertise": [
       "Verkehrswertschätzung",
       "Zustandsbeurteilung",
@@ -182,10 +182,10 @@
       {
         "date": "01/2021 – 09/2024",
         "title": "Bauherrenvertreter, Empa Materials Science and Technology (Dübendorf, ZH)",
-        "description": "Grossprojekte für Empa, Eawag und WSL."
+        "description": "Projektleitung für die Forschungsinstitute im ETH Bereich: Empa, Eawag und WSL."
       },
       {
-        "date": "12/2018 – 09/2024",
+        "date": "12/2018 – 12/2020",
         "title": "Bauherrenvertreter, BEP Baugenossenschaft des eidgenössischen Personals",
         "description": "Wohnungsbau und Sanierungen im Raum Zürich."
       },
@@ -200,9 +200,14 @@
         "description": "Planung und Realisierung von Hochschulbauten."
       },
       {
+        "date": "01/1995 – 09/2011",
+        "title": "Geschäftsleitung & Mitinhaberin, Delta Architekten AG (Altdorf)",
+        "description": "Planung und Realisierung von Neu- und Umbauten."
+      },
+      {
         "date": "2002 – 2022",
         "title": "Mitglied, Kantonale Schätzungskommission Uri",
-        "description": "Bewertungen im Auftrag der öffentlichen Hand."
+        "description": "Bewertungen im Auftrag der öffentlichen Hand im Nebenamt."
       },
       {
         "date": "2006 – 2007",
@@ -220,7 +225,7 @@
         "description": "Schwerpunkt Architektur und Projektierung."
       }
     ],
-    "quickfacts": "<div>Schwerpunkte</div><div>Verkehrswertschätzungen, Zustandsbeurteilungen, Bauherrenvertretung, Energieberatung</div><div>Branchen/Umfelder</div><div>Forschung (Empa/Eawag/WSL), Genossenschaftsbau (BEP), Hochschulumfeld (ETH), Grossprojekte</div><div>Rollen</div><div>Inhaber/GL, Bauherrenvertreter, Projektmanager</div><div>Engagement</div><div>Kantonale Schätzungskommission (2002–2022); Gemeinderat Seedorf-Bauen, Ressort Schulen & Kultur (seit 2025)</div><div>Ausbildung</div><div>Dipl. Arch. ETH; MBA HSLU; CAS Immobilienschätzung; IPMA Projektleitung</div>",
+    "quickfacts": "<div>Schwerpunkte</div><div>Verkehrswertschätzungen, Zustandsbeurteilungen, Bauherrenvertretung, Energieberatung</div><div>Branchen/Umfelder</div><div>Forschungsinstitute (Empa/Eawag/WSL), Genossenschaftsbau (BEP), Hochschule (ETH), Grossprojekte</div><div>Rollen</div><div>Inhaber/GL, Bauherrenvertreter, Projektmanager</div><div>Engagement</div><div>Kantonale Schätzungskommission (2002–2022); Gemeinderat Seedorf-Bauen, Ressort Schulen & Kultur (seit 2025)</div><div>Ausbildung</div><div>Dipl. Arch. ETH; MBA HSLU; CAS Immobilienschätzung; IPMA Projektleitung</div>",
     "methods_title": "Methoden & Standards",
     "methods_summary": "Transparente, nachvollziehbare Bewertung (aufklappen)",
     "methods_list": "<li>Methoden: Vergleichswert, Ertragswert, Sachwert; objekt- und marktgerecht kombiniert</li><li>Datenbasis: Zustandsbeurteilung, Kosten- und Lebenszyklusbetrachtung, energetische Kennwerte</li><li>Dokumentation: klare Annahmen, Sensitivitaeten, Quellenlage</li><li>Praxis: neutrale Gutachten (kein Eigenhandel), Beratung bei Kauf/Verkauf und Projektentwicklung</li>"
@@ -228,8 +233,8 @@
   "person_b": {
     "name": "Françoise C. Ellenberger",
     "title": "Dipl. Arch. ETH/SIA, Immobilienbewerterin eidg. FA",
-    "bio": "Bauherrenvertreterin und Spezialistin für Nachhaltigkeit mit fundiertem Know-how in Immobilien, Energie und Wasserkonzessionen. Ich verbinde architektonische Praxis mit messbarer Wirkung: Strategie, Bewertung und Umsetzung – von CO₂-Absenkpfaden bis zur nutzerorientierten Planung.",
-    "motivation": "'Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Wandern in den Alpen und in der Beschäftigung mit moderner Kunst.'",
+    "bio": "Bauherrenvertreterin und Spezialistin für Nachhaltigkeit mit fundiertem Know-how in Immobilien, Energie und Wasserwirtschaft. Ich verbinde architektonische Praxis mit messbarer Wirkung: Strategie, Bewertung und Umsetzung – von CO₂-Absenkpfaden bis zur nutzerorientierten Planung.",
+    "motivation": "'Jede Immobilie erzählt eine Geschichte – von den Menschen, die darin lebten, und von ihrer baulichen Entwicklung. Diesen Geschichten einen objektiven Wert zuzuordnen, ist eine verantwortungsvolle Aufgabe. Ausgleich finde ich beim Schwimmen im See und in der Beschäftigung mit moderner Kunst.'",
     "expertise": [
       "Bauherrenvertretung",
       "Nachhaltigkeit",
@@ -239,12 +244,12 @@
       "Portfolio-Strategie",
       "Wohnungsbau",
       "Öffentliche Hand",
-      "Genossenschaftsbau"
+      "Anlagestrategie"
     ],
     "timeline": [
       {
         "date": "seit 01/2023",
-        "title": "Selbständige Bauherrenberaterin",
+        "title": "Bauherrenberaterin",
         "description": "Entwicklung, Planung, Bau & Nachhaltigkeit; CO₂-Absenkpfade; Immobilienbewertungen."
       },
       {
@@ -266,17 +271,12 @@
         "date": "1980 – 1988",
         "title": "Dipl. Architektin ETH Zürich",
         "description": "Verbandsaktivitäten: SIA, SIV, BPW."
-      },
-      {
-        "date": "1972 – 1980",
-        "title": "Matura Typus B, Kollegium Karl Borromäus",
-        "description": "Humanistisches Fundament für das Architekturstudium."
       }
     ],
-    "quickfacts": "<div>Schwerpunkte</div><div>Nachhaltigkeitsstrategien Immobilien, Bauherrenvertretung, Immobilienbewertungen (eidg. FA), Energie & Wasserkonzessionen</div><div>Rollen</div><div>Selbständige Bauherrenberaterin; Bauherrenvertreterin (Suva, 2011–2022); Kantonsarchitektin / Leitung Energiefachstelle (OW, 2006–2011); Geschäftsleitung/Mitinhaberin Architektur (Delta Architekten, 1991–2006)</div><div>Ausbildung</div><div>Dipl. Arch. ETH; Matura Typus B (Kollegium Karl Borromäus); Verbandsaktivitäten: SIA, SIV, BPW</div><div>Arbeitsweise</div><div>Strategisch, nutzerzentriert, messbar nachhaltig; klare Priorisierung von Wirkung, Kosten und Qualität</div>",
+    "quickfacts": "<div>Schwerpunkte</div><div>Nachhaltigkeitsstrategien Immobilien, Bauherrenvertretung, Immobilienbewertungen (eidg. FA), Energie & Wasserkonzessionen</div><div>Rollen</div><div>Selbständige Bauherrenberaterin; Bauherrenvertreterin (Suva, 2011–2022); Kantonsarchitektin / Leitung Energiefachstelle (OW, 2006–2011); Geschäftsleitung/Mitinhaberin Architektur (Delta Architekten, 1991–2006)</div><div>Ausbildung</div><div>Dipl. Arch. ETH; Verbandsaktivitäten: SIA, SIV, BPW</div><div>Arbeitsweise</div><div>Strategisch, nutzerzentriert, messbar nachhaltig; klare Priorisierung von Wirkung, Kosten und Qualität</div>",
     "methods_title": "Methoden & Nachhaltigkeit",
     "methods_summary": "Nachhaltigkeit mit Praxisnutzen (aufklappen)",
-    "methods_list": "<li>Nachhaltigkeitsstrategien für Portfolios und Einzelobjekte (inkl. Absenkpfade CO2, Energiepfade, Zielsysteme)</li><li>Bewertungsmethodik: Vergleichs-, Ertrags- und Sachwert; Anreicherung um energetische und ökologische Kennwerte</li><li>Bauherrenvertretung: Nutzerbedürfnisse, Betrieb, Lebenszykluskosten, Genehmigungen (inkl. Wasser/Wärme, wo relevant)</li><li>Governance & Reporting: nachvollziehbare Annahmen, KPI-Tracking, Auftraggeber-transparenz</li>"
+    "methods_list": "<li>Nachhaltigkeitsstrategien für Portfolios und Einzelobjekte (inkl. Absenkpfade CO2, Energiepfade, Zielsysteme)</li><li>Bewertungsmethodik: Vergleichs-, Ertrags- und Sachwert; Anreicherung um energetische und ökologische Kennwerte</li><li>Bauherrenvertretung: Nutzerbedürfnisse, Betrieb, Lebenszykluskosten, Genehmigungen</li><li>Governance & Reporting: nachvollziehbare Annahmen, KPI-Tracking, Auftraggeber-transparenz</li>"
   },
   "contact_pref": "Bevorzugt: Nutzen Sie das Formular rechts.",
   "contact_service_label": "Anliegen",
@@ -285,7 +285,7 @@
   "contact_service_options": [
     "01 Verkehrswertgutachten",
     "02 Bauzustandsbewertungen",
-    "03 Projektmanagement (Neubau/Sanierung)",
+    "03 Projektmanagement",
     "04 Transaktionsberatung"
   ],
   "person_quickfacts_title": "Kurzprofil",
@@ -301,7 +301,7 @@
       "contact": "<strong>Kontakt (bevorzugt):</strong> <a href=\"contact.html\">Kontaktformular</a>",
       "reveal_button": "anzeigen",
       "responsible": "<strong>Verantwortlich für den Inhalt:</strong> Dominik Planzer &amp; Françoise C. Ellenberger",
-      "optional_note": "Optionale Angaben (z. B. UID/MwSt-Nr.) auf anfrage "
+      "optional_note": "Optionale Angaben (z. B. UID/MwSt-Nr.) auf Anfrage"
     },
     "privacy": {
       "meta_title": "Datenschutz | Immobilien Schätzung + Beratung",
