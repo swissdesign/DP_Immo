@@ -349,6 +349,7 @@ section {
     justify-content: center;
     flex: 1;
     gap: 2rem;
+  fill: var(--paper);
 }
 .logo-animated-wrapper {
   width: min(70vw, 520px);
@@ -356,6 +357,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--paper);
 }
 .logo-animated-wrapper svg,
 .logo-animated-wrapper img {
@@ -365,6 +367,7 @@ section {
 }
 .logo-animated-wrapper img {
   object-fit: contain;
+  fill: var(--paper);
 }
 .hero-title {
   font-size: var(--font-size-4xl);
