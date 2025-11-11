@@ -359,6 +359,12 @@ section {
   justify-content: center;
   fill: var(--paper);
 }
+
+.logo-animated-wrapper svg #logo *,
+.logo-animated-wrapper svg #text * {
+    fill: var(--paper);
+  }
+
 .logo-animated-wrapper svg,
 .logo-animated-wrapper img {
   fill: var(--paper);
