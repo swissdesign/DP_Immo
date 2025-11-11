@@ -359,6 +359,7 @@ section {
 }
 .logo-animated-wrapper svg,
 .logo-animated-wrapper img {
+  fill: var(--paper);
   width: 100%;
   height: 100%;
 }
