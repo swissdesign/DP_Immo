@@ -1,5 +1,4 @@
-/*
-  Main Stylesheet
+Main Stylesheet
   ---
   1. Base & Reset
   2. Layout & Container
@@ -352,7 +351,8 @@ section {
   fill: var(--paper);
 }
 .logo-animated-wrapper {
-  width: min(70vw, 520px);
+  /* MODIFIED: Increased max-width from 520px to 620px */
+  width: min(80vw, 620px);
   aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
