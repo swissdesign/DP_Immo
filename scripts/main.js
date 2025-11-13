@@ -1,45 +1,22 @@
+// MODIFIED: Added 6 new paths to the pattern for a much denser, more random line effect.
 const SCROLL_PATTERN_MARKUP = `
-       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
           <defs>
             <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-               <line class="st0" x1="68.19" y1="16.12" x2="18.54" y2="65.77"/>
-  <line class="st0" x1="75.64" y1="49.89" x2="61.42" y2="64.11"/>
-  <line class="st0" x1="40.4" y1="13.77" x2="27.61" y2="26.57"/>
-  <line class="st0" x1="61.5" y1="6.12" x2="-3.01" y2="70.63"/>
-  <line class="st0" x1="49.96" y1="55.4" x2="45.14" y2="60.22"/>
-  <line class="st0" x1="82.89" y1="34.46" x2="77.18" y2="40.17"/>
-  <line class="st0" x1="107.23" y1="48.27" x2="71.55" y2="83.95"/>
-  <line class="st0" x1="64.26" y1="81.44" x2="47.69" y2="98.01"/>
-  <line class="st0" x1="38.5" y1="63.79" x2="23.07" y2="79.22"/>
-  <line class="st0" x1="16.27" y1="26.16" x2="-3.29" y2="45.72"/>
-  <line class="st0" x1="44.05" y1="-.97" x2="41.94" y2="1.13"/>
-  <line class="st0" x1="61.5" y1="34.87" x2="39.59" y2="56.78"/>
-  <line class="st0" x1="91.43" y1="18.55" x2="20.56" y2="89.42"/>
-  <line class="st0" x1="58.14" y1="71.2" x2="50.89" y2="78.45"/>
-  <line class="st0" x1="79.36" y1="54.92" x2="63.73" y2="70.55"/>
-  <line class="st0" x1="102.37" y1="63.5" x2="50.73" y2="115.14"/>
-  <line class="st0" x1="67.94" y1="3.81" x2="60.49" y2="11.26"/>
-  <line class="st0" x1="56.08" y1=".69" x2="50.89" y2="5.87"/>
-  <line class="st0" x1="35.14" y1="6.24" x2="18.17" y2="23.21"/>
-  <line class="st0" x1="51.87" y1="-16.4" x2="-9.37" y2="44.83"/>
-  <line class="st0" x1="16.71" y1="36.94" x2="66.36" y2="86.59"/>
-  <line class="st0" x1="50.49" y1="29.49" x2="64.7" y2="43.71"/>
-  <line class="st0" x1="14.36" y1="64.72" x2="27.16" y2="77.52"/>
-  <line class="st0" x1="6.71" y1="43.63" x2="71.22" y2="108.14"/>
-  <line class="st0" x1="56" y1="55.17" x2="60.82" y2="59.99"/>
-  <line class="st0" x1="35.06" y1="22.24" x2="40.77" y2="27.95"/>
-  <line class="st0" x1="48.87" y1="-2.1" x2="84.55" y2="33.58"/>
-  <line class="st0" x1="82.04" y1="40.87" x2="98.6" y2="57.44"/>
-  <line class="st0" x1="64.38" y1="66.63" x2="79.81" y2="82.06"/>
-  <line class="st0" x1="26.76" y1="88.86" x2="46.32" y2="108.42"/>
-  <line class="st0" x1="35.46" y1="43.63" x2="57.37" y2="65.53"/>
-  <line class="st0" x1="19.14" y1="13.7" x2="90.02" y2="84.57"/>
-  <line class="st0" x1="71.79" y1="46.99" x2="79.04" y2="54.24"/>
-  <line class="st0" x1="55.51" y1="25.77" x2="71.14" y2="41.4"/>
-  <line class="st0" x1="64.1" y1="2.76" x2="115.73" y2="54.4"/>
-  <line class="st0" x1="4.4" y1="37.19" x2="11.85" y2="44.64"/>
-  <line class="st0" x1="6.83" y1="69.99" x2="23.8" y2="86.96"/>
-  <line class="st0" x1="-15.81" y1="53.26" x2="45.43" y2="114.5"/>
+              <!-- Original 6 Paths -->
+              <path d="M-25 25 L25 -25 M75 125 L125 75" />
+              <path d="M75 -25 L125 25 M-25 75 L25 125" />
+              <path d="M25 75 L75 25" />
+              <path d="M-25 75 L25 25 M75 175 L125 125" />
+              <path d="M-25 -25 L25 25 M75 75 L125 125" />
+              <path d="M-25 125 L25 75 M75 25 L125 -25" />
+              <!-- Added 6 More Paths for Density -->
+              <path d="M-15 35 L35 -15 M85 135 L135 85" />
+              <path d="M85 -15 L135 35 M-15 85 L35 135" />
+              <path d="M15 85 L85 15" />
+              <path d="M-15 85 L35 35 M85 185 L135 135" />
+              <path d="M-15 -15 L35 35 M85 85 L135 135" />
+              <path d="M-15 135 L35 85 M85 35 L135 -15" />
             </pattern>
           </defs>
           <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
