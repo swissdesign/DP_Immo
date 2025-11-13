@@ -57,8 +57,101 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Intersection Observer for animations ---
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Scroll Pattern Background ---
+    let scrollPatternPaths = [];
+    const SCROLL_PATTERN_MARKUP = `
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="100%" height="100%"
+             viewBox="0 0 100 100"
+             preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="pattern-lines"
+                     x="0" y="0"
+                     width="100" height="100"
+                     patternUnits="userSpaceOnUse">
+
+              <!-- Diagonals (45°) -->
+              <path d="M-25 25 L25 -25 M75 125 L125 75" />
+              <path d="M75 -25 L125 25 M-25 75 L25 125" />
+              <path d="M25 75 L75 25" />
+              <path d="M-10 110 L40 60" />
+              <path d="M60 40 L110 -10" />
+              <path d="M-30 80 L80 -30" />
+              <path d="M20 130 L130 20" />
+              <path d="M-20 40 L40 -20" />
+              <path d="M60 120 L120 60" />
+
+              <!-- Horizontal (90°) -->
+              <path d="M-10 10 L110 10" />
+              <path d="M-10 32 L110 32" />
+              <path d="M-10 55 L110 55" />
+              <path d="M-10 82 L110 82" />
+              <path d="M-30 95 L130 95" />
+
+              <!-- Vertical (90°) -->
+              <path d="M15 -10 L15 110" />
+              <path d="M38 -10 L38 110" />
+              <path d="M55 -10 L55 110" />
+              <path d="M70 -10 L70 110" />
+              <path d="M92 -10 L92 110" />
+            </pattern>
+          </defs>
+
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
+        </svg>
+    `.trim();
+
+    function initScrollPattern() {
+        if (prefersReducedMotion) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+        wrapper.innerHTML = SCROLL_PATTERN_MARKUP;
+
+        document.body.insertBefore(wrapper, document.body.firstChild);
+
+        const svg = wrapper.querySelector('svg');
+        if (!svg) return;
+
+        const paths = svg.querySelectorAll('path');
+
+        scrollPatternPaths = Array.from(paths).map((path) => {
+            const length = path.getTotalLength();
+
+            const dash = length * (Math.random() * 0.2 + 0.1);
+            const gap = length * (Math.random() * 0.4 + 0.6);
+
+            path.style.fill = 'none';
+            path.style.strokeDasharray = `${dash} ${gap}`;
+            path.style.strokeDashoffset = length;
+
+            const phaseOffset = Math.random();
+            const direction = Math.random() < 0.5 ? 1 : -1;
+
+            return { path, length, phaseOffset, direction };
+        });
+    }
+
+    function updateScrollPattern(ratio) {
+        if (!scrollPatternPaths.length) return;
+
+        const eased = ratio < 0.5
+            ? 2 * ratio * ratio
+            : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
+
+        scrollPatternPaths.forEach(({ path, length, phaseOffset, direction }) => {
+            let phase = phaseOffset + direction * eased;
+            phase %= 1;
+            if (phase < 0) phase += 1;
+
+            const offset = length * (1 - phase);
+            path.style.strokeDashoffset = offset;
+        });
+    }
+
+    // --- Intersection Observer for animations ---
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
     if (!prefersReducedMotion) {
@@ -153,11 +246,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseColour = { r: 247, g: 244, b: 239 }; // #F7F4EF
         const targetColour = { r: 237, g: 232, b: 226 }; // #EDE8E2
 
+        initScrollPattern();
+
         function updateScrollEffects() {
             const scrollY = window.scrollY;
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const ratio = docHeight > 0 ? Math.min(scrollY / docHeight, 1) : 0;
-            
+
             const r = Math.round(baseColour.r + (targetColour.r - baseColour.r) * ratio);
             const g = Math.round(baseColour.g + (targetColour.g - baseColour.g) * ratio);
             const b = Math.round(baseColour.b + (targetColour.b - baseColour.b) * ratio);
@@ -167,6 +262,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const offset = scrollY * 0.1;
                 heroSection.style.backgroundPosition = `center calc(50% + ${offset}px)`;
             }
+
+            // Animate the SVG line pattern in sync with the scroll ratio
+            updateScrollPattern(ratio);
         }
 
         let ticking = false;
