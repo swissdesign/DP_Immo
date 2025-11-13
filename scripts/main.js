@@ -4,11 +4,11 @@ const SCROLL_PATTERN_MARKUP = `
           <defs>
             <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
               <!-- Original 6 Paths -->
-              <path d="M-25 25 L25 -25 M75 125 L125 75" />
+              <path d="M-15 35 L35 -15 M85 135 L135 85" />
               <path d="M75 -25 L125 25 M-25 75 L25 125" />
-              <path d="M25 75 L75 25" />
-              <path d="M-25 75 L25 25 M75 175 L125 125" />
-              <path d="M-25 -25 L25 25 M75 75 L125 125" />
+              <path d="M45 95 L95 45" />
+              <path d="M-5 55 L5 5 M55 155 L105 105" />
+              <path d="M-10 -10 L40 40 M90 90 L140 140" />
               <path d="M-25 125 L25 75 M75 25 L125 -25" />
               <!-- Added 6 More Paths for Density -->
               <path d="M-15 35 L35 -15 M85 135 L135 85" />
