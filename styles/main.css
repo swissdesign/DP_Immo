@@ -41,7 +41,7 @@ body {
 
 /* Globale Bildanpassung für Sättigung und Helligkeit */
 img:not(.logo-static) {
-  filter: saturate(85%) brightness(95%);
+  filter: saturate(65%) brightness(90%);
 }
 
 @media (max-width: 768px) {
