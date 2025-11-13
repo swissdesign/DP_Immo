@@ -101,10 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
         </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                  <path d="M-25 25 L25 -25 M75 125 L125 75" />
+                  <path d="M75 -25 L125 25 M-25 75 L25 125" />
+                  <path d="M25 75 L75 25" />
+                </pattern>
+              </defs>
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
+            </svg>
     `.trim();
 
     function initScrollPattern() {
         if (prefersReducedMotion) return;
+
+        const DASH_RATIO = 0.4;
+        const GAP_RATIO = 0.9;
+        const PHASE_OFFSET_MULTIPLIER = 0.15;
 
         const wrapper = document.createElement('div');
         wrapper.className = 'scroll-pattern-wrapper';
@@ -122,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const dash = length * (Math.random() * 0.2 + 0.1);
             const gap = length * (Math.random() * 0.4 + 0.6);
+        scrollPatternPaths = Array.from(paths).map((path, index) => {
+            const length = path.getTotalLength();
+            const dash = length * DASH_RATIO;
+            const gap = length * GAP_RATIO;
 
             path.style.fill = 'none';
             path.style.strokeDasharray = `${dash} ${gap}`;
@@ -131,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const direction = Math.random() < 0.5 ? 1 : -1;
 
             return { path, length, phaseOffset, direction };
+            return { path, length, phaseOffset: index * PHASE_OFFSET_MULTIPLIER };
         });
     }
 
@@ -146,6 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
             phase %= 1;
             if (phase < 0) phase += 1;
 
+        scrollPatternPaths.forEach(({ path, length, phaseOffset }) => {
+            const phase = (eased + phaseOffset) % 1;
             const offset = length * (1 - phase);
             path.style.strokeDashoffset = offset;
         });
@@ -153,6 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Intersection Observer for animations ---
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+    initScrollPattern();
 
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {

@@ -41,6 +41,7 @@ body {
 }
 
 /* Scroll Pattern Background ---------------------------------- */
+/* Scroll Pattern Background */
 .scroll-pattern-wrapper {
   position: fixed;
   inset: 0;
@@ -57,6 +58,9 @@ body {
 .scroll-pattern-wrapper svg path {
   stroke: var(--line);
   stroke-width: 0.25;
+.scroll-pattern-wrapper svg path {
+  stroke: var(--line);
+  stroke-width: 0.6;
   stroke-linecap: round;
   opacity: 0.35;
   mix-blend-mode: multiply;
