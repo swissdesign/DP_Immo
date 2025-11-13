@@ -83,6 +83,7 @@ img {
   .full-screen {
     min-height: auto;
     justify-content: flex-start;
+    padding-block: clamp(3rem, 1.3rem + 7.2vw, 6rem);
   }
 }
 section {
