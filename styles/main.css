@@ -40,6 +40,7 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+/* Scroll Pattern Background ---------------------------------- */
 /* Scroll Pattern Background */
 .scroll-pattern-wrapper {
   position: fixed;
@@ -53,6 +54,10 @@ body {
   height: 100%;
 }
 
+/* Thin, subtle lines with blending */
+.scroll-pattern-wrapper svg path {
+  stroke: var(--line);
+  stroke-width: 0.25;
 .scroll-pattern-wrapper svg path {
   stroke: var(--line);
   stroke-width: 0.6;

@@ -61,6 +61,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll Pattern Background ---
     let scrollPatternPaths = [];
+    let lastScrollRatio = 0;
+    const SCROLL_PATTERN_SVG_PATH = 'assets/scroll-pattern.svg';
+    const SCROLL_PATTERN_CONFIG = {
+        MIN_DASH_RATIO: 0.1,
+        DASH_VARIANCE: 0.2,
+        MIN_GAP_RATIO: 0.6,
+        GAP_VARIANCE: 0.4,
+    };
+
+    async function initScrollPattern() {
+        if (prefersReducedMotion) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+
+        let svgMarkup = '';
+        try {
+            const response = await fetch(SCROLL_PATTERN_SVG_PATH);
+            if (!response.ok) {
+                throw new Error(`Request failed with status ${response.status}`);
+            }
+            svgMarkup = (await response.text()).trim();
+        } catch (error) {
+            console.error('Failed to load scroll pattern SVG:', error);
+            return;
+        }
+
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(svgMarkup, 'image/svg+xml');
+        const svg = svgDoc.querySelector('svg');
+        if (!svg || svg.querySelector('parsererror')) {
+            console.error('Failed to parse scroll pattern SVG.');
+            return;
+        }
+        wrapper.appendChild(svg);
+        document.body.insertBefore(wrapper, document.body.firstChild);
+
+        const paths = svg.querySelectorAll('path');
+        const {
+            MIN_DASH_RATIO,
+            DASH_VARIANCE,
+            MIN_GAP_RATIO,
+            GAP_VARIANCE,
+        } = SCROLL_PATTERN_CONFIG;
+
+        scrollPatternPaths = Array.from(paths).map((path) => {
+            const length = path.getTotalLength();
+
+            const dash = length * (MIN_DASH_RATIO + Math.random() * DASH_VARIANCE);
+            const gap = length * (MIN_GAP_RATIO + Math.random() * GAP_VARIANCE);
     const SCROLL_PATTERN_MARKUP = `
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
               <defs>
@@ -100,6 +150,13 @@ document.addEventListener('DOMContentLoaded', () => {
             path.style.strokeDasharray = `${dash} ${gap}`;
             path.style.strokeDashoffset = length;
 
+            const phaseOffset = Math.random();
+            const direction = Math.random() < 0.5 ? 1 : -1;
+
+            return { path, length, phaseOffset, direction };
+        });
+
+        updateScrollPattern(lastScrollRatio);
             return { path, length, phaseOffset: index * PHASE_OFFSET_MULTIPLIER };
         });
     }
@@ -110,6 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const eased = ratio < 0.5
             ? 2 * ratio * ratio
             : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
+
+        scrollPatternPaths.forEach(({ path, length, phaseOffset, direction }) => {
+            let phase = phaseOffset + direction * eased;
+            phase %= 1;
+            if (phase < 0) phase += 1;
 
         scrollPatternPaths.forEach(({ path, length, phaseOffset }) => {
             const phase = (eased + phaseOffset) % 1;
@@ -215,10 +277,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseColour = { r: 247, g: 244, b: 239 }; // #F7F4EF
         const targetColour = { r: 237, g: 232, b: 226 }; // #EDE8E2
 
+        initScrollPattern();
+
         function updateScrollEffects() {
             const scrollY = window.scrollY;
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const ratio = docHeight > 0 ? Math.min(scrollY / docHeight, 1) : 0;
+
+            lastScrollRatio = ratio;
 
             const r = Math.round(baseColour.r + (targetColour.r - baseColour.r) * ratio);
             const g = Math.round(baseColour.g + (targetColour.g - baseColour.g) * ratio);
@@ -230,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 heroSection.style.backgroundPosition = `center calc(50% + ${offset}px)`;
             }
 
+            // Animate the SVG line pattern in sync with the scroll ratio
             updateScrollPattern(ratio);
         }
 
