@@ -120,12 +120,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Animated Logo Injection ---
     const logoWrapper = document.querySelector('.logo-animated-wrapper');
     if (logoWrapper) {
-        fetch('assets/logo.svg')
+        // MODIFIED: Changed path to fetch your new logo
+        fetch('assets/ISB_Logoanimated_PHD.svg')
             .then(response => response.text())
             .then(svgData => {
                 logoWrapper.innerHTML = svgData;
                 const svgElement = logoWrapper.querySelector('svg');
                 if (svgElement) {
+                    // This code finds the groups by ID and applies the animation timings
                     const logoGroup = svgElement.querySelector('#logo');
                     const textGroup = svgElement.querySelector('#text');
                     if (logoGroup) {
@@ -139,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
             .catch(() => {
+                // Fallback if the new logo fails to load
                 logoWrapper.innerHTML = `<img src="assets/logo-static.svg" alt="Immobilien Schätzung + Beratung Logo">`;
             });
     }
