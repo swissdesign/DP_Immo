@@ -1,3 +1,75 @@
+const SCROLL_PATTERN_MARKUP = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <path d="M-25 25 L25 -25 M75 125 L125 75" />
+              <path d="M75 -25 L125 25 M-25 75 L25 125" />
+              <path d="M25 75 L75 25" />
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
+        </svg>
+`.trim();
+
+let scrollPatternPaths = [];
+let lastScrollRatio = 0;
+
+function initScrollPattern(prefersReducedMotion) {
+    if (prefersReducedMotion) return;
+
+    const DASH_RATIO = 0.4;
+    const GAP_RATIO = 0.9;
+    const PHASE_OFFSET_MULTIPLIER = 0.15;
+
+    let svg = document.querySelector('.scroll-pattern-wrapper svg');
+
+    if (!svg) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+        wrapper.innerHTML = SCROLL_PATTERN_MARKUP;
+
+        document.body.insertBefore(wrapper, document.body.firstChild);
+        svg = wrapper.querySelector('svg');
+    }
+
+    if (!svg) return;
+
+    const paths = svg.querySelectorAll('path');
+    scrollPatternPaths = Array.from(paths).map((path, index) => {
+        const length = path.getTotalLength();
+        const dash = length * DASH_RATIO;
+        const gap = length * GAP_RATIO;
+
+        path.style.fill = 'none';
+        path.style.strokeDasharray = `${dash} ${gap}`;
+        path.style.strokeDashoffset = length;
+
+        const phaseOffset = (index * PHASE_OFFSET_MULTIPLIER) % 1;
+        const direction = Math.random() < 0.5 ? 1 : -1;
+
+        return { path, length, phaseOffset, direction };
+    });
+
+    updateScrollPattern(lastScrollRatio);
+}
+
+function updateScrollPattern(ratio) {
+    if (!scrollPatternPaths.length) return;
+
+    const eased = ratio < 0.5
+        ? 2 * ratio * ratio
+        : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
+
+    scrollPatternPaths.forEach(({ path, length, phaseOffset, direction }) => {
+        let phase = phaseOffset + direction * eased;
+        phase %= 1;
+        if (phase < 0) phase += 1;
+
+        const offset = length * (1 - phase);
+        path.style.strokeDashoffset = offset;
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- PWA Service Worker Registration ---
@@ -59,78 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // --- Scroll Pattern Background ---
-    let scrollPatternPaths = [];
-    let lastScrollRatio = 0;
-    const SCROLL_PATTERN_MARKUP = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                  <path d="M-25 25 L25 -25 M75 125 L125 75" />
-                  <path d="M75 -25 L125 25 M-25 75 L25 125" />
-                  <path d="M25 75 L75 25" />
-                </pattern>
-              </defs>
-              <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
-            </svg>
-    `.trim();
-
-    function initScrollPattern() {
-        if (prefersReducedMotion) return;
-
-        const DASH_RATIO = 0.4;
-        const GAP_RATIO = 0.9;
-        const PHASE_OFFSET_MULTIPLIER = 0.15;
-
-        const wrapper = document.createElement('div');
-        wrapper.className = 'scroll-pattern-wrapper';
-        wrapper.innerHTML = SCROLL_PATTERN_MARKUP;
-
-        document.body.insertBefore(wrapper, document.body.firstChild);
-
-        const svg = wrapper.querySelector('svg');
-        if (!svg) return;
-
-        const paths = svg.querySelectorAll('path');
-        scrollPatternPaths = Array.from(paths).map((path, index) => {
-            const length = path.getTotalLength();
-            const dash = length * DASH_RATIO;
-            const gap = length * GAP_RATIO;
-
-            path.style.fill = 'none';
-            path.style.strokeDasharray = `${dash} ${gap}`;
-            path.style.strokeDashoffset = length;
-
-            const phaseOffset = (index * PHASE_OFFSET_MULTIPLIER) % 1;
-            const direction = Math.random() < 0.5 ? 1 : -1;
-
-            return { path, length, phaseOffset, direction };
-        });
-
-        updateScrollPattern(lastScrollRatio);
-    }
-
-    function updateScrollPattern(ratio) {
-        if (!scrollPatternPaths.length) return;
-
-        const eased = ratio < 0.5
-            ? 2 * ratio * ratio
-            : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
-
-        scrollPatternPaths.forEach(({ path, length, phaseOffset, direction }) => {
-            let phase = phaseOffset + direction * eased;
-            phase %= 1;
-            if (phase < 0) phase += 1;
-
-            const offset = length * (1 - phase);
-            path.style.strokeDashoffset = offset;
-        });
-    }
-
     // --- Intersection Observer for animations ---
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
-    initScrollPattern();
+    // --- Scroll Pattern Background ---
+    initScrollPattern(prefersReducedMotion);
 
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
@@ -224,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseColour = { r: 247, g: 244, b: 239 }; // #F7F4EF
         const targetColour = { r: 237, g: 232, b: 226 }; // #EDE8E2
 
-        initScrollPattern();
+        initScrollPattern(false);
 
         function updateScrollEffects() {
             const scrollY = window.scrollY;
