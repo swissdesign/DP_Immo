@@ -48,12 +48,12 @@ body {
   pointer-events: none;
 }
 
-#scroll-pattern-svg {
+.scroll-pattern-wrapper svg {
   width: 100%;
   height: 100%;
 }
 
-#scroll-pattern-svg path {
+.scroll-pattern-wrapper svg path {
   stroke: var(--line);
   stroke-width: 0.6;
   stroke-linecap: round;

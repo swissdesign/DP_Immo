@@ -61,14 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll Pattern Background ---
     let scrollPatternPaths = [];
-
-    function initScrollPattern() {
-        if (prefersReducedMotion) return;
-
-        const wrapper = document.createElement('div');
-        wrapper.className = 'scroll-pattern-wrapper';
-        wrapper.innerHTML = `
-            <svg id="scroll-pattern-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+    const SCROLL_PATTERN_MARKUP = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
               <defs>
                 <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
                   <path d="M-25 25 L25 -25 M75 125 L125 75" />
@@ -78,24 +72,35 @@ document.addEventListener('DOMContentLoaded', () => {
               </defs>
               <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
             </svg>
-        `.trim();
+    `.trim();
+
+    function initScrollPattern() {
+        if (prefersReducedMotion) return;
+
+        const DASH_RATIO = 0.4;
+        const GAP_RATIO = 0.9;
+        const PHASE_OFFSET_MULTIPLIER = 0.15;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+        wrapper.innerHTML = SCROLL_PATTERN_MARKUP;
 
         document.body.insertBefore(wrapper, document.body.firstChild);
 
-        const svg = wrapper.querySelector('#scroll-pattern-svg');
+        const svg = wrapper.querySelector('svg');
         if (!svg) return;
 
         const paths = svg.querySelectorAll('path');
         scrollPatternPaths = Array.from(paths).map((path, index) => {
             const length = path.getTotalLength();
-            const dash = length * 0.4;
-            const gap = length * 0.9;
+            const dash = length * DASH_RATIO;
+            const gap = length * GAP_RATIO;
 
             path.style.fill = 'none';
             path.style.strokeDasharray = `${dash} ${gap}`;
             path.style.strokeDashoffset = length;
 
-            return { path, length, phaseOffset: index * 0.15 };
+            return { path, length, phaseOffset: index * PHASE_OFFSET_MULTIPLIER };
         });
     }
 
