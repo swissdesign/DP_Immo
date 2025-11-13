@@ -1,10 +1,13 @@
 const SCROLL_PATTERN_MARKUP = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
           <defs>
             <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
               <path d="M-25 25 L25 -25 M75 125 L125 75" />
               <path d="M75 -25 L125 25 M-25 75 L25 125" />
               <path d="M25 75 L75 25" />
+              <path d="M-25 75 L25 25 M75 175 L125 125" />
+              <path d="M-25 -25 L25 25 M75 75 L125 125" />
+              <path d="M-25 125 L25 75 M75 25 L125 -25" />
             </pattern>
           </defs>
           <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
