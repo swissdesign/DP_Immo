@@ -57,9 +57,71 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Intersection Observer for animations ---
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Scroll Pattern Background ---
+    let scrollPatternPaths = [];
+    const SCROLL_PATTERN_MARKUP = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <pattern id="pattern-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                  <path d="M-25 25 L25 -25 M75 125 L125 75" />
+                  <path d="M75 -25 L125 25 M-25 75 L25 125" />
+                  <path d="M25 75 L75 25" />
+                </pattern>
+              </defs>
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" />
+            </svg>
+    `.trim();
+
+    function initScrollPattern() {
+        if (prefersReducedMotion) return;
+
+        const DASH_RATIO = 0.4;
+        const GAP_RATIO = 0.9;
+        const PHASE_OFFSET_MULTIPLIER = 0.15;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+        wrapper.innerHTML = SCROLL_PATTERN_MARKUP;
+
+        document.body.insertBefore(wrapper, document.body.firstChild);
+
+        const svg = wrapper.querySelector('svg');
+        if (!svg) return;
+
+        const paths = svg.querySelectorAll('path');
+        scrollPatternPaths = Array.from(paths).map((path, index) => {
+            const length = path.getTotalLength();
+            const dash = length * DASH_RATIO;
+            const gap = length * GAP_RATIO;
+
+            path.style.fill = 'none';
+            path.style.strokeDasharray = `${dash} ${gap}`;
+            path.style.strokeDashoffset = length;
+
+            return { path, length, phaseOffset: index * PHASE_OFFSET_MULTIPLIER };
+        });
+    }
+
+    function updateScrollPattern(ratio) {
+        if (!scrollPatternPaths.length) return;
+
+        const eased = ratio < 0.5
+            ? 2 * ratio * ratio
+            : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
+
+        scrollPatternPaths.forEach(({ path, length, phaseOffset }) => {
+            const phase = (eased + phaseOffset) % 1;
+            const offset = length * (1 - phase);
+            path.style.strokeDashoffset = offset;
+        });
+    }
+
+    // --- Intersection Observer for animations ---
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+    initScrollPattern();
 
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
@@ -157,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const scrollY = window.scrollY;
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const ratio = docHeight > 0 ? Math.min(scrollY / docHeight, 1) : 0;
-            
+
             const r = Math.round(baseColour.r + (targetColour.r - baseColour.r) * ratio);
             const g = Math.round(baseColour.g + (targetColour.g - baseColour.g) * ratio);
             const b = Math.round(baseColour.b + (targetColour.b - baseColour.b) * ratio);
@@ -167,6 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const offset = scrollY * 0.1;
                 heroSection.style.backgroundPosition = `center calc(50% + ${offset}px)`;
             }
+
+            updateScrollPattern(ratio);
         }
 
         let ticking = false;
