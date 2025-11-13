@@ -1315,3 +1315,8 @@ body.person-page { background-color: #fff; } /* Override paper for full white */
   max-height: 90%;
   border-radius: 6px;
 }
+
+.about-intro {
+  text-align: center;  /* Zentriert den Text innerhalb des Blocks */
+  margin-inline: auto; /* Zentriert den Block selbst auf der Seite */
+}
