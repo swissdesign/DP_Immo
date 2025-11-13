@@ -88,14 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        wrapper.innerHTML = svgMarkup;
-        document.body.insertBefore(wrapper, document.body.firstChild);
-
-        const svg = wrapper.querySelector('svg');
-        if (!svg) {
-            wrapper.remove();
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(svgMarkup, 'image/svg+xml');
+        const svg = svgDoc.querySelector('svg');
+        if (!svg || svg.querySelector('parsererror')) {
+            console.error('Failed to parse scroll pattern SVG.');
             return;
         }
+        wrapper.appendChild(svg);
+        document.body.insertBefore(wrapper, document.body.firstChild);
 
         const paths = svg.querySelectorAll('path');
         const {
