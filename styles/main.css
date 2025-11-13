@@ -39,6 +39,11 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+/* Globale Bildanpassung für Sättigung und Helligkeit */
+img:not(.logo-static) {
+  filter: saturate(85%) brightness(95%);
+}
+
 @media (max-width: 768px) {
   body {
     scroll-snap-type: none;
