@@ -57,8 +57,91 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Intersection Observer for animations ---
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Scroll Pattern Background ---
+    let scrollPatternPaths = [];
+    let lastScrollRatio = 0;
+    const SCROLL_PATTERN_SVG_PATH = 'assets/scroll-pattern.svg';
+    const SCROLL_PATTERN_CONFIG = {
+        MIN_DASH_RATIO: 0.1,
+        DASH_VARIANCE: 0.2,
+        MIN_GAP_RATIO: 0.6,
+        GAP_VARIANCE: 0.4,
+    };
+
+    async function initScrollPattern() {
+        if (prefersReducedMotion) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scroll-pattern-wrapper';
+
+        let svgMarkup = '';
+        try {
+            const response = await fetch(SCROLL_PATTERN_SVG_PATH);
+            if (!response.ok) {
+                throw new Error(`Request failed with status ${response.status}`);
+            }
+            svgMarkup = (await response.text()).trim();
+        } catch (error) {
+            console.error('Failed to load scroll pattern SVG:', error);
+            return;
+        }
+
+        wrapper.innerHTML = svgMarkup;
+        document.body.insertBefore(wrapper, document.body.firstChild);
+
+        const svg = wrapper.querySelector('svg');
+        if (!svg) {
+            wrapper.remove();
+            return;
+        }
+
+        const paths = svg.querySelectorAll('path');
+        const {
+            MIN_DASH_RATIO,
+            DASH_VARIANCE,
+            MIN_GAP_RATIO,
+            GAP_VARIANCE,
+        } = SCROLL_PATTERN_CONFIG;
+
+        scrollPatternPaths = Array.from(paths).map((path) => {
+            const length = path.getTotalLength();
+
+            const dash = length * (MIN_DASH_RATIO + Math.random() * DASH_VARIANCE);
+            const gap = length * (MIN_GAP_RATIO + Math.random() * GAP_VARIANCE);
+
+            path.style.fill = 'none';
+            path.style.strokeDasharray = `${dash} ${gap}`;
+            path.style.strokeDashoffset = length;
+
+            const phaseOffset = Math.random();
+            const direction = Math.random() < 0.5 ? 1 : -1;
+
+            return { path, length, phaseOffset, direction };
+        });
+
+        updateScrollPattern(lastScrollRatio);
+    }
+
+    function updateScrollPattern(ratio) {
+        if (!scrollPatternPaths.length) return;
+
+        const eased = ratio < 0.5
+            ? 2 * ratio * ratio
+            : 1 - Math.pow(-2 * ratio + 2, 2) / 2;
+
+        scrollPatternPaths.forEach(({ path, length, phaseOffset, direction }) => {
+            let phase = phaseOffset + direction * eased;
+            phase %= 1;
+            if (phase < 0) phase += 1;
+
+            const offset = length * (1 - phase);
+            path.style.strokeDashoffset = offset;
+        });
+    }
+
+    // --- Intersection Observer for animations ---
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
     if (!prefersReducedMotion) {
@@ -153,11 +236,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseColour = { r: 247, g: 244, b: 239 }; // #F7F4EF
         const targetColour = { r: 237, g: 232, b: 226 }; // #EDE8E2
 
+        initScrollPattern();
+
         function updateScrollEffects() {
             const scrollY = window.scrollY;
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const ratio = docHeight > 0 ? Math.min(scrollY / docHeight, 1) : 0;
-            
+
+            lastScrollRatio = ratio;
+
             const r = Math.round(baseColour.r + (targetColour.r - baseColour.r) * ratio);
             const g = Math.round(baseColour.g + (targetColour.g - baseColour.g) * ratio);
             const b = Math.round(baseColour.b + (targetColour.b - baseColour.b) * ratio);
@@ -167,6 +254,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const offset = scrollY * 0.1;
                 heroSection.style.backgroundPosition = `center calc(50% + ${offset}px)`;
             }
+
+            // Animate the SVG line pattern in sync with the scroll ratio
+            updateScrollPattern(ratio);
         }
 
         let ticking = false;
